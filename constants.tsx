@@ -1,4 +1,4 @@
-import { NavItem, ServiceItem, FAQItem, ArticleItem, ServicePageContent, BookContent } from './types';
+import { NavItem, ServiceItem, FAQItem, ArticleItem, ServicePageContent, BookContent, PortfolioItem } from './types';
 import { Layers, TrendingUp, Building2, Globe, Cpu, RefreshCw, Mic, LineChart } from 'lucide-react';
 import React from 'react';
 
@@ -6,26 +6,14 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Services', path: '/services' },
+  { label: 'Keynotes', path: '/keynotes' },
   { label: 'Books', path: '/books' },
   { label: 'Experience', path: '/work-experience' },
   { label: 'Insights', path: '/insights' },
+  { label: 'Media', path: '/media' },
+  { label: 'Awards', path: '/awards' },
   { label: 'Contact', path: '/contact' },
 ];
-
-export interface PortfolioItem {
-  id: string;
-  slug: string;
-  title: string;
-  category: string;
-  summary: string;
-  image: string;
-  clientType?: string;
-  challenge: string;
-  solution: string;
-  impact: string[];
-  location: string;
-  year: string;
-}
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
@@ -104,279 +92,238 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 
 export const SERVICES: ServiceItem[] = [
   {
-    title: 'Board-Level Advisory',
-    description: 'Strategic clarity and governance at the highest level.',
+    title: 'Board Advisory & Market Acceleration',
+    description: 'Strategic guidance for board decisions and accelerated market entry with proven methodologies.',
     icon: <Layers className="w-6 h-6" />,
-    path: '/services/board-advisory'
+    path: '/pages/board-advisory-market-acceleration'
   },
   {
-    title: 'Market Acceleration',
-    description: 'Structured growth across new and emerging markets.',
-    icon: <TrendingUp className="w-6 h-6" />,
-    path: '/services/market-acceleration'
-  },
-  {
-    title: 'Government & Enterprise',
-    description: 'Policy-aligned strategy with execution focus.',
-    icon: <Building2 className="w-6 h-6" />,
-    path: '/services/government-enterprise'
-  },
-  {
-    title: 'Smart Cities Advisory',
-    description: 'Designing future-ready urban systems.',
+    title: 'Smart Cities Strategic Advisory',
+    description: 'Comprehensive urban planning and smart infrastructure development consulting.',
     icon: <Globe className="w-6 h-6" />,
-    path: '/services/smart-cities'
+    path: '/pages/smart-cities-strategic-advisory'
   },
   {
-    title: 'AI Advisory',
-    description: 'From AI ambition to real-world deployment.',
+    title: 'Artificial Intelligence Advisory',
+    description: 'Expert AI strategy development and implementation guidance for transformation.',
     icon: <Cpu className="w-6 h-6" />,
-    path: '/services/ai-advisory'
+    path: '/pages/artificial-intelligence-advisory'
   },
   {
-    title: 'Digital Transformation',
-    description: 'Beyond buzzwords — toward operational impact.',
-    icon: <RefreshCw className="w-6 h-6" />,
-    path: '/services/digital-transformation'
-  },
-  {
-    title: 'Global Keynotes',
-    description: 'Insight-driven perspectives on leadership and the future.',
+    title: 'Keynotes & Public Speaking',
+    description: 'Inspiring presentations and thought leadership on emerging technologies and trends.',
     icon: <Mic className="w-6 h-6" />,
-    path: '/services/global-keynotes'
+    path: '/pages/keynotes-public-speaking'
   },
   {
-    title: 'Investment & Fund Raising',
-    description: 'Strategic capital structuring for scalable growth.',
+    title: 'Academic Advisory & Accreditation',
+    description: 'Educational program development and institutional accreditation support services.',
+    icon: <Building2 className="w-6 h-6" />,
+    path: '/pages/academic-advisory-accreditation'
+  },
+  {
+    title: 'Fund Raising Services',
+    description: 'Strategic fundraising support and investor relations for growth-stage companies.',
     icon: <LineChart className="w-6 h-6" />,
-    path: '/services/fundraising'
+    path: '/pages/fund-raising-services'
+  },
+  {
+    title: 'Executive Training & Coaching',
+    description: 'Leadership development and executive coaching programs for senior management teams.',
+    icon: <TrendingUp className="w-6 h-6" />,
+    path: '/pages/executive-training-coaching'
   }
 ];
 
+// Content Map
 export const SERVICE_CONTENT: Record<string, ServicePageContent> = {
-  'board-advisory': {
-    id: 'board-advisory',
-    title: 'Board-Level Advisory',
-    subtitle: 'Strategic clarity at the highest level of decision-making.',
-    strategicOverview: 'In an era of rapid disruption, boards must do more than govern; they must guide. Dr. Usman partners directly with directors and executive committees to cut through complexity, ensuring that governance structures are not just compliant, but competitive assets that drive long-term value.',
-    solves: [
-      { title: 'Strategic Drift', description: 'Realigning disjointed executive visions into a unified roadmap.' },
-      { title: 'Governance Paralysis', description: 'Streamlining decision-making processes to match market speed.' },
-      { title: 'Succession Ambiguity', description: 'Structuring leadership continuity for sustainable growth.' }
-    ],
-    capabilities: [
-      { title: 'Governance Frameworks', description: 'Custom-built structures that balance oversight with agility.' },
-      { title: 'Executive Alignment', description: 'Facilitated sessions to unify C-suite vision and priorities.' },
-      { title: 'Risk & Resilience', description: 'Forward-looking risk modeling for volatile global markets.' }
-    ],
-    outcomes: [
-      'Robust governance structures',
-      'Unified executive decision-making',
-      'Sustainable long-term growth',
-      'Elevated board performance'
-    ],
-    process: [
-      { step: '01', title: 'Diagnostic Audit', description: 'Deep-dive review of current board efficacy and friction points.' },
-      { step: '02', title: 'Strategic Realignment', description: 'Workshops to redefine core pillars and decision matrices.' },
-      { step: '03', title: 'Framework Implementation', description: 'Deploying new governance tools and reporting cadences.' },
-      { step: '04', title: 'Advisory Retainer', description: 'Ongoing counsel to ensure adherence and adaptation.' }
+  'board-advisory-market-acceleration': {
+    id: 'board-advisory-market-acceleration',
+    title: 'Board Advisory & Market Acceleration',
+    subtitle: 'Strategic guidance for board decisions and accelerated market entry.',
+    sections: [
+      {
+        content: "Dr. Usman Zafar and his team at World Business Hub (WBH) provide premier Board Advisory and Market Acceleration Services, eliminating the need to recruit sales, marketing, or business development teams. Leveraging over two decades of global leadership, Dr. Usman Zafar drives transformative growth for organizations in the MENA, Asia Pacific, and African markets. With a proven track record of securing over 90 global partnerships and leading more than 100 projects, we offer rapid market access by securing key strategic projects in both public and private sectors through strong C-level decision makers connections."
+      },
+      {
+        title: "Market Acceleration Services",
+        isDark: true,
+        bullets: [
+          "Market Entry Strategies: Tailored roadmaps for navigating emerging markets, including the Middle East, North Africa, and Asia Pacific, with a focus on regulatory compliance and cultural nuances.",
+          "Strategic Alliances and Investments: Securing high-value partnerships and funding through public-private partnerships (PPPs) and build-operate-transfer (BOT) models, as evidenced by Dr. Zafar’s work with World Business Hub.",
+          "Smart City and Urban Development Expertise: Dr. Usman, as a Senior Advisor for multiple Smart Cities and a board member for numerous international companies, possesses unparalleled expertise in accelerating company market expansion across diverse global markets.",
+          "Brand Positioning and Global Reach: Enhancing visibility through international conferences, awards, and media, as demonstrated by Dr. Zafar’s roles as a keynote speaker and Guest of Honor at events like the International Prime Awards and Smart Cities Summit.",
+          "Key Performance Indicators (KPIs): For market acceleration services, Dr. Usman’s team delivers a detailed yearly business plan to the board, outlining quarterly revenue targets to ensure strategic alignment and measurable growth. Progress is tracked through bi-weekly sales reports, providing real-time insights into performance metrics. Regular board meetings further facilitate oversight, enabling data-driven decisions to optimize market entry and expansion outcomes.",
+          "Cost-Saving Market Expansion Solution: Dr. Usman Zafar and his expert team at World Business Hub enable low-cost market expansion in MENA, Asia Pacific, and Africa. By leveraging regional expertise and pre-built networks, they eliminate the need for in-house sales or marketing teams. This accelerates entry by up to 90% and cuts costs by 60%, ideal for SMEs and startups."
+        ]
+      },
+      {
+        title: "Board Advisory Services",
+        bullets: [
+          "Strategic Planning and Governance: Developing robust strategies to align with organizational goals, ensuring operational effectiveness and compliance with regulatory standards.",
+          "Industry Engagement and Partnerships: Facilitating strategic alliances with public and private sectors to foster innovation and growth, as demonstrated by Dr. Zafar’s advisory roles with Higher Colleges of Technology, Ajman University, and Al Ain University.",
+          "Technology Integration: Advising on the adoption of innovative technologies, such as blockchain and AI, to enhance stakeholder collaboration and drive digital transformation.",
+          "Research and Funding Strategies: Guiding organizations to secure funding from public and private sectors, optimizing research strategies to support long-term objectives.",
+          "Talent Development: Providing insights on faculty and non-faculty recruitment, promotion, and evaluation to build high-performing teams."
+        ],
+        content: "Contact Dr. Usman Zafar for potential collaboration at advisor@usmanzafar.com."
+      }
     ]
   },
-  'market-acceleration': {
-    id: 'market-acceleration',
-    title: 'Market Acceleration',
-    subtitle: 'Structured expansion across emerging and global markets.',
-    strategicOverview: 'Entering new markets is high-risk, high-reward. We mitigate the former and maximize the latter. By combining geopolitical insight with on-the-ground operational networks, we help organizations bypass typical entry barriers and accelerate their path to revenue.',
-    solves: [
-      { title: 'Market Opacity', description: 'Demystifying local regulations, culture, and competitive landscapes.' },
-      { title: 'Partner Misalignment', description: 'Vetting and securing partners who actually deliver.' },
-      { title: 'Operational Drag', description: 'Setting up lean, effective launch teams from day one.' }
-    ],
-    capabilities: [
-      { title: 'Market Entry Strategy', description: 'Data-driven selection of high-potential target geographies.' },
-      { title: 'Strategic Partnerships', description: 'Negotiating alliances with local conglomerates and governments.' },
-      { title: 'Scalable Growth Models', description: 'Designing replicable playbooks for multi-region expansion.' }
-    ],
-    outcomes: [
-      'Accelerated time-to-market',
-      'High-value partner ecosystems',
-      'Risk-mitigated scaling',
-      'Clear revenue traction'
-    ],
-    process: [
-      { step: '01', title: 'Market Scan', description: 'Identifying the path of least resistance and highest value.' },
-      { step: '02', title: 'Ecosystem Mapping', description: 'Pinpointing critical stakeholders and partners.' },
-      { step: '03', title: 'Launch Execution', description: 'Hands-on oversight of the initial market entry phase.' },
-      { step: '04', title: 'Scale & Optimize', description: 'Refining operations based on initial market feedback.' }
-    ]
+  'smart-cities-strategic-advisory': {
+     id: 'smart-cities-strategic-advisory',
+     title: 'Smart Cities Strategic Advisory',
+     subtitle: 'Comprehensive urban planning and smart infrastructure development.',
+     sections: [
+        {
+          content: "We empower governments and developers to create intelligent, sustainable, and future-ready urban environments. By integrating advanced technology with urban planning, we ensure cities are not just connected, but livable, efficient, and resilient."
+        },
+        {
+          title: "Our Smart Cities Advisory Services",
+          isDark: true,
+          bullets: [
+            "Smart City Strategy & Master Planning: Developing comprehensive roadmaps for greenfield and brownfield smart city projects.",
+            "Digital Twin Implementation: Overseeing the creation of digital replicas for real-time urban management and simulation.",
+            "IoT & Infrastructure Architecture: Designing the connectivity layer that powers smart energy, water, and transport systems.",
+            "Data Governance & Privacy Frameworks: Ensuring citizen data is handled with sovereignty, security, and ethical compliance.",
+            "Sustainable Urban Mobility: Planning integrated transport networks that prioritize efficiency and reduced carbon footprint.",
+            "Public-Private Partnership (PPP) Structuring: Facilitating funding and operational models between government bodies and private tech providers."
+          ]
+        },
+        {
+          title: "Why Partner with Us?",
+          content: "Dr. Usman Zafar brings over 20 years of experience in smart city initiatives across the MENA region and beyond. His vendor-agnostic approach ensures that technology choices serve the city's long-term strategic goals, not just short-term trends. Contact Dr. Usman Zafar for potential collaboration at advisor@usmanzafar.com."
+        }
+     ]
   },
-  'government-enterprise': {
-    id: 'government-enterprise',
-    title: 'Government & Enterprise',
-    subtitle: 'Strategy and execution in complex regulated environments.',
-    strategicOverview: 'Public sector bodies and large enterprises face a unique challenge: innovating while maintaining stability. We bridge the gap between high-level policy vision and on-the-ground operational reality, ensuring that mandates translate into measurable citizen and stakeholder impact.',
-    solves: [
-      { title: 'Policy-Execution Gap', description: 'Ensuring high-level mandates are actually implementable.' },
-      { title: 'Siloed Operations', description: 'Breaking down departmental barriers to enable unified action.' },
-      { title: 'Digital Lag', description: 'Modernizing legacy infrastructure without disrupting critical services.' }
-    ],
-    capabilities: [
-      { title: 'Public Sector Reform', description: 'Modernizing service delivery models for efficiency.' },
-      { title: 'Enterprise Transformation', description: 'Large-scale change management for multinational entities.' },
-      { title: 'Policy Alignment', description: 'Harmonizing corporate strategy with national agendas.' }
-    ],
-    outcomes: [
-      'Policy-compliant operations',
-      'Efficient public service delivery',
-      'Stakeholder consensus',
-      'Operational resilience'
-    ],
-    process: [
-      { step: '01', title: 'Stakeholder Alignment', description: 'Unifying diverse interests around a common strategic goal.' },
-      { step: '02', title: 'Policy Decoding', description: 'Translating regulations into operational requirements.' },
-      { step: '03', title: 'Pilot Programs', description: 'Testing strategies in controlled environments before rollout.' },
-      { step: '04', title: 'National Scale-Up', description: 'Deploying successful frameworks across the broader entity.' }
-    ]
+  'artificial-intelligence-advisory': {
+     id: 'artificial-intelligence-advisory',
+     title: 'Artificial Intelligence Advisory',
+     subtitle: 'Expert AI strategy development and implementation guidance.',
+     sections: [
+       {
+         title: "Strategic AI Roadmapping",
+         content: "Moving beyond hype to tangible ROI. We help organizations identify high-impact AI use cases, assess readiness, and build a phased roadmap for adoption that aligns with business objectives."
+       },
+       {
+         title: "Implementation & Technology",
+         isDark: true,
+         bullets: [
+           "Technology Assessment & Selection: unbiased evaluation of AI tools, platforms, and vendors to find the best fit for your infrastructure.",
+           "Implementation Support: Guiding your team through the deployment of machine learning models, automation workflows, and data pipelines.",
+           "Ethical AI Guidance: Establishing governance frameworks to ensure AI systems are transparent, fair, and compliant with global regulations.",
+           "Data Strategy: Structuring your data assets to fuel AI initiatives effectively and securely."
+         ]
+       },
+       {
+         title: "Training & Up-skilling",
+         content: "Preparing your workforce for the AI era. We design training programs that upskill teams, fostering a culture of innovation and AI fluency across the organization. Contact Dr. Usman Zafar for potential collaboration at advisor@usmanzafar.com."
+       }
+     ]
   },
-  'smart-cities': {
-    id: 'smart-cities',
-    title: 'Smart Cities Advisory',
-    subtitle: 'Designing integrated, future-ready urban ecosystems.',
-    strategicOverview: 'A smart city is not just about sensors; it is about livability. We advise municipalities and developers on creating urban environments where technology serves the citizen. From digital twins to sustainable infrastructure, we design cities that are resilient, efficient, and human-centric.',
-    solves: [
-      { title: 'Fragmented Tech', description: 'Moving from isolated pilot projects to integrated platforms.' },
-      { title: 'Data Privacy Risks', description: 'Establishing robust governance for citizen data.' },
-      { title: 'Sustainability Goals', description: 'Using tech to actively reduce carbon footprints.' }
-    ],
-    capabilities: [
-      { title: 'Smart Infrastructure', description: 'IoT and connectivity planning for urban environments.' },
-      { title: 'Digital Governance', description: 'Frameworks for managing city-wide data ecosystems.' },
-      { title: 'Urban Innovation', description: 'Attracting tech talent and startups to the city.' }
-    ],
-    outcomes: [
-      'Integrated urban data systems',
-      'Sustainable infrastructure planning',
-      'Citizen-centric digital services',
-      'Global city competitiveness'
-    ],
-    process: [
-      { step: '01', title: 'Vision & Masterplan', description: 'Defining the digital DNA of the future city.' },
-      { step: '02', title: 'Technology Roadmap', description: 'Selecting the right vendors and infrastructure stacks.' },
-      { step: '03', title: 'Public-Private Models', description: 'Structuring funding and operational partnerships.' },
-      { step: '04', title: 'Citizen Engagement', description: 'Ensuring adoption and trust from the community.' }
-    ]
+  'keynotes-public-speaking': {
+     id: 'keynotes-public-speaking',
+     title: 'Keynotes & Public Speaking',
+     subtitle: 'Inspiring presentations on emerging technologies and trends.',
+     sections: [
+       {
+         title: "Why Book Dr. Usman Zafar?",
+         content: "Dr. Usman delivers powerful, evidence-based keynotes that challenge conventional thinking. Whether for a government summit, a corporate retreat, or a technology conference, his talks provide the clarity and inspiration needed to navigate uncertainty."
+       },
+       {
+         title: "Signature Topics",
+         isDark: true,
+         bullets: [
+           "The Future of Leadership: Navigating complexity in a digital-first world.",
+           "Smart Cities & Urban Innovation: Designing for the human experience.",
+           "AI & The Future Economy: How artificial intelligence will reshape industries and labor markets.",
+           "Digital Sovereignty: Strategies for nations and enterprises to secure their digital future.",
+           "Market Acceleration: Playbooks for rapid expansion in emerging markets."
+         ]
+       }
+     ]
   },
-  'ai-advisory': {
-    id: 'ai-advisory',
-    title: 'AI Advisory',
-    subtitle: 'Responsible AI strategy with real-world impact.',
-    strategicOverview: 'AI is a defining force, but hype often outpaces value. We help organizations look past the buzzwords to identify high-impact, ethically sound AI use cases. Our focus is on readiness, governance, and tangible ROI, ensuring AI becomes a competitive advantage, not a liability.',
-    solves: [
-      { title: 'Algorithm Bias', description: 'Establishing ethical guardrails for AI deployment.' },
-      { title: 'Use-Case Paralysis', description: 'Identifying where AI adds actual business value.' },
-      { title: 'Skills Gap', description: 'Preparing the workforce for AI-augmented workflows.' }
-    ],
-    capabilities: [
-      { title: 'AI Readiness Assessment', description: 'Auditing data infrastructure and organizational maturity.' },
-      { title: 'High-Impact Use Cases', description: 'Prioritizing pilots that deliver quick, visible wins.' },
-      { title: 'Ethical Governance', description: 'Frameworks for responsible AI development and use.' }
-    ],
-    outcomes: [
-      'Clear AI adoption roadmap',
-      'Risk-mitigated deployment',
-      'Measurable efficiency gains',
-      'Future-proofed workforce'
-    ],
-    process: [
-      { step: '01', title: 'Readiness Audit', description: 'Assessing data quality and technical infrastructure.' },
-      { step: '02', title: 'Strategy Definition', description: 'Selecting the right AI models and partners.' },
-      { step: '03', title: 'Pilot Execution', description: 'Launching controlled experiments to prove value.' },
-      { step: '04', title: 'Operational Scale', description: 'Integrating AI into core business processes.' }
-    ]
+  'academic-advisory-accreditation': {
+     id: 'academic-advisory-accreditation',
+     title: 'Academic Advisory & Accreditation',
+     subtitle: 'Educational program development and institutional accreditation support.',
+     sections: [
+       {
+         title: "Overview",
+         content: "Elevating academic institutions through strategic curriculum development, global accreditation support, and partnership structuring. We bridge the gap between academia and industry requirements."
+       },
+       {
+         title: "Key Services",
+         isDark: true,
+         bullets: [
+           "Program Design & Development: Creating industry-aligned curricula that enhance graduate employability.",
+           "Accreditation Support: Guiding institutions through the rigorous process of international accreditation (e.g., ABET, AACSB).",
+           "Institutional Strategy: Advising on long-term growth, faculty development, and research priorities.",
+           "Industry Partnerships: Facilitating collaborations between universities and the corporate sector for research and internships."
+         ]
+       },
+       {
+         title: "Why Choose Dr. Usman Zafar?",
+         content: "With extensive experience on advisory boards of leading universities like Higher Colleges of Technology and Ajman University, Dr. Zafar brings a deep understanding of the academic landscape and its intersection with future workforce needs."
+       }
+     ]
   },
-  'digital-transformation': {
-    id: 'digital-transformation',
-    title: 'Digital Transformation',
-    subtitle: 'Turning digital ambition into operational results.',
-    strategicOverview: 'Transformation is not an IT project; it is a cultural shift. We guide legacy organizations through the difficult process of modernization. By focusing on people and processes first, and technology second, we ensure that digital investments yield actual operational agility.',
-    solves: [
-      { title: 'Legacy Inertia', description: 'Overcoming resistance to new tools and workflows.' },
-      { title: 'Tech Debt', description: 'Rationalizing bloated software portfolios.' },
-      { title: 'Customer Friction', description: 'Digitizing touchpoints to improve user experience.' }
-    ],
-    capabilities: [
-      { title: 'Digital Operating Models', description: 'Redesigning org charts for the digital age.' },
-      { title: 'Platform Modernization', description: 'Migrating from monolithic systems to agile microservices.' },
-      { title: 'Execution Enablement', description: 'Training and change management for staff.' }
-    ],
-    outcomes: [
-      'Modernized tech stack',
-      'Agile operational culture',
-      'Customer experience improvement',
-      'Cost reduction via automation'
-    ],
-    process: [
-      { step: '01', title: 'Current State Analysis', description: 'Mapping the friction points in workflows.' },
-      { step: '02', title: 'Target Operating Model', description: 'Designing the future state of the organization.' },
-      { step: '03', title: 'Tech Selection', description: 'Choosing tools that fit the strategy, not the hype.' },
-      { step: '04', title: 'Change Management', description: 'Guiding teams through the transition curve.' }
-    ]
+  'fund-raising-services': {
+     id: 'fund-raising-services',
+     title: 'Fund Raising Services',
+     subtitle: 'Strategic fundraising support and investor relations.',
+     sections: [
+       {
+         title: "Strategic Capital Structuring",
+         content: "Capital is a tool, not a goal. We help founders and boards structure their fundraising to align with long-term vision. From crafting the narrative to selecting the right investor mix, we ensure that the capital raised fuels growth without compromising strategic sovereignty."
+       },
+       {
+         title: "Our Fundraising Capabilities",
+         isDark: true,
+         bullets: [
+           "Funding Strategy Development: Defining the right capital mix (equity, debt, grants) for your growth stage.",
+           "Investor Network Access: Leveraging deep relationships with VCs, family offices, and sovereign wealth funds across MENA and Asia.",
+           "Pitch and Proposal Optimization: Crafting compelling pitch decks and investment memos that resonate with institutional investors.",
+           "Public-Private Partnerships (PPPs): Structuring deals that leverage government backing and private sector efficiency.",
+           "Crowdfunding and Alternative Financing: Navigating modern funding avenues for specific project needs."
+         ]
+       },
+       {
+         content: "Contact Dr. Usman Zafar for potential collaboration at advisor@usmanzafar.com."
+       }
+     ]
   },
-  'global-keynotes': {
-    id: 'global-keynotes',
-    title: 'Global Keynotes',
-    subtitle: 'Strategic insight for leaders shaping the future.',
-    strategicOverview: 'Great leadership requires a view of the horizon. Dr. Usman delivers powerful, evidence-based keynotes that challenge conventional thinking. Whether for a government summit or a corporate retreat, his talks provide the clarity and inspiration needed to navigate uncertainty.',
-    solves: [
-      { title: 'Strategic Myopia', description: 'Opening eyes to global macro-trends and shifts.' },
-      { title: 'Leadership Fatigue', description: 'Re-energizing teams with a compelling future vision.' },
-      { title: 'Innovation Stagnation', description: 'Sparking new ideas through cross-industry insights.' }
-    ],
-    capabilities: [
-      { title: 'Executive Leadership', description: 'Talks on resilience, decision-making, and legacy.' },
-      { title: 'Innovation Strategy', description: 'How to build cultures that refuse to stagnate.' },
-      { title: 'Future Economies', description: 'Deep dives into the trends shaping the next decade.' }
-    ],
-    outcomes: [
-      'Inspired leadership teams',
-      'Clearer future vision',
-      'Engaged stakeholder audiences',
-      'Actionable strategic takeaways'
-    ],
-    process: [
-      { step: '01', title: 'Audience Analysis', description: 'Understanding the specific challenges of the room.' },
-      { step: '02', title: 'Content Customization', description: 'Tailoring data and stories to resonate deeply.' },
-      { step: '03', title: 'Keynote Delivery', description: 'High-impact, visually engaging presentation.' },
-      { step: '04', title: 'Executive Q&A', description: 'Deep-dive sessions with leadership post-talk.' }
-    ]
-  },
-  'fundraising': {
-    id: 'fundraising',
-    title: 'Investment & Fund Raising',
-    subtitle: 'Capital strategy aligned with sustainable growth.',
-    strategicOverview: 'Capital is a tool, not a goal. We help founders and boards structure their fundraising to align with long-term vision. From crafting the narrative to selecting the right investor mix, we ensure that the capital raised fuels growth without compromising strategic sovereignty.',
-    solves: [
-      { title: 'Valuation Misalignment', description: 'Balancing founder equity with investor demands.' },
-      { title: 'Narrative Gaps', description: 'Translating technical success into financial potential.' },
-      { title: 'Due Diligence Friction', description: 'Preparing data rooms that instill investor confidence.' }
-    ],
-    capabilities: [
-      { title: 'Investor Readiness', description: 'Pressure-testing business models before pitching.' },
-      { title: 'Value Narratives', description: 'Crafting pitch decks that tell a compelling story.' },
-      { title: 'Scaling Capital', description: 'Structuring Series B+ rounds for expansion.' }
-    ],
-    outcomes: [
-      'Investment-ready assets',
-      'Aligned capital partnerships',
-      'Structured growth roadmap',
-      'Successful funding rounds'
-    ],
-    process: [
-      { step: '01', title: 'Financial Modeling', description: 'Building defensible projections and scenarios.' },
-      { step: '02', title: 'Narrative Design', description: 'Creating the pitch deck and investor memo.' },
-      { step: '03', title: 'Investor Matching', description: 'Identifying funds with the right thesis fit.' },
-      { step: '04', title: 'Deal Negotiation', description: 'Advising on term sheets and governance rights.' }
-    ]
+  'executive-training-coaching': {
+     id: 'executive-training-coaching',
+     title: 'Executive Training & Coaching',
+     subtitle: 'Leadership development for senior management teams.',
+     sections: [
+       {
+         title: "Why Choose Our Executive Training?",
+         content: "Empowering C-suite leaders with the mindset and tools to navigate complexity, drive innovation, and lead high-performance teams in a digital age. Our programs are not generic; they are tailored to the specific challenges of your industry."
+       },
+       {
+         title: "Training & Coaching Topics",
+         isDark: true,
+         bullets: [
+           "Digital Leadership & Transformation: Leading teams through technological disruption.",
+           "Strategic Decision Making: Frameworks for high-stakes choices in volatile markets.",
+           "Innovation Culture: Building organizations that continuously adapt and evolve.",
+           "Governance & Ethics: Best practices for board members and senior executives.",
+           "Change Management: guiding organizations through structural shifts and mergers."
+         ]
+       },
+       {
+         title: "Program Formats",
+         bullets: [
+           "One-on-One Executive Coaching",
+           "Senior Leadership Workshops",
+           "Board Retreat Facilitation",
+           "Virtual Masterclasses"
+         ],
+         content: "Who Should Attend? CEOs, Board Members, Government Officials, and Senior Executives looking to sharpen their strategic edge."
+       }
+     ]
   }
 };
 

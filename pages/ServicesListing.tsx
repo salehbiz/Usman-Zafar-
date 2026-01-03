@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Check, ShieldCheck, Globe, Layers, Zap, ArrowUpRight } from 'lucide-react';
-import FinalCTA from '../components/FinalCTA';
 
 const ServicesListing: React.FC = () => {
   const navigate = useNavigate();
@@ -10,55 +9,49 @@ const ServicesListing: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Specific Service Data for the Grid (8 Items as requested)
+  // UPDATED SERVICES LIST (7 Items) - Exact matches from request
   const SERVICES_GRID = [
     {
-      title: "Government & Public Sector Advisory",
-      desc: "Policy alignment, digital sovereignty frameworks, and national-scale transformation strategies.",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
-      path: "/services/government-enterprise"
+      title: "Board Advisory & Market Acceleration",
+      desc: "Strategic guidance for board decisions and accelerated market entry with proven methodologies.",
+      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop",
+      path: "/pages/board-advisory-market-acceleration"
     },
     {
       title: "Smart Cities Strategic Advisory",
-      desc: "Designing future-ready urban ecosystems, digital twins, and sustainable infrastructure.",
+      desc: "Comprehensive urban planning and smart infrastructure development consulting.",
       image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2669&auto=format&fit=crop",
-      path: "/services/smart-cities"
+      path: "/pages/smart-cities-strategic-advisory"
     },
     {
-      title: "AI Strategy & Digital Transformation",
-      desc: "From algorithmic governance to enterprise-wide AI adoption and operational resilience.",
+      title: "Artificial Intelligence Advisory",
+      desc: "Expert AI strategy development and implementation guidance for transformation.",
       image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop",
-      path: "/services/ai-advisory"
+      path: "/pages/artificial-intelligence-advisory"
     },
     {
-      title: "Market Acceleration & Entry Strategy",
-      desc: "Navigating regulatory landscapes to scale ventures across MENA, APAC, and beyond.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
-      path: "/services/market-acceleration"
-    },
-    {
-      title: "Board Advisory & Governance",
-      desc: "Ensuring long-term stability, succession planning, and decision clarity for boards.",
-      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop",
-      path: "/services/board-advisory"
-    },
-    {
-      title: "Fundraising & Capital Strategy",
-      desc: "Structuring capital raises, investor narratives, and public-private partnerships.",
-      image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=2670&auto=format&fit=crop",
-      path: "/services/fundraising"
-    },
-    {
-      title: "Digital Sovereignty & Data Policy",
-      desc: "Protecting national and corporate data assets in an era of geopolitical fragmentation.",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
-      path: "/services/ai-advisory" // Mapping to AI/Policy
-    },
-    {
-      title: "Keynote Speaking & Executive Briefings",
-      desc: "High-impact insights on leadership, future economies, and technological disruption.",
+      title: "Keynotes & Public Speaking",
+      desc: "Inspiring presentations and thought leadership on emerging technologies and trends.",
       image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2670&auto=format&fit=crop",
-      path: "/services/global-keynotes"
+      path: "/pages/keynotes-public-speaking"
+    },
+    {
+      title: "Academic Advisory & Accreditation",
+      desc: "Educational program development and institutional accreditation support services.",
+      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2670&auto=format&fit=crop",
+      path: "/pages/academic-advisory-accreditation"
+    },
+    {
+      title: "Fund Raising Services",
+      desc: "Strategic fundraising support and investor relations for growth-stage companies.",
+      image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=2670&auto=format&fit=crop",
+      path: "/pages/fund-raising-services"
+    },
+    {
+      title: "Executive Training & Coaching",
+      desc: "Leadership development and executive coaching programs for senior management teams.",
+      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop",
+      path: "/pages/executive-training-coaching"
     }
   ];
 
@@ -72,66 +65,64 @@ const ServicesListing: React.FC = () => {
 
   const WHY_US_FEATURES = [
     {
-      icon: <ShieldCheck size={24} />,
+      icon: <ShieldCheck size={28} />,
       title: "Policy-Aligned Execution",
       desc: "Strategies that withstand regulatory scrutiny and political shifts."
     },
     {
-      icon: <Globe size={24} />,
+      icon: <Globe size={28} />,
       title: "Global Market Access",
       desc: "Deep networks spanning the Middle East, Asia Pacific, and Africa."
     },
     {
-      icon: <Layers size={24} />,
+      icon: <Layers size={28} />,
       title: "Board-Level Perspective",
       desc: "Governance structures that ensure long-term resilience."
     },
     {
-      icon: <Zap size={24} />,
+      icon: <Zap size={28} />,
       title: "Beyond Strategy",
       desc: "We don't just advise on the roadmap; we oversee the execution."
     }
   ];
 
   return (
-    <div className="bg-[#F6F5EF] min-h-screen pt-24 font-sans text-[#124442] selection:bg-[#C8F16B] selection:text-[#0B1F1C]">
+    <div className="bg-[#F6F5EF] min-h-screen font-sans text-[#124442] selection:bg-[#C8F16B] selection:text-[#0B1F1C]">
       
-      {/* 1. HERO SECTION */}
-      <section className="px-6 md:px-12 max-w-[1400px] mx-auto mb-16 lg:mb-24">
-        <div className="relative w-full h-[500px] lg:h-[600px] rounded-[40px] overflow-hidden shadow-2xl group">
-            
-            {/* Background Image */}
-            <img 
-               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" 
-               alt="Advisory Services" 
-               className="absolute inset-0 w-full h-full object-cover transition-transform duration-[3s] ease-out group-hover:scale-105"
-            />
-            
-            {/* Overlay Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F1C]/90 via-[#0B1F1C]/40 to-transparent"></div>
-            <div className="absolute inset-0 bg-[#124442]/20 mix-blend-multiply"></div>
+      {/* 1. HERO SECTION - Full Bleed / Dark */}
+      <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <img 
+            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" 
+            alt="Advisory Services" 
+            className="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        
+        {/* Premium Dark Gradient Overlay */}
+        <div className="absolute inset-0 z-10" style={{ background: 'radial-gradient(circle at center, rgba(18,68,66,0.85) 0%, rgba(14,58,54,0.95) 100%)' }}></div>
+        <div className="absolute inset-0 bg-black/20 z-10 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/noise.png')] opacity-[0.03] z-10"></div>
 
-            {/* Content */}
-            <div className="absolute inset-0 p-8 md:p-12 lg:p-20 flex flex-col justify-center items-start z-10">
-                <h1 className="text-5xl md:text-6xl lg:text-[80px] font-semibold text-white tracking-tighter mb-6 leading-[1.05] drop-shadow-lg">
-                   Services
-                </h1>
-                <p className="text-lg md:text-xl text-[#F3F6F4]/90 font-light max-w-xl leading-relaxed">
-                   Comprehensive advisory solutions for leaders navigating complexity, scale, and digital disruption.
-                </p>
+        {/* Content */}
+        <div className="relative z-20 text-center px-6 md:px-12 max-w-[1000px] mt-16 animate-fade-in">
+            {/* Breadcrumb */}
+            <div className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 px-6 py-2 rounded-full mb-10 shadow-lg">
+                <span className="text-white/70 text-sm font-medium cursor-pointer hover:text-white transition-colors" onClick={() => navigate('/')}>Home</span>
+                <ArrowRight size={14} className="text-[#C8F16B]" />
+                <span className="text-[#C8F16B] text-sm font-medium">Services</span>
             </div>
 
-            {/* Breadcrumb Pill (Bottom Right) */}
-            <div className="absolute bottom-8 right-8 hidden md:flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-full shadow-lg hover:bg-white/20 transition-all cursor-pointer" onClick={() => navigate('/')}>
-               <span className="text-white text-sm font-medium">Home</span>
-               <ArrowRight size={14} className="text-[#C8F16B]" />
-               <span className="text-[#C8F16B] text-sm font-medium">Services</span>
-            </div>
+            <h1 className="text-5xl md:text-7xl lg:text-[90px] font-semibold text-white tracking-tighter mb-8 leading-[1.05] drop-shadow-2xl">
+                Services
+            </h1>
+            <p className="text-xl md:text-2xl text-[#F3F6F4]/80 font-light max-w-3xl mx-auto leading-relaxed">
+                Comprehensive solutions for leaders navigating complexity, scale, and digital disruption.
+            </p>
         </div>
       </section>
 
-      {/* 2. INTRO SECTION ("What We Do") */}
-      <section className="px-6 md:px-12 max-w-[1400px] mx-auto mb-20 lg:mb-32">
+      {/* 2. INTRO SECTION - Light */}
+      <section className="px-6 md:px-12 py-24 max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
            
            {/* Left: Executive Summary */}
@@ -167,15 +158,15 @@ const ServicesListing: React.FC = () => {
         </div>
       </section>
 
-      {/* 3. WHY CHOOSE US (Dark Section) */}
+      {/* 3. WHY CHOOSE US - Dark */}
       <section className="bg-[#0B1F1C] py-24 px-6 md:px-12 relative overflow-hidden">
-         {/* Background Texture */}
          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/noise.png')] opacity-[0.03] pointer-events-none"></div>
          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C8F16B]/5 rounded-full blur-[120px] pointer-events-none"></div>
+         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#124442]/20 rounded-full blur-[120px] pointer-events-none"></div>
 
          <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center relative z-10">
             
-            {/* Left: Image/Video Thumbnail Style */}
+            {/* Left: Image Card */}
             <div className="relative rounded-[32px] overflow-hidden aspect-[4/5] lg:aspect-square shadow-2xl border border-white/10 group">
                <img 
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop" 
@@ -191,20 +182,20 @@ const ServicesListing: React.FC = () => {
                </div>
             </div>
 
-            {/* Right: Stacked Features */}
+            {/* Right: Features */}
             <div>
                <h2 className="text-3xl md:text-4xl font-semibold text-white mb-12 tracking-tight">Why Leaders Partner With Us</h2>
                <div className="space-y-4">
                   {WHY_US_FEATURES.map((feature, idx) => (
                      <div 
                         key={idx} 
-                        className="group flex items-start gap-6 p-6 rounded-[24px] bg-white/[0.03] border border-white/5 hover:bg-white/[0.08] hover:border-white/10 transition-all duration-300"
+                        className="group flex items-center gap-6 p-6 rounded-[24px] bg-white/[0.03] border border-white/5 hover:bg-white/[0.08] hover:border-[#C8F16B]/20 hover:translate-x-2 transition-all duration-300 cursor-default"
                      >
-                        <div className="w-12 h-12 rounded-xl bg-[#C8F16B]/10 flex items-center justify-center text-[#C8F16B] shrink-0 group-hover:bg-[#C8F16B] group-hover:text-[#0B1F1C] transition-colors">
+                        <div className="w-14 h-14 rounded-xl bg-[#C8F16B]/10 flex items-center justify-center text-[#C8F16B] shrink-0 group-hover:bg-[#C8F16B] group-hover:text-[#0B1F1C] transition-colors shadow-[0_0_15px_rgba(200,241,107,0.1)]">
                            {feature.icon}
                         </div>
                         <div>
-                           <h4 className="text-white text-lg font-semibold mb-2">{feature.title}</h4>
+                           <h4 className="text-white text-lg font-semibold mb-1 group-hover:text-[#C8F16B] transition-colors">{feature.title}</h4>
                            <p className="text-white/60 text-sm leading-relaxed font-light">{feature.desc}</p>
                         </div>
                      </div>
@@ -214,7 +205,7 @@ const ServicesListing: React.FC = () => {
          </div>
       </section>
 
-      {/* 4. SERVICES GRID */}
+      {/* 4. SERVICES GRID - Light */}
       <section className="py-24 px-6 md:px-12 bg-[#F6F5EF]">
          <div className="max-w-[1400px] mx-auto">
             
@@ -225,12 +216,13 @@ const ServicesListing: React.FC = () => {
                </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+            {/* GRID LAYOUT: Desktop 4 columns (flows 4 then 3 for 7 items), Tablet 2, Mobile 1 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                {SERVICES_GRID.map((service, idx) => (
                   <div 
                      key={idx}
                      onClick={() => navigate(service.path)}
-                     className="group flex flex-col bg-white rounded-[24px] overflow-hidden border border-[#124442]/5 shadow-sm hover:shadow-[0_20px_40px_-10px_rgba(18,68,66,0.1)] hover:-translate-y-2 transition-all duration-300 cursor-pointer h-full"
+                     className="group flex flex-col bg-white rounded-[24px] overflow-hidden border border-[#124442]/5 shadow-sm hover:shadow-[0_20px_40px_-10px_rgba(18,68,66,0.1)] hover:-translate-y-2 hover:border-[#C8F16B]/30 transition-all duration-300 cursor-pointer h-full"
                   >
                      {/* Card Image */}
                      <div className="relative h-48 overflow-hidden">
@@ -243,7 +235,10 @@ const ServicesListing: React.FC = () => {
                      </div>
 
                      {/* Card Content */}
-                     <div className="p-6 flex flex-col flex-grow">
+                     <div className="p-6 flex flex-col flex-grow relative">
+                        {/* Hover Top Border Glow */}
+                        <div className="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-[#C8F16B] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
                         <h3 className="text-lg font-bold text-[#124442] leading-tight mb-3 group-hover:text-[#1A5A59] transition-colors min-h-[54px]">
                            {service.title}
                         </h3>
@@ -252,7 +247,7 @@ const ServicesListing: React.FC = () => {
                         </p>
 
                         <div className="mt-auto flex justify-between items-center border-t border-[#124442]/5 pt-4">
-                           <span className="text-[#124442] text-xs font-bold uppercase tracking-widest group-hover:text-[#1A5A59]">Explore</span>
+                           <span className="text-[#124442] text-xs font-bold uppercase tracking-widest group-hover:text-[#1A5A59]">View Service</span>
                            <div className="w-8 h-8 rounded-full bg-[#F6F5EF] flex items-center justify-center text-[#124442] group-hover:bg-[#C8F16B] transition-colors">
                               <ArrowUpRight size={16} />
                            </div>
@@ -264,31 +259,34 @@ const ServicesListing: React.FC = () => {
          </div>
       </section>
 
-      {/* 5. FINAL CTA (Dark Gradient) */}
+      {/* 5. CUSTOM CTA SECTION - Dark */}
       <section className="px-6 md:px-12 max-w-[1400px] mx-auto pb-24">
-         <div className="relative rounded-[48px] p-12 md:p-20 text-center overflow-hidden shadow-2xl bg-[#0B1F1C] group">
+         <div className="relative rounded-[48px] p-12 md:p-20 text-center overflow-hidden shadow-2xl bg-[#0B1F1C] group border border-white/5">
             
             {/* Animated Gradient Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#124442] via-[#0B1F1C] to-[#082220]"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/noise.png')] opacity-[0.05] mix-blend-overlay"></div>
             
             {/* Hover Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#C8F16B]/5 rounded-full blur-[100px] group-hover:bg-[#C8F16B]/10 transition-colors duration-700 pointer-events-none"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#C8F16B]/5 rounded-full blur-[120px] group-hover:bg-[#C8F16B]/10 transition-colors duration-700 pointer-events-none"></div>
 
             <div className="relative z-10 flex flex-col items-center">
-               <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6 tracking-tight leading-[1.1]">
-                  Let’s build systems <br/> that endure.
+               <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold text-white mb-6 tracking-tight leading-[1.05]">
+                  Let’s Build Systems <br/> That Endure
                </h2>
-               <p className="text-[#F3F6F4]/60 text-lg mb-10 font-light max-w-xl">
-                  Strategic advisory for leaders navigating complexity, scale, and transformation.
+               <p className="text-[#F3F6F4]/60 text-lg md:text-xl mb-12 font-light max-w-2xl">
+                  Policy. AI. Markets. Execution — delivered with global credibility.
                </p>
                
                <button 
                   onClick={() => navigate('/contact')}
-                  className="px-10 py-5 bg-gradient-to-r from-[#C8F16B] to-[#B5DC5A] text-[#0B1F1C] rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(200,241,107,0.4)] hover:scale-105 transition-all duration-300 transform flex items-center gap-3"
+                  className="relative group/btn px-10 py-5 bg-[#C8F16B] text-[#0B1F1C] rounded-full font-bold text-lg hover:bg-white transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_40px_rgba(200,241,107,0.3)] flex items-center gap-3 overflow-hidden"
                >
-                  Book a Strategic Call
-                  <ArrowRight size={20} />
+                  <span className="relative z-10 flex items-center gap-3">
+                     Book a Strategic Call <ArrowRight size={20} />
+                  </span>
+                  {/* Sheen Effect */}
+                  <div className="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 group-hover/btn:animate-[shimmer_1s_infinite]"></div>
                </button>
             </div>
          </div>

@@ -5,45 +5,38 @@ import { useNavigate } from 'react-router-dom';
 const SERVICES = [
   {
     id: 1,
-    title: "Market Acceleration",
-    description: "Scaling ventures from strategy to execution with partnerships and market-entry support.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
-    path: "/services/market-acceleration"
+    title: "Board Advisory & Market Acceleration",
+    description: "Strategic guidance for board decisions and accelerated market entry with proven methodologies.",
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop",
+    path: "/pages/board-advisory-market-acceleration"
   },
   {
     id: 2,
     title: "Smart Cities Strategic Advisory",
-    description: "Strategic urban planning, technology integration, and data-driven governance for future-ready cities.",
+    description: "Comprehensive urban planning and smart infrastructure development consulting.",
     image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2669&auto=format&fit=crop",
-    path: "/services/smart-cities"
+    path: "/pages/smart-cities-strategic-advisory"
   },
   {
     id: 3,
-    title: "AI Advisory",
-    description: "Practical AI strategy and adoption to improve decision-making, efficiency, and innovation.",
+    title: "Artificial Intelligence Advisory",
+    description: "Expert AI strategy development and implementation guidance for transformation.",
     image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop",
-    path: "/services/ai-advisory"
+    path: "/pages/artificial-intelligence-advisory"
   },
   {
     id: 4,
-    title: "Board Advisory",
-    description: "Executive-level guidance for governance, growth strategy, and long-term positioning.",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop",
-    path: "/services/board-advisory"
+    title: "Keynotes & Public Speaking",
+    description: "Inspiring presentations and thought leadership on emerging technologies and trends.",
+    image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2670&auto=format&fit=crop",
+    path: "/pages/keynotes-public-speaking"
   },
   {
     id: 5,
     title: "Fund Raising Services",
-    description: "Funding strategy development, investor network access, pitch optimization, PPP structuring, and alternative financing.",
+    description: "Strategic fundraising support and investor relations for growth-stage companies.",
     image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=2670&auto=format&fit=crop",
-    path: "/services/fundraising"
-  },
-  {
-    id: 6,
-    title: "Keynote Speaking",
-    description: "High-impact keynotes on innovation, smart cities, digital transformation, and emerging tech.",
-    image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2670&auto=format&fit=crop",
-    path: "/services/global-keynotes"
+    path: "/pages/fund-raising-services"
   }
 ];
 
@@ -88,7 +81,7 @@ const ServicesInteractive: React.FC = () => {
             </h2>
             
             <p className="text-[#F6F5EF]/70 text-base leading-relaxed font-light mb-12 max-w-sm">
-              Premium advisory and acceleration services designed to help governments and enterprises scale, modernize, and execute with confidence.
+              Dr. Usman Zafar and his team at World Business Hub (WBH) provide premier Board Advisory and Market Acceleration Services, eliminating the need to recruit sales, marketing, or business development teams.
             </p>
 
             {/* Dynamic Description Box */}

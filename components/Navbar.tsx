@@ -63,6 +63,7 @@ const Navbar: React.FC = () => {
           <NavLink to="/" className={getNavLinkClass}>Home</NavLink>
           <NavLink to="/about" className={getNavLinkClass}>About</NavLink>
           <NavLink to="/services" className={getNavLinkClass}>Services</NavLink>
+          <NavLink to="/keynotes" className={getNavLinkClass}>Keynotes</NavLink>
           <NavLink to="/books" className={getNavLinkClass}>Books</NavLink>
         </div>
 

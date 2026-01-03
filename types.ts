@@ -38,31 +38,18 @@ export interface TestimonialItem {
   image: string;
 }
 
-export interface CapabilityItem {
-  title: string;
-  description?: string;
-}
-
-export interface SolveItem {
-  title: string;
-  description: string;
-}
-
-export interface ProcessItem {
-  step: string;
-  title: string;
-  description: string;
+export interface ServiceSection {
+  title?: string;
+  content?: string | ReactNode;
+  bullets?: string[];
+  isDark?: boolean;
 }
 
 export interface ServicePageContent {
   id: string;
   title: string;
   subtitle: string;
-  strategicOverview: string;
-  solves: SolveItem[];
-  capabilities: CapabilityItem[];
-  outcomes: string[];
-  process: ProcessItem[];
+  sections: ServiceSection[];
 }
 
 export interface BookFeature {
@@ -81,4 +68,19 @@ export interface BookContent {
   highlights: string[];
   audience: string[];
   features: BookFeature[];
+}
+
+export interface PortfolioItem {
+  id: string;
+  slug: string;
+  title: string;
+  category: string;
+  summary: string;
+  image: string;
+  clientType?: string;
+  location: string;
+  year: string;
+  challenge: string;
+  solution: string;
+  impact: string[];
 }

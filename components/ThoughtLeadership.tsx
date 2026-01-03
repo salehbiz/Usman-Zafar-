@@ -5,7 +5,10 @@ import { SERVICE_CONTENT } from '../constants';
 
 const ThoughtLeadership: React.FC = () => {
   const navigate = useNavigate();
-  const content = SERVICE_CONTENT['global-keynotes'];
+  // Updated key to match constants.tsx and fixed property access
+  const content = SERVICE_CONTENT['keynotes-public-speaking'];
+
+  if (!content) return null;
 
   return (
     <section className="py-32 px-6 md:px-12 relative overflow-hidden">
@@ -20,11 +23,11 @@ const ThoughtLeadership: React.FC = () => {
             Shaping leaders, markets, and future systems.
           </h2>
           <p className="text-[#F3F6F4]/60 text-lg leading-relaxed mb-12 max-w-lg font-light">
-            {content.strategicOverview}
+            {content.sections[0]?.content}
           </p>
           
           <button 
-             onClick={() => navigate('/services/global-keynotes')}
+             onClick={() => navigate('/pages/keynotes-public-speaking')}
              className="group flex items-center gap-3 text-white font-medium text-lg"
           >
              <span className="border-b border-white/30 pb-1 group-hover:border-[#C8F16B] group-hover:text-[#C8F16B] transition-all">
