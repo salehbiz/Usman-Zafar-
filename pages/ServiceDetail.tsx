@@ -4,6 +4,19 @@ import { useNavigate } from 'react-router-dom';
 import { ServicePageContent } from '../types';
 import { SERVICES } from '../constants';
 
+// Replace these with your direct image links (postimg/postimage direct URL)
+const HERO_IMAGES: Record<string, string> = {
+  'board-advisory-market-acceleration': "https://i.postimg.cc/tJQsKHT7/image.png",
+  'smart-cities-strategic-advisory': "https://i.postimg.cc/xCHCyFR2/image.png",
+  'artificial-intelligence-advisory': "https://i.postimg.cc/QdydLrYC/image.png",
+  'keynotes-public-speaking': "https://i.postimg.cc/28HzvDDx/image.png",
+  'academic-advisory-accreditation': "https://i.postimg.cc/4xDRb4F7/image.png",
+  'fund-raising-services': "https://i.postimg.cc/YS6Z66WX/image.png",
+  'executive-training-coaching': "https://i.postimg.cc/C5QQhJ3Z/image.png",
+};
+
+const DEFAULT_HERO_IMAGE = "PASTE_IMAGE_LINK_HERE";
+
 interface ServiceDetailProps {
   content: ServicePageContent;
 }
@@ -11,6 +24,7 @@ interface ServiceDetailProps {
 const ServiceDetail: React.FC<ServiceDetailProps> = ({ content }) => {
   const navigate = useNavigate();
   const relatedServices = SERVICES.filter(s => !s.path.includes(content.id)).slice(0, 4);
+  const heroImageUrl = HERO_IMAGES[content.id] || DEFAULT_HERO_IMAGE;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -35,19 +49,19 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ content }) => {
                </p>
             </div>
 
-            <div className="relative h-[400px] lg:h-[500px] rounded-[32px] overflow-hidden shadow-2xl animate-slide-up-fade" style={{ animationDelay: '0.2s' }}>
+            <div className="relative h-[400px] lg:h-[500px] rounded-[32px] overflow-hidden shadow-2xl animate-slide-up-fade bg-[#0B1F1C]" style={{ animationDelay: '0.2s' }}>
                <img 
-                  src={`https://picsum.photos/seed/${content.id}/1200/800`} 
+                  src={heroImageUrl} 
                   alt={content.title}
-                  className="w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-contain bg-[#0B1F1C]"
                />
-               <div className="absolute inset-0 bg-[#124442]/10"></div>
+               <div className="absolute inset-0 bg-[#124442]/10 pointer-events-none"></div>
                
                {/* Floating Chips */}
-               <div className="absolute bottom-8 left-8 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/40 shadow-lg text-sm font-semibold text-[#124442] animate-float">
+               <div className="absolute bottom-8 left-8 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/40 shadow-lg text-sm font-semibold text-[#124442] animate-float z-10">
                   Strategic Clarity
                </div>
-               <div className="absolute top-8 right-8 bg-[#C8F16B]/90 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg text-sm font-bold text-[#0B1F1C] animate-float" style={{ animationDelay: '1s' }}>
+               <div className="absolute top-8 right-8 bg-[#C8F16B]/90 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg text-sm font-bold text-[#0B1F1C] animate-float z-10" style={{ animationDelay: '1s' }}>
                   High Impact
                </div>
             </div>

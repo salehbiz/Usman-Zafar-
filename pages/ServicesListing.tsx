@@ -14,43 +14,43 @@ const ServicesListing: React.FC = () => {
     {
       title: "Board Advisory & Market Acceleration",
       desc: "Strategic guidance for board decisions and accelerated market entry with proven methodologies.",
-      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop",
+      image: "https://i.postimg.cc/tJQsKHT7/image.png",
       path: "/pages/board-advisory-market-acceleration"
     },
     {
       title: "Smart Cities Strategic Advisory",
       desc: "Comprehensive urban planning and smart infrastructure development consulting.",
-      image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2669&auto=format&fit=crop",
+      image: "https://i.postimg.cc/xCHCyFR2/image.png",
       path: "/pages/smart-cities-strategic-advisory"
     },
     {
       title: "Artificial Intelligence Advisory",
       desc: "Expert AI strategy development and implementation guidance for transformation.",
-      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop",
+      image: "https://i.postimg.cc/QdydLrYC/image.png",
       path: "/pages/artificial-intelligence-advisory"
     },
     {
       title: "Keynotes & Public Speaking",
       desc: "Inspiring presentations and thought leadership on emerging technologies and trends.",
-      image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2670&auto=format&fit=crop",
+      image: "https://i.postimg.cc/28HzvDDx/image.png",
       path: "/pages/keynotes-public-speaking"
     },
     {
       title: "Academic Advisory & Accreditation",
       desc: "Educational program development and institutional accreditation support services.",
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2670&auto=format&fit=crop",
+      image: "https://i.postimg.cc/4xDRb4F7/image.png",
       path: "/pages/academic-advisory-accreditation"
     },
     {
       title: "Fund Raising Services",
       desc: "Strategic fundraising support and investor relations for growth-stage companies.",
-      image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=2670&auto=format&fit=crop",
+      image: "https://i.postimg.cc/YS6Z66WX/image.png",
       path: "/pages/fund-raising-services"
     },
     {
       title: "Executive Training & Coaching",
       desc: "Leadership development and executive coaching programs for senior management teams.",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop",
+      image: "https://i.postimg.cc/C5QQhJ3Z/image.png",
       path: "/pages/executive-training-coaching"
     }
   ];
@@ -93,7 +93,7 @@ const ServicesListing: React.FC = () => {
       <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <img 
-            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" 
+            src="https://i.postimg.cc/Xq8D5sS6/image.png" 
             alt="Advisory Services" 
             className="absolute inset-0 w-full h-full object-cover z-0"
         />
@@ -169,7 +169,7 @@ const ServicesListing: React.FC = () => {
             {/* Left: Image Card */}
             <div className="relative rounded-[32px] overflow-hidden aspect-[4/5] lg:aspect-square shadow-2xl border border-white/10 group">
                <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop" 
+                  src="https://i.postimg.cc/cJSwq08q/image.png" 
                   alt="Strategic Planning" 
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                />

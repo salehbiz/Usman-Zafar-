@@ -69,10 +69,11 @@ const Navbar: React.FC = () => {
 
         {/* CENTER LOGO */}
         <div className="flex justify-center w-full lg:w-2/12 cursor-pointer group" onClick={() => navigate('/')}>
-           <span className={`text-xl md:text-2xl font-semibold tracking-tight text-[#F6F5EF] ${isHomePage && !isScrolled ? 'drop-shadow-lg' : ''}`}>
-             usmanzafar
-             <span className="text-[#C8F16B] opacity-80 group-hover:opacity-100 transition-opacity">.com</span>
-           </span>
+           <img 
+             src="https://i.postimg.cc/fy1m9Jr8/Blue_White_Professional_Minimal_Brand_Logo_2_1_removebg_preview_(1).png" 
+             alt="usmanzafar.com"
+             className={`h-8 w-auto object-contain transition-all duration-300 ${isHomePage && !isScrolled ? 'drop-shadow-lg' : ''}`}
+           />
         </div>
 
         {/* RIGHT NAV GROUP */}

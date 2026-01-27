@@ -16,6 +16,7 @@ import KeynotesListing from './pages/KeynotesListing';
 import MediaListing from './pages/MediaListing';
 import AwardsListing from './pages/AwardsListing';
 import AcademicExperience from './pages/AcademicExperience';
+import Contact from './pages/Contact';
 import { SERVICE_CONTENT } from './constants';
 
 // Scroll to top on route change
@@ -94,13 +95,7 @@ const App: React.FC = () => {
               />
             } />
 
-            <Route path="/contact" element={
-              <GenericPage 
-                title="Contact" 
-                subtitle="Reach out to discuss advisory engagements, speaking opportunities, or press inquiries."
-                image="https://picsum.photos/seed/contact/600/600"
-              />
-            } />
+            <Route path="/contact" element={<Contact />} />
 
           </Routes>
         </main>

@@ -7,28 +7,28 @@ const SERVICES = [
     id: 1,
     title: "Board Advisory & Market Acceleration",
     description: "Strategic guidance for board decisions and accelerated market entry with proven methodologies.",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop",
+    image: "https://i.postimg.cc/zvW2Sh8H/image.png",
     path: "/pages/board-advisory-market-acceleration"
   },
   {
     id: 2,
     title: "Smart Cities Strategic Advisory",
     description: "Comprehensive urban planning and smart infrastructure development consulting.",
-    image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2669&auto=format&fit=crop",
+    image: "https://i.postimg.cc/0QKVPSMg/image.png",
     path: "/pages/smart-cities-strategic-advisory"
   },
   {
     id: 3,
     title: "Artificial Intelligence Advisory",
     description: "Expert AI strategy development and implementation guidance for transformation.",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop",
+    image: "https://i.postimg.cc/SKJrf9fP/image.png",
     path: "/pages/artificial-intelligence-advisory"
   },
   {
     id: 4,
     title: "Keynotes & Public Speaking",
     description: "Inspiring presentations and thought leadership on emerging technologies and trends.",
-    image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2670&auto=format&fit=crop",
+    image: "https://i.postimg.cc/MGM7QSWK/image.png",
     path: "/pages/keynotes-public-speaking"
   },
   {

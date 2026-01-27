@@ -1,26 +1,37 @@
 import React from 'react';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const PublicationsSection: React.FC = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const books = [
     {
       title: "Artificial Intelligence for SME Leaders",
       teaser: "A step-by-step guide for founders and managers to adopt AI and drive growth.",
-      link: "/books/artificial-intelligence-for-sme-leaders",
-      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop", // Abstract Tech
+      amazonLink: "https://www.amazon.com/SME-Leaders-Artificial-Intelligence-Customers-ebook/dp/B0FV1LXS1Z",
+      image: "https://i.postimg.cc/QxkzLnv1/Blueand-Red-Gradient-This-Year-s-Last-Book-Mockup-Instagram-Post-2-(1).webp", // Abstract Tech
       tag: "Ebook"
     },
     {
       title: "Digital Sovereignty",
       teaser: "A strategic guide to the global data wars and reclaiming control in an AI-driven world.",
-      link: "/books/digital-sovereignty",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop", // Abstract Network/Globe
+      amazonLink: "https://www.amazon.com/Digital-Sovereignty-Silent-Control-Borderless-ebook/dp/B0G168HTCZ",
+      image: "https://i.postimg.cc/MpHmsPwf/1-(1).webp", // Abstract Network/Globe
       tag: "New Release"
     }
   ];
+
+  const handleBookClick = (book: typeof books[0]) => {
+    // Rule 2: On Books Page, open Amazon
+    if (location.pathname === '/books') {
+        window.open(book.amazonLink, '_blank', 'noopener,noreferrer');
+    } else {
+        // Rule 1: On other pages, navigate to Books page
+        navigate('/books');
+    }
+  };
 
   return (
     <section className="py-24 px-6 md:px-12 bg-[#F6F5EF] relative overflow-hidden">
@@ -76,26 +87,26 @@ const PublicationsSection: React.FC = () => {
                 {books.map((book, idx) => (
                   <div 
                     key={idx}
-                    onClick={() => navigate(book.link)}
+                    onClick={() => handleBookClick(book)}
                     className="group relative h-[480px] rounded-[32px] overflow-hidden border border-[#124442]/10 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.08)] hover:shadow-[0_30px_70px_rgba(0,0,0,0.12)] transition-all duration-500 hover:scale-[1.02] cursor-pointer"
                   >
-                    {/* Background Image */}
+                    {/* Background Image - Updated to fit/contain */}
                     <img 
                       src={book.image} 
                       alt={book.title}
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="absolute inset-0 w-full h-full object-contain object-center transition-transform duration-700 group-hover:scale-105"
                     />
                     
                     {/* Gradient Overlay for Text Readability */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B2625] via-[#0B2625]/40 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-95"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B2625] via-[#0B2625]/40 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-95 pointer-events-none"></div>
                     
                     {/* Badge */}
-                    <div className="absolute top-6 left-6 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1 rounded-full">
+                    <div className="absolute top-6 left-6 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1 rounded-full z-20">
                        <span className="text-white text-[10px] font-bold uppercase tracking-wider">{book.tag}</span>
                     </div>
 
                     {/* Content */}
-                    <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col items-start">
+                    <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col items-start z-20">
                        <h3 className="text-2xl font-bold text-white mb-3 leading-tight group-hover:text-[#C8F16B] transition-colors">
                           {book.title}
                        </h3>
@@ -104,7 +115,7 @@ const PublicationsSection: React.FC = () => {
                        </p>
                        
                        <button className="group/btn flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-semibold transition-all duration-300 group-hover:bg-[#C8F16B] group-hover:text-[#0B2625] group-hover:border-[#C8F16B] group-hover:-translate-y-1">
-                          Learn More
+                          {location.pathname === '/books' ? 'Buy on Amazon' : 'Learn More'}
                           <ArrowUpRight size={14} />
                        </button>
                     </div>

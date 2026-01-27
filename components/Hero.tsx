@@ -41,14 +41,14 @@ const Hero: React.FC = () => {
   const activeCard = cards[activeIndex];
 
   return (
-    <section className="relative w-full h-[85vh] lg:h-[95vh] min-h-[700px] flex items-end overflow-hidden bg-[#F6F5EF]">
+    <section className="relative w-full min-h-[100dvh] sm:h-screen sm:min-h-[700px] flex items-end overflow-hidden bg-[#F6F5EF]">
         
         {/* 1. BACKGROUND IMAGE (z-0) */}
         <div className="absolute inset-0 z-0">
             <img 
                 src="https://i.postimg.cc/SRPwbTTG/Gemini-Generated-Image-r9egf9r9egf9r9eg-(1).png" 
                 alt="Dr. Usman Zafar" 
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-[50%_12%] sm:object-center"
             />
         </div>
 
@@ -63,11 +63,16 @@ const Hero: React.FC = () => {
         ></div>
 
         {/* 3. CONTENT CONTAINER */}
-        {/* pb-20 provides natural bottom spacing without the fade overlay */}
-        <div className="relative z-10 w-full max-w-[1450px] mx-auto px-6 md:px-12 lg:px-16 pb-20 flex flex-col lg:flex-row items-end justify-between gap-12 h-full">
+        {/* Mobile: Spacer creates 420px top zone. Content stacks at bottom. */}
+        {/* Tablet (sm): Keeps pt-[45vh] if needed, or resets. */}
+        {/* Desktop (lg): lg:pt-0 resets padding. lg:justify-between restores layout. */}
+        <div className="relative z-10 w-full max-w-[1450px] mx-auto px-6 md:px-12 lg:px-16 sm:pt-[45vh] lg:pt-0 pb-8 lg:pb-20 flex flex-col lg:flex-row items-end justify-end lg:justify-between gap-6 lg:gap-12 h-full">
             
+            {/* MOBILE ONLY SPACER: Forces top 420px to be empty for the image face */}
+            <div className="w-full h-[420px] shrink-0 sm:hidden" aria-hidden="true" />
+
             {/* LEFT SIDE: Typography */}
-            <div className="w-full lg:w-1/2 flex flex-col justify-end animate-slide-up-fade pb-6">
+            <div className="w-full lg:w-1/2 flex flex-col justify-end animate-slide-up-fade pb-0 lg:pb-6 mb-8 lg:mb-0">
                 
                 {/* Main Heading */}
                 <h1 className="text-4xl md:text-5xl lg:text-[64px] font-medium tracking-[-0.02em] text-white mb-6 leading-[1.1] drop-shadow-sm">
@@ -101,11 +106,11 @@ const Hero: React.FC = () => {
 
             {/* RIGHT SIDE: Auto-Rotating Glass Card */}
             <div 
-              className="w-full lg:w-5/12 flex items-end justify-start lg:justify-end h-full pb-0 pointer-events-auto"
+              className="w-full lg:w-5/12 flex items-end justify-start lg:justify-end lg:h-full pb-0 pointer-events-auto"
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-               <div className="relative flex items-center gap-6 lg:mr-4">
+               <div className="relative flex items-center gap-6 lg:mr-4 mb-6 lg:mb-0">
                   
                   {/* The Card */}
                   <div className="w-full max-w-[340px] lg:w-[380px]">
@@ -120,7 +125,7 @@ const Hero: React.FC = () => {
                               <h3 className="text-white font-medium text-lg tracking-wide">{activeCard.title}</h3>
                           </div>
                           
-                          <p className="text-white/70 text-[15px] leading-relaxed font-normal">
+                          <p className="text-white/70 text-sm md:text-[15px] leading-relaxed font-normal">
                              {activeCard.desc}
                           </p>
                       </div>

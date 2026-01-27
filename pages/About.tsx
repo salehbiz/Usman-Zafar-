@@ -12,6 +12,7 @@ const WORK_EXPERIENCE = [
     role: "CEO",
     company: "World Business Hub (WBH)",
     period: "2021 – Present",
+    logo: "https://i.postimg.cc/qvN55XHt/image.png",
     impact: [
       "Drive 30+ PPP/BOT projects across MENA & Africa.",
       "Market entry strategies & strategic partnerships.",
@@ -24,6 +25,7 @@ const WORK_EXPERIENCE = [
     role: "Board Advisor",
     company: "Bizmoni — All In One Super App",
     period: "2024 – Present",
+    logo: "https://i.postimg.cc/qv25rBgJ/image.png",
     impact: [
       "Drive global expansion & attract investors.",
       "AI platform integrating social + marketplace + CRM.",
@@ -36,6 +38,7 @@ const WORK_EXPERIENCE = [
     role: "Senior Board Advisor",
     company: "SRIVEN",
     period: "2024 – Present",
+    logo: "https://i.postimg.cc/1RTCNVN7/image.png",
     impact: [
       "Expansion across MENA/Africa regions.",
       "Digital strategy, cloud, cybersecurity & analytics.",
@@ -48,6 +51,7 @@ const WORK_EXPERIENCE = [
     role: "Board Advisor",
     company: "X0PA AI",
     period: "2024 – Present",
+    logo: "https://i.postimg.cc/SRjPbWY5/image.png",
     impact: [
       "Expand operations in MENA region.",
       "AI recruitment platform & bias-free hiring strategy.",
@@ -60,6 +64,7 @@ const WORK_EXPERIENCE = [
     role: "Business Partner & Senior Board Member",
     company: "Let’s Fame",
     period: "2025 – Present",
+    logo: "https://i.postimg.cc/zGYxxmpZ/image.png",
     impact: [
       "Global expansion & funding strategy.",
       "Partnerships democratizing talent opportunities.",
@@ -72,6 +77,7 @@ const WORK_EXPERIENCE = [
     role: "Smart City Advisor",
     company: "EMEA Region TR1ton Group",
     period: "2023 – Present",
+    logo: "https://i.postimg.cc/fLPKX1kp/image.png",
     impact: [
       "Smart city strategies connecting tech to climate/congestion challenges.",
       "Sustainable communities & blockchain integration.",
@@ -84,6 +90,7 @@ const WORK_EXPERIENCE = [
     role: "Board Advisor",
     company: "Prime Event",
     period: "2022 – Present",
+    logo: "https://i.postimg.cc/pLvgp5wt/image.png",
     impact: [
       "Guide awards strategy + global expansion.",
       "Secure C-level participation & jury credibility.",
@@ -96,6 +103,7 @@ const WORK_EXPERIENCE = [
     role: "Board Advisor & Smart Cities Expert",
     company: "ExpertSkillz Middle East FZ",
     period: "2017 – Present",
+    logo: "https://i.postimg.cc/05J3nCxM/image.png",
     impact: [
       "Digital media/marketing strategy for smart city innovation.",
       "Engagements in gov, education & creative industries.",
@@ -108,6 +116,7 @@ const WORK_EXPERIENCE = [
     role: "Strategic Business Advisor",
     company: "Cinch Technologies Ltd",
     period: "2019 – Present",
+    logo: "https://i.postimg.cc/9Q1N08PJ/image.png",
     impact: [
       "Global expansion & public sector engagement.",
       "Partnerships across MENA, Africa & APAC.",
@@ -120,6 +129,7 @@ const WORK_EXPERIENCE = [
     role: "Council Member",
     company: "GLG",
     period: "2018 – Present",
+    logo: "https://i.postimg.cc/wvRWW6Kg/image.png",
     impact: [
       "Consulting projects worldwide.",
       "Compliance framework & connecting global expertise.",
@@ -132,6 +142,7 @@ const WORK_EXPERIENCE = [
     role: "Chief Strategy Officer",
     company: "AFIK Group",
     period: "2023 – 2024",
+    logo: "https://i.postimg.cc/1R6Cw5cr/image.png",
     impact: [
       "Strategic guidance for construction growth.",
       "Operations in Turkey, Cyprus, Germany & Greece.",
@@ -144,6 +155,7 @@ const WORK_EXPERIENCE = [
     role: "Senior Business Advisor",
     company: "HyGear",
     period: "2022 – 2024",
+    logo: "https://i.postimg.cc/13WJsgsh/image.png",
     impact: [
       "Distribution partners in GCC + India.",
       "Expand premium fitness tech & new market growth.",
@@ -156,6 +168,7 @@ const WORK_EXPERIENCE = [
     role: "Business Head Development",
     company: "KSI Malta",
     period: "2020 – 2023",
+    logo: "https://i.postimg.cc/C5V4mkHY/image.png",
     impact: [
       "MENA business development & taxation/legal services.",
       "Leveraging Morison KSi global network.",
@@ -168,6 +181,7 @@ const WORK_EXPERIENCE = [
     role: "Analyst Advisor",
     company: "TNC Group",
     period: "2019 – 2022",
+    logo: "https://i.postimg.cc/fRbf2wXJ/image.png",
     impact: [
       "Blockchain advisory, funding & M&A.",
       "Board composition & governance.",
@@ -180,6 +194,7 @@ const WORK_EXPERIENCE = [
     role: "CEO & Founder",
     company: "DUC CONSULTING INT",
     period: "2003 – Present",
+    logo: "https://i.postimg.cc/K84t70Sq/image.png",
     impact: [
       "80+ companies supported; 100+ projects worth $100M+.",
       "Raised $500M+ & provided C-level advisory.",
@@ -192,6 +207,7 @@ const WORK_EXPERIENCE = [
     role: "Senior Advisor",
     company: "Locus Chain MENA",
     period: "2018 – 2019",
+    logo: "https://i.postimg.cc/pr2FmZJz/image.png",
     impact: [
       "Channel partners, investor relations & public sector accounts.",
       "Localization, branding & global representation.",
@@ -204,6 +220,7 @@ const WORK_EXPERIENCE = [
     role: "Regional Adviser",
     company: "TAKEAWAY",
     period: "2015 – Present",
+    logo: "https://i.postimg.cc/JzyBHtZK/image.png",
     impact: [
       "Expansion Middle East/Africa/APAC.",
       "Partnerships, investments & operations setup.",
@@ -216,6 +233,7 @@ const WORK_EXPERIENCE = [
     role: "Business Development Manager",
     company: "IMEX System Ltd.",
     period: "2015 – 2017",
+    logo: "https://i.postimg.cc/Y2srGRR2/image.png",
     impact: [
       "Smart city + eGovernment solutions.",
       "Multi-million public sector engagements.",
@@ -228,6 +246,7 @@ const WORK_EXPERIENCE = [
     role: "Advisory Board Member",
     company: "CloudBuy",
     period: "2014 – 2017",
+    logo: "https://i.postimg.cc/R0d9MLhX/image.png",
     impact: [
       "Transactional eCommerce platform & government contracts.",
       "Regional plans & UK board insights.",
@@ -240,6 +259,7 @@ const WORK_EXPERIENCE = [
     role: "Managing Partner",
     company: "ICONMA",
     period: "2014 – 2016",
+    logo: "https://i.postimg.cc/DZYTGfqt/image.png",
     impact: [
       "Public sector projects & partnerships.",
       "Revenue growth & gov solutions delivery.",
@@ -252,6 +272,7 @@ const WORK_EXPERIENCE = [
     role: "Country Manager",
     company: "Init",
     period: "2012 – 2014",
+    logo: "https://i.postimg.cc/4xTTVS9C/image.png",
     impact: [
       "Secured AED50M+ public sector deals (Abu Dhabi + Bahrain).",
       "eGov/eBusiness & full sales cycle leadership.",
@@ -264,6 +285,7 @@ const WORK_EXPERIENCE = [
     role: "Managing Director",
     company: "AL TAQNYAH Business Solutions Dubai",
     period: "2006 – 2011",
+    logo: "https://i.postimg.cc/2Sw86DXx/image.png",
     impact: [
       "Scaled startup to multi-million revenue.",
       "Led major public sector projects & IT innovation.",
@@ -276,6 +298,7 @@ const WORK_EXPERIENCE = [
     role: "Director of Information Technology",
     company: "Ajman Government",
     period: "2004 – 2006",
+    logo: "https://i.postimg.cc/Qxgj4Ds8/image.png",
     impact: [
       "Chaired IT steering; ERP/GIS/DMS deployments.",
       "Saved AED90M; 5-year eGov roadmap.",
@@ -302,14 +325,18 @@ const RoleCard: React.FC<{ data: typeof WORK_EXPERIENCE[0]; isDark: boolean }> =
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
            
            <div className="flex items-center gap-5 w-full">
-              {/* Logo Placeholder */}
+              {/* Logo Placeholder - Replaces Letter Avatar */}
               <div 
                 className={`
-                  w-14 h-14 rounded-xl flex items-center justify-center shrink-0 font-bold text-lg border
-                  ${isDark ? 'bg-white/5 text-[#C8F16B] border-white/10' : 'bg-[#124442]/5 text-[#124442] border-[#124442]/10'}
+                  w-14 h-14 rounded-xl flex items-center justify-center shrink-0 border overflow-hidden p-1.5
+                  ${isDark ? 'bg-white/5 border-white/10' : 'bg-[#124442]/5 border-[#124442]/10'}
                 `}
               >
-                {data.company.charAt(0)}
+                <img 
+                  src={data.logo || "https://placehold.co/100x100/e2e8f0/124442?text=Logo"} 
+                  alt={`${data.company} Logo`}
+                  className="w-full h-full object-contain opacity-90"
+                />
               </div>
               
               <div className="flex-grow">
@@ -411,7 +438,7 @@ const About: React.FC = () => {
         <section className="px-6 md:px-12 max-w-[1400px] mx-auto mb-16 lg:mb-20">
            <div className="relative w-full h-[480px] lg:h-[620px] rounded-[40px] overflow-hidden shadow-2xl animate-fade-in group">
               <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1287&auto=format&fit=crop" 
+                  src="https://i.postimg.cc/15P7y1xH/GLY7904-(1).webp" 
                   alt="Dr. Usman Zafar" 
                   className="absolute inset-0 w-full h-full object-cover object-[center_25%] transition-transform duration-[3s] ease-out group-hover:scale-105"
               />
@@ -447,7 +474,7 @@ const About: React.FC = () => {
               <div className="lg:col-span-5 lg:order-2">
                  <div className="relative aspect-[4/5] rounded-[32px] overflow-hidden shadow-2xl group">
                     <img 
-                       src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop" 
+                       src="https://i.postimg.cc/zGTfKh2C/image.png" 
                        alt="Strategic Consultation" 
                        className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105 grayscale hover:grayscale-0"
                     />
@@ -625,7 +652,7 @@ const About: React.FC = () => {
                     </div>
                     <h3 className="text-xl font-bold text-[#124442] mb-4">Academic Experience</h3>
                     <p className="text-[#124442]/70 leading-relaxed font-light mb-8 text-sm">
-                       Dr. Usman Zafar is a senior academic advisor and educator with PhDs in Information Technology and International Trade & Business. He has taught and advised across leading universities in the UAE, Asia, and Europe, contributing to curriculum development, accreditation, and industry-aligned education.
+                       Dr. Usman Zafar is a senior academic advisor and educator with PhDs in Information Technology and International Trade and Business. He has taught and advised across leading universities in the UAE, Asia, and Europe, contributing to curriculum development, accreditation, and industry-aligned education.
                     </p>
                  </div>
                  <button 

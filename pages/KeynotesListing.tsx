@@ -9,352 +9,352 @@ const KEYNOTES_DATA = [
     {
         title: "DUBAI COURTS E-NOTARY CONFERENCE",
         description: "UNDER THE PATRONAGE OF HIGHNESS SHEIKH MAKTOUM BIN MOHAMMED BIN RASHID AL MAKTOUM, DEPUTY RULER OF DUBAI AL TAQNYAH / DUBAI COURTS HOSTED AN “ENOTARY CONFERENCE” AT AL BUSTAN ROTANA HOTEL DUBAI UAE.",
-        image: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?q=80&w=2532&auto=format&fit=crop"
+        image: "https://i.postimg.cc/fL2yM3d4/image.png"
     },
     {
         title: "Prime Awards Global Edition 2025 – Guest of Honor & Honouree",
         description: "Dr. Usman Zafar attended the International Prime Awards as the Guest of Honor and delivered a keynote alongside UAE Royal Family members and global dignitaries. He was honored with the Global Advisory Distinguished Guest Honouree 2025 award for his contributions to innovation, leadership, and business transformation.",
-        image: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2669&auto=format&fit=crop"
+        image: "https://i.postimg.cc/g0q61b2B/image.png"
     },
     {
         title: "Royal Rapchee Entertainment – Red Carpet Welcome & Guest of Honor",
         description: "Dr. Usman Zafar received a Red Carpet Welcome as the Guest of Honor after securing $50 million in funding to support the launch of a global, family-friendly OTT platform. The ceremony took place at Dusit Thani Dubai in March 2025, recognizing his key role in structuring the investment.",
-        image: "https://images.unsplash.com/photo-1505373877841-8d43a716664d?q=80&w=2669&auto=format&fit=crop"
+        image: "https://i.postimg.cc/Vv5rSSB3/image.png"
     },
     {
         title: "UAE–China Chamber of Commerce – AI & FinTech Forum Panelist",
         description: "Dr. Usman participated as a panelist at the Artificial Intelligence FinTech Forum, discussing Regulatory Frameworks for Inclusive FinTech: Balancing Innovation and Protection. He highlighted policy approaches enabling innovation while ensuring consumer trust.",
-        image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/MKMfqQGv/image.png"
     },
     {
         title: "Innovation Provider of the Year – UAE & Venezuela Joint Ceremony",
         description: "Dr. Usman received the Innovation Provider of the Year Award for World Business Hub (WBH), presented by H.E. Sheikh Isa Al-Muallah and the Ambassador of Venezuela. The award recognized his contributions to innovation and market expansion initiatives.",
-        image: "https://images.unsplash.com/photo-1628108920110-63ce73456743?q=80&w=2669&auto=format&fit=crop"
+        image: "https://i.postimg.cc/63pTS7SW/image.png"
     },
     {
         title: "Kenya Delegations – Smart Cities, Digital Transformation & National Projects",
         description: "During his official visits to Kenya, Dr. Usman delivered keynote briefings to government leaders, universities, and county officials on Smart Cities frameworks, national infrastructure planning, blockchain centers of excellence, and multi-million-dollar development projects. His engagements included collaborations with KCA University, Murang’a County, Nairobi Governor’s Office, and national strategic programs.",
-        image: "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/4yh4kp1J/image.png"
     },
     {
         title: "Future IT Summit",
         description: "Dr Usman Zafar was honored to Chair the Panel discussion at Future IT Summit to talk about “GCC Organizations’ Digital Transformation Readiness Roadmap and How prepared are we?” at Burj Al Arab.",
-        image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/tRLW15wv/image.png"
     },
     {
         title: "3rd Government Organization Websites Global Competitiveness Strategy Development Conference",
         description: "Dr. Usman Zafar presenting “Technology, Innovation and Lateral Thinking for Web Services” and leading the panel discussion “Use of Social Media for eGovernment Services” during the 3rd GCC Government Organization Websites Global Competitiveness Conference at Radisson SAS Hotel Dubai.",
-        image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/cCYK7p2k/image.png"
     },
     {
         title: "2nd Annual Customer Engagement Technology with e-Government Conference",
         description: "Dr Usman Zafar presenting “e-Government Transformation to Mobile Government: Opportunities & Challenges” as a keynote speaker at CET Middle Conference at the Address Hotel Dubai, UAE.",
-        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop"
+        image: "https://i.postimg.cc/Dw5ScdjG/image.png"
     },
     {
         title: "Open Data Forum by Emirates ID & United Nations Abu Dhabi",
         description: "Dr Usman Zafar presenting “Open Data Strategies” as a speaker and moderating the distinguished panelist session during the 1st Open Data Forum organized by Emirates ID & United Nations at Ritz Carlton Hotel, Abu Dhabi, UAE.",
-        image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2671&auto=format&fit=crop"
+        image: "https://i.postimg.cc/PxvNTGXj/image.png"
     },
     {
         title: "GCC Fatal and Horrific Accidents Prevention Conference",
         description: "Dr. Usman Zafar presenting “How to Implement Highly Effective Safety Strategies and Initiatives” at the Burj Al Arab Hotel Dubai, UAE.",
-        image: "https://images.unsplash.com/photo-1576085898323-218337e3e43c?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/0y5QrKkw/image.png"
     },
     {
         title: "Ajman University International Conference on Trends for Information Technology and Applications",
         description: "Dr. Usman Zafar and Mr. Abdulraheem, IT Director Dubai Courts, jointly presenting the Dubai Courts eNotary Case Study at Ajman University, UAE.",
-        image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/76zPjgVp/image.png"
     },
     {
         title: "UAE Government e-Services Marketing Strategy Conference – Burj Al Arab",
         description: "Dr. Usman Zafar presenting “Developing e-Government Marketing Capabilities” and leading panel discussions on benchmarking citizen engagement success and failure criteria.",
-        image: "https://images.unsplash.com/photo-1541818767794-2b9626da71b1?q=80&w=1287&auto=format&fit=crop"
+        image: "https://i.postimg.cc/k50qN2mj/image.png"
     },
     {
         title: "Royal Returns Investment – Grand Inauguration Guest of Honor",
         description: "Dr. Usman Zafar served as Guest of Honor and received the Leading Global Advisor of the Year 2024 award.",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
+        image: "https://i.postimg.cc/DypVdSQd/image.png"
     },
     {
         title: "Datamatix GITEX Conference – Government Social Media",
         description: "Dr. Usman Zafar presenting “Government Social Media – Global Trends and its Impact”.",
-        image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/WzSsS3fR/image.png"
     },
     {
         title: "VVS Estate Academy Launch – Red Carpet Welcome",
         description: "Dr. Usman Zafar participated in the VVS Estate Academy launch and media briefing.",
-        image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=2573&auto=format&fit=crop"
+        image: "https://i.postimg.cc/TwtQMDP8/image.png"
     },
     {
         title: "HCT Dubai – Future Smart Cities Keynote",
         description: "Dr. Usman Zafar delivered a keynote on Technology Transformation and Future Smart Cities.",
-        image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/jjX4P7PS/image.png"
     },
     {
         title: "Smart Government & Smart City Conference – Burj Al Arab",
         description: "Panel discussion with senior ICT and government leaders.",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/rFFVs1Kr/image.png"
     },
     {
         title: "eGovernment Program in Judicial Legislation, e-Notary & e-Justice",
         description: "Dr. Usman Zafar presenting “Key Challenges in eCourts Systems”.",
-        image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2672&auto=format&fit=crop"
+        image: "https://i.postimg.cc/bvb8WLBP/image.png"
     },
     {
         title: "Datamatix GITEX Conference – Web 2.0 & Semantic Web 3.0",
         description: "",
-        image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/3J59MY8J/image.png"
     },
     {
         title: "Launch of Properties Guild with Taqnyah",
         description: "",
-        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2573&auto=format&fit=crop"
+        image: "https://i.postimg.cc/C5rWzfQL/image.png"
     },
     {
         title: "17th GCC e-Government and e-Services Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2574&auto=format&fit=crop"
+        image: "https://i.postimg.cc/023TvDSB/image.png"
     },
     {
         title: "Manipal / IEEE Conference on Technology Management",
         description: "",
-        image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/V6YTgRyb/image.png"
     },
     {
         title: "10th GCC Government Excellence Services Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1558403194-611308249627?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/dVrxKXw2/image.png"
     },
     {
         title: "GCC e-Tourism Development Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?q=80&w=2674&auto=format&fit=crop"
+        image: "https://i.postimg.cc/J0spYYp8/image.png"
     },
     {
         title: "9th Leading CEO Conference – Burj Al Arab",
         description: "",
-        image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2671&auto=format&fit=crop"
+        image: "https://i.postimg.cc/cJTTxGjY/image.png"
     },
     {
         title: "Under Secretaries and Directors Leadership Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop"
+        image: "https://i.postimg.cc/8cfbmJCc/image.png"
     },
     {
         title: "3rd GCC Government Corporate & Media Communication Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/PfBGs11G/image.png"
     },
     {
         title: "19th GCC e-Government and e-Services Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1531297461136-82lw9z1p7q3?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/pT4SvthG/image.png"
     },
     {
         title: "GCC Government & Private Sector Knowledge Management Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/sDFL0sRD/image.png"
     },
     {
         title: "M-Government Conference Dubai",
         description: "",
-        image: "https://images.unsplash.com/photo-1535303311164-664fc9ec6532?q=80&w=2574&auto=format&fit=crop"
+        image: "https://i.postimg.cc/gJCg5qQT/image.png"
     },
     {
         title: "ID World Conference Abu Dhabi",
         description: "",
-        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
+        image: "https://i.postimg.cc/MKb9PBDY/image.png"
     },
     {
         title: "Datamatix GITEX Conference – Big Data & Analytics",
         description: "",
-        image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=2574&auto=format&fit=crop"
+        image: "https://i.postimg.cc/tg7D4MHN/image.png"
     },
     {
         title: "CPI Big Data Symposium",
         description: "",
-        image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2676&auto=format&fit=crop"
+        image: "https://i.postimg.cc/jdZzn4cM/image.png"
     },
     {
         title: "Avaya Video Conferencing & Mobility Roadshow",
         description: "",
-        image: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/Bv1Dy90R/image.png"
     },
     {
         title: "20th GCC eGovernment & eServices Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop"
+        image: "https://i.postimg.cc/tJDVP93d/image.png"
     },
     {
         title: "11th Government & Business Leading CEO Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop"
+        image: "https://i.postimg.cc/9fTRbdP5/image.png"
     },
     {
         title: "6th GCC Smart Government & Cities Portals Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2669&auto=format&fit=crop"
+        image: "https://i.postimg.cc/y6nJLYRN/image.png"
     },
     {
         title: "4th UAE Leading Government Executives Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2573&auto=format&fit=crop"
+        image: "https://i.postimg.cc/W4Mzg2jc/image.png"
     },
     {
         title: "4th GCC Municipalities & Smart Cities Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1477281765962-ef9f231b9489?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/VvNkxnt1/image.png"
     },
     {
         title: "3rd Smart Government & City Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop"
+        image: "https://i.postimg.cc/t464GXsN/image.png"
     },
     {
         title: "Smart Cities & Smart Governance Conference – Qatar",
         description: "",
-        image: "https://images.unsplash.com/photo-1512453979798-5ea904f18431?q=80&w=2574&auto=format&fit=crop"
+        image: "https://i.postimg.cc/3RtKFNqK/image.png"
     },
     {
         title: "Global Innovation Summit – Jumeirah Beach Hotel",
         description: "",
-        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/TYzT9ZtV/image.png"
     },
     {
         title: "3rd Annual Critical Communications Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=2671&auto=format&fit=crop"
+        image: "https://i.postimg.cc/vTxpxmFk/image.png"
     },
     {
         title: "21st GCC Government & Smart Services Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop"
+        image: "https://i.postimg.cc/WpQ4WF3z/image.png"
     },
     {
         title: "14th GCC Smart Government Customer Care Excellence Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2684&auto=format&fit=crop"
+        image: "https://i.postimg.cc/gJxY4mbt/image.png"
     },
     {
         title: "5th GCC Government Future Leaders Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/Gp2rhd27/image.png"
     },
     {
         title: "5th GCC Municipalities & Smart Cities Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1444723121867-227e9cb65180?q=80&w=2669&auto=format&fit=crop"
+        image: "https://i.postimg.cc/RVBBJchp/image.png"
     },
     {
         title: "3rd M2M Middle East Forum",
         description: "",
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2534&auto=format&fit=crop"
+        image: "https://i.postimg.cc/YCXKPZ3L/image.png"
     },
     {
         title: "15th GCC Smart Government Customer Care Excellence Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2669&auto=format&fit=crop"
+        image: "https://i.postimg.cc/BvX9fp7v/image.png"
     },
     {
         title: "IQPC Bio Materic Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2680&auto=format&fit=crop"
+        image: "https://i.postimg.cc/fy71fryL/image.png"
     },
     {
         title: "6th GCC Smart Municipalities Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1495539406979-bf61750d38ad?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/7YVpCdjF/image.png"
     },
     {
         title: "Nationals Working in Private Sector Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1568992687947-86c47086c71e?q=80&w=2669&auto=format&fit=crop"
+        image: "https://i.postimg.cc/vmpjFs6x/image.png"
     },
     {
         title: "23rd GCC Smart Cities & Smart Government Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/DwNpLT66/image.png"
     },
     {
         title: "7th GCC Municipalities & Smart Cities Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/W3L9YwQY/image.png"
     },
     {
         title: "Al Ain SME Expo Forum",
         description: "",
-        image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2574&auto=format&fit=crop"
+        image: "https://i.postimg.cc/65jMxXkG/image.png"
     },
     {
         title: "CEO Klub Investment Forum Dubai",
         description: "",
-        image: "https://images.unsplash.com/photo-1559523182-a284c3fb7cff?q=80&w=2574&auto=format&fit=crop"
+        image: "https://i.postimg.cc/t48D7zCg/image.png"
     },
     {
         title: "20th GCC Green HR Management Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop"
+        image: "https://i.postimg.cc/fLfv2n7y/image.png"
     },
     {
         title: "CIO 200 Awards",
         description: "",
-        image: "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=2595&auto=format&fit=crop"
+        image: "https://i.postimg.cc/7ZJnvT1g/image.png"
     },
     {
         title: "Blockchain Investment Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1621504450168-38f647319c43?q=80&w=2574&auto=format&fit=crop"
+        image: "https://i.postimg.cc/W38MmmjG/image.png"
     },
     {
         title: "24th GCC Smart Cities & Smart Government Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2672&auto=format&fit=crop"
+        image: "https://i.postimg.cc/Hx6y8p4Q/image.png"
     },
     {
         title: "5G MENA Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/Nf9HLvyX/image.png"
     },
     {
         title: "18th GCC HR Transformation Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/6Q07F9PP/image.png"
     },
     {
         title: "17th GCC Customer Care Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/KcV16p06/image.png"
     },
     {
         title: "Global Online Shopping Portals & GCC Retail Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/GmnH28w5/image.png"
     },
     {
         title: "Innovation Conference – Federal Authority of Identity & Citizenship",
         description: "",
-        image: "https://images.unsplash.com/photo-1531297461136-82lw9z1p7q3?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/DZ0zD1Lb/image.png"
     },
     {
         title: "8th Smart City Expo",
         description: "",
-        image: "https://images.unsplash.com/photo-1477281765962-ef9f231b9489?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/mZ0QYrWp/image.png"
     },
     {
         title: "26th GCC Smart Government & Smart City Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop"
+        image: "https://i.postimg.cc/nrG50y23/image.png"
     },
     {
         title: "25th GCC Smart Government & Smart Cities Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop"
+        image: "https://i.postimg.cc/s2GNtQKH/image.png"
     },
     {
         title: "17th GCC Human Resources Conference",
         description: "",
-        image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2574&auto=format&fit=crop"
+        image: "https://i.postimg.cc/Jn1jjSyX/image.png"
     }
 ];
 
@@ -372,7 +372,7 @@ const KeynotesListing: React.FC = () => {
             <section className="relative w-full h-[60vh] min-h-[500px] flex items-end justify-start overflow-hidden">
                 {/* Background Image */}
                 <img 
-                    src="https://images.unsplash.com/photo-1475721027767-p05a6db14ba0?q=80&w=2669&auto=format&fit=crop" 
+                    src="https://i.postimg.cc/gJCg5qQT/image.png" 
                     alt="Keynote Stage" 
                     className="absolute inset-0 w-full h-full object-cover z-0"
                 />

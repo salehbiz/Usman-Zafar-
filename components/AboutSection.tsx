@@ -80,7 +80,7 @@ const AboutSection: React.FC = () => {
                className="relative h-[400px] lg:h-[550px] w-full rounded-[40px] overflow-hidden shadow-2xl group/image order-1 lg:order-2"
              >
                 <img 
-                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1287&auto=format&fit=crop" 
+                   src="https://i.postimg.cc/fL2yM3d4/image.png" 
                    alt="Dr. Usman Zafar" 
                    className="w-full h-full object-cover object-top transition-transform duration-[1.5s] ease-out group-hover/image:scale-[1.03]"
                 />

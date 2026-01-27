@@ -1,25 +1,92 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight, X, ChevronLeft, ChevronRight, ZoomIn, Play } from 'lucide-react';
+import { ArrowRight, X, ChevronLeft, ChevronRight, ZoomIn, ImageOff } from 'lucide-react';
 
-// Placeholder array for the 27 media images.
-// In a production environment, these src URLs would be replaced with the exact file paths 
-// from the source website. Using high-quality Unsplash images to simulate the layout.
-const MEDIA_IMAGES = Array.from({ length: 27 }).map((_, i) => ({
-  id: i,
-  src: `https://images.unsplash.com/photo-${[
-    '1556761175-5973dc0f32e7', '1544531586-fde5298cdd40', '1507003211169-0a1dd7228f2d',
-    '1475721027767-p05a6db14ba0', '1511578314322-379afb476865', '1505373877841-8d43a716664d',
-    '1582213782179-e0d53f98f2ca', '1628108920110-63ce73456743', '1541746972996-4e0b0f43e02a',
-    '1591115765373-5207764f72e7', '1517245386807-bb43f82c33c4', '1556761175-5973dc0f32e7',
-    '1507679799987-c73779587ccf', '1576085898323-218337e3e43c', '1523580494863-6f3031224c94',
-    '1460925895917-afdab827c52f', '1560520653-9e0e4c89eb11', '1517048676732-d65bc937f952',
-    '1486406146926-c627a92ad1ab', '1621504450168-38f647319c43', '1551818255-e6e10975bc17',
-    '1477281765962-ef9f231b9489', '1497366216548-37526070297c', '1577962917302-cd874c4e31d2',
-    '1531297461136-82lw9z1p7q3', '1552664730-d307ca884978', '1535303311164-664fc9ec6532'
-  ][i % 27]}?q=80&w=800&auto=format&fit=crop`,
-  alt: `Media Appearance ${i + 1}`
-}));
+// NOTE: Use direct image links that end in .jpg/.png/.webp. 
+// Avoid viewer page links (e.g. postimg.cc/gallery/...) - use the 'Direct Link' option.
+const MEDIA_IMAGES = [
+  { id: 1, src: "https://i.postimg.cc/ncjKrK2M/CX1-(1).png", title: "Media Feature 1" },
+  { id: 2, src: "https://i.postimg.cc/3RfpJWDk/CX2-(1).png", title: "Media Feature 2" },
+  { id: 3, src: "https://i.postimg.cc/RhjHK8dR/CX3_(1).png", title: "Media Feature 3" },
+  { id: 4, src: "https://i.postimg.cc/TPC5ChQv/CX4-(1).png", title: "Media Feature 4" },
+  { id: 5, src: "https://i.postimg.cc/fLgWD07H/image.png", title: "Media Feature 5" },
+  { id: 6, src: "https://i.postimg.cc/Mp866wR2/image.png", title: "Media Feature 6" },
+  { id: 7, src: "https://i.postimg.cc/FKTNVJBW/image.png", title: "Media Feature 7" },
+  { id: 8, src: "https://i.postimg.cc/Kz4Fq8XQ/image.png", title: "Media Feature 8" },
+  { id: 9, src: "https://i.postimg.cc/tRZn7X1Z/image.png", title: "Media Feature 9" },
+  { id: 10, src: "https://i.postimg.cc/8PLFBtBX/image.png", title: "Media Feature 10" },
+  { id: 11, src: "https://i.postimg.cc/QdbHvCzP/image.png", title: "Media Feature 11" },
+  { id: 12, src: "https://i.postimg.cc/xdpqT7nH/image.png", title: "Media Feature 12" },
+  { id: 13, src: "https://i.postimg.cc/kXPG4W3f/image.png", title: "Media Feature 13" },
+  { id: 14, src: "https://i.postimg.cc/VkYN91NZ/image.png", title: "Media Feature 14" },
+  { id: 15, src: "https://i.postimg.cc/yNxY5Pck/image.png", title: "Media Feature 15" },
+  { id: 16, src: "https://i.postimg.cc/TwW223tS/image.png", title: "Media Feature 16" },
+  { id: 17, src: "https://i.postimg.cc/8PLFBtBX/image.png", title: "Media Feature 17" },
+  { id: 18, src: "https://i.postimg.cc/rpDMgp2g/image.png", title: "Media Feature 18" },
+  { id: 19, src: "https://i.postimg.cc/QtLGbkbt/image.png", title: "Media Feature 19" },
+  { id: 20, src: "https://i.postimg.cc/02VT3qf7/image.png", title: "Media Feature 20" },
+  { id: 21, src: "https://i.postimg.cc/ZqdXCvhG/image.png", title: "Media Feature 21" },
+  { id: 22, src: "https://i.postimg.cc/J01F6TBM/image.png", title: "Media Feature 22" },
+  { id: 23, src: "https://i.postimg.cc/VLkTXV8g/image.png", title: "Media Feature 23" },
+  { id: 24, src: "https://i.postimg.cc/Y0ndXtHh/image.png", title: "Media Feature 24" },
+  { id: 25, src: "https://i.postimg.cc/TYskg20q/image.png", title: "Media Feature 25" },
+  { id: 26, src: "https://i.postimg.cc/Mpj9Dkry/image.png", title: "Media Feature 26" },
+  { id: 27, src: "https://i.postimg.cc/pXgSCtZ1/image.png", title: "Media Feature 27" },
+  { id: 28, src: "https://i.postimg.cc/85pNDmYX/image.png", title: "Media Feature 28" },
+  { id: 29, src: "https://i.postimg.cc/NfHh3nM5/image.png", title: "Media Feature 29" },
+  { id: 30, src: "https://i.postimg.cc/QtLGbkbt/image.png", title: "Media Feature 30" },
+  { id: 31, src: "https://i.postimg.cc/SRJsMGQZ/image.png", title: "Media Feature 31" },
+];
+
+interface MediaCardProps {
+  item: typeof MEDIA_IMAGES[0];
+  onClick: () => void;
+}
+
+const MediaCard: React.FC<MediaCardProps> = ({ item, onClick }) => {
+  const [hasError, setHasError] = useState(false);
+
+  if (hasError) {
+    return (
+      <div className="w-full bg-gray-100 rounded-[24px] border border-[#124442]/10 flex flex-col items-center justify-center text-[#124442]/40 min-h-[300px] p-8 text-center mb-8">
+        <ImageOff size={48} className="mb-4 opacity-50" />
+        <span className="text-sm font-medium mb-1">Image unavailable</span>
+        <span className="text-xs opacity-60 break-all">{item.title}</span>
+      </div>
+    );
+  }
+
+  return (
+    <div 
+      onClick={onClick}
+      className="group relative w-full mb-8 break-inside-avoid bg-white rounded-[24px] overflow-hidden shadow-sm border border-[#124442]/5 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+    >
+      <div className="relative w-full bg-[#F6F5EF] min-h-[200px] flex items-center justify-center">
+        <img 
+          src={item.src} 
+          alt={item.title}
+          className="w-full h-auto object-contain block max-h-[700px] transition-transform duration-700 group-hover:scale-[1.01]"
+          onError={() => setHasError(true)}
+        />
+        
+        {/* Hover Overlay */}
+        <div className="absolute inset-0 bg-[#124442]/0 group-hover:bg-[#124442]/5 transition-colors duration-300 pointer-events-none"></div>
+        
+        {/* View Icon */}
+        <div className="absolute bottom-6 right-6 w-12 h-12 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center text-[#124442] shadow-lg opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-10">
+            <ZoomIn size={20} />
+        </div>
+      </div>
+      
+      {/* Caption Bar */}
+      <div className="px-6 py-4 border-t border-[#124442]/5 bg-white">
+        <p className="text-[#124442] font-medium text-sm tracking-wide truncate">
+            {item.title}
+        </p>
+      </div>
+    </div>
+  );
+};
 
 const MediaListing: React.FC = () => {
   const navigate = useNavigate();
@@ -66,7 +133,7 @@ const MediaListing: React.FC = () => {
       <section className="relative w-full h-[60vh] min-h-[500px] flex items-end justify-start overflow-hidden bg-[#0B1F1C]">
         {/* Background Image with Blur */}
         <img 
-          src={MEDIA_IMAGES[0].src} 
+          src={MEDIA_IMAGES[26].src} 
           alt="Media Background" 
           className="absolute inset-0 w-full h-full object-cover opacity-40 blur-sm scale-105"
         />
@@ -98,38 +165,16 @@ const MediaListing: React.FC = () => {
 
       {/* 2. GALLERY SECTION */}
       <section className="px-6 md:px-12 py-24 bg-[#F6F5EF]">
-        <div className="max-w-[1400px] mx-auto">
+        <div className="max-w-[1600px] mx-auto">
           
           <div className="flex items-center gap-3 mb-12">
              <div className="w-8 h-[2px] bg-[#124442]"></div>
              <h2 className="text-[#124442] font-semibold text-2xl tracking-tight">Press & Features</h2>
           </div>
 
-          {/* Grid Layout: 4 cols desktop, 2 tablet, 1 mobile */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="columns-1 md:columns-2 xl:columns-3 gap-8 space-y-8">
             {MEDIA_IMAGES.map((img, idx) => (
-              <div 
-                key={img.id}
-                onClick={() => setLightboxIndex(idx)}
-                className="group relative aspect-[4/3] rounded-[20px] overflow-hidden bg-white shadow-sm border border-[#124442]/5 cursor-pointer hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-              >
-                <img 
-                  src={img.src} 
-                  alt={img.alt} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-[#124442]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                {/* View Icon */}
-                <div className="absolute bottom-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center text-[#124442] shadow-md opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                   <ZoomIn size={18} />
-                </div>
-
-                {/* Subtle border glow on hover */}
-                <div className="absolute inset-0 rounded-[20px] border-2 border-[#C8F16B] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-              </div>
+              <MediaCard key={img.id} item={img} onClick={() => setLightboxIndex(idx)} />
             ))}
           </div>
 
@@ -157,39 +202,40 @@ const MediaListing: React.FC = () => {
 
       {/* LIGHTBOX OVERLAY */}
       {lightboxIndex !== null && (
-        <div className="fixed inset-0 z-[60] bg-black/95 backdrop-blur-sm flex items-center justify-center animate-fade-in">
+        <div className="fixed inset-0 z-[60] bg-black/95 backdrop-blur-md flex items-center justify-center animate-fade-in p-4 md:p-12">
            
            {/* Close Button */}
            <button 
              onClick={closeLightbox}
-             className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors p-2"
+             className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors p-2 z-50 bg-black/20 rounded-full"
            >
              <X size={32} />
            </button>
 
-           {/* Main Image */}
-           <div className="relative max-w-[90vw] max-h-[90vh]">
+           {/* Main Image Wrapper */}
+           <div className="relative w-full h-full flex items-center justify-center">
               <img 
                 src={MEDIA_IMAGES[lightboxIndex].src} 
-                alt={MEDIA_IMAGES[lightboxIndex].alt} 
-                className="max-w-full max-h-[85vh] rounded-lg shadow-2xl border border-white/10"
+                alt={MEDIA_IMAGES[lightboxIndex].title} 
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl border border-white/10"
               />
-              <p className="text-white/60 text-center mt-4 text-sm font-medium tracking-wide">
-                 {lightboxIndex + 1} / {MEDIA_IMAGES.length}
-              </p>
+              
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-white/80 text-sm font-medium tracking-wide">
+                 {MEDIA_IMAGES[lightboxIndex].title} <span className="opacity-40 mx-2">|</span> {lightboxIndex + 1} of {MEDIA_IMAGES.length}
+              </div>
            </div>
 
            {/* Nav Controls */}
            <button 
              onClick={(e) => { e.stopPropagation(); prevImage(); }}
-             className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-[#C8F16B] hover:scale-110 transition-all p-4"
+             className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-[#C8F16B] hover:scale-110 transition-all p-4 bg-black/20 rounded-full"
            >
              <ChevronLeft size={48} strokeWidth={1} />
            </button>
 
            <button 
              onClick={(e) => { e.stopPropagation(); nextImage(); }}
-             className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-[#C8F16B] hover:scale-110 transition-all p-4"
+             className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-[#C8F16B] hover:scale-110 transition-all p-4 bg-black/20 rounded-full"
            >
              <ChevronRight size={48} strokeWidth={1} />
            </button>

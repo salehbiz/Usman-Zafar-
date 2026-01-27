@@ -8,127 +8,127 @@ const AWARDS_DATA = [
     id: 1,
     title: "51 Most Impactful Smart Cities Leaders – Global Listing",
     description: "Recognizing influential contributions to Smart City development and sustainable digital transformation.",
-    image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2669&auto=format&fit=crop"
+    image: "https://i.postimg.cc/P5GWdC2t/image.png"
   },
   {
     id: 2,
     title: "Leading Global Advisor of the Year – PRIME Awards",
     description: "Recognizing excellence in global advisory leadership and transformative strategic impact.",
-    image: "https://images.unsplash.com/photo-1628108920110-63ce73456743?q=80&w=2669&auto=format&fit=crop"
+    image: "https://i.postimg.cc/TPfnWZ8Y/image.png"
   },
   {
     id: 3,
     title: "Abu Dhabi Chamber SME Excellence Recognition",
     description: "Honoring contributions to SME development and economic advancement.",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop"
+    image: "https://i.postimg.cc/4y7cgGcf/image.png"
   },
   {
     id: 4,
     title: "Young Achiever Award – GCC Leadership Awards",
     description: "Celebrating outstanding leadership potential and early career achievements.",
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2669&auto=format&fit=crop"
+    image: "https://i.postimg.cc/KcwL5KXn/image.png"
   },
   {
     id: 5,
     title: "Outstanding Global Leadership Award",
     description: "Awarded for influential global leadership and contributions to international development.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/T3qDGCKz/image.png"
   },
   {
     id: 6,
     title: "Federal Authority for Identity & Citizenship Appreciation Award",
     description: "For supporting national digital transformation and leading public-sector innovation.",
-    image: "https://images.unsplash.com/photo-1531297461136-82lw9z1p7q3?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/W45qqz6r/image.png"
   },
   {
     id: 7,
     title: "HCT Dubai – Industry Contribution Recognition",
     description: "Acknowledging leadership in academic–industry innovation partnerships.",
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/d1X7nffL/image.png"
   },
   {
     id: 8,
     title: "Professional Doctorate Award – European International University",
     description: "Conferred for academic excellence and global leadership in international trade and business.",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/F1XYXLN9/image.png"
   },
   {
     id: 9,
     title: "HYGEAR Corporate Recognition Award",
     description: "Awarded for strategic advisory support and contribution to fitness technology innovation.",
-    image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2680&auto=format&fit=crop"
+    image: "https://i.postimg.cc/sDWHrQ57/image.png"
   },
   {
     id: 10,
     title: "Manipal University – Industry Expertise Award",
     description: "For expert contributions to innovation, collaboration, and technology leadership.",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/9QtxD68w/image.png"
   },
   {
     id: 11,
     title: "PITB Government Recognition Award",
     description: "Awarded by the Punjab IT Board for contributions to national-level digital transformation.",
-    image: "https://images.unsplash.com/photo-1541818767794-2b9626da71b1?q=80&w=1287&auto=format&fit=crop"
+    image: "https://i.postimg.cc/B6yNW4bs/image.png"
   },
   {
     id: 12,
     title: "Ajman International Export Development Recognition",
     description: "Honoring insights into economic development, export growth, and trade innovation.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
+    image: "https://i.postimg.cc/h4kMpDN1/image.png"
   },
   {
     id: 13,
     title: "Future IT Summit – Moderator Appreciation Award",
     description: "Recognizing leadership in moderating major industry panels on technology and innovation.",
-    image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/Mpx5Js6x/image.png"
   },
   {
     id: 14,
     title: "News Time HD TV Smart City Contribution Award",
     description: "For outstanding contributions to national Smart City initiatives.",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop"
+    image: "https://i.postimg.cc/MGpYvvjS/image.png"
   },
   {
     id: 15,
     title: "PRIME Awards Certificate of Achievement",
     description: "Certifying excellence in global advisory leadership.",
-    image: "https://images.unsplash.com/photo-1576267423048-15c0040fec78?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/hjH8ysZK/image.png"
   },
   {
     id: 16,
     title: "PRIME Awards Asia – Guest of Honour Recognition",
     description: "Celebrating distinguished presence and leadership contributions in Asia.",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
+    image: "https://i.postimg.cc/fTQjYH0S/image.png"
   },
   {
     id: 17,
     title: "Global Achievers Award",
     description: "Recognizing Dr. Usman Zafar for outstanding global leadership, business excellence, and impact as Chairman of World Business Hub (WBH).",
-    image: "https://images.unsplash.com/photo-1558403194-611308249627?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/g2YVTnsP/image.png"
   },
   {
     id: 18,
     title: "Certificate of Appreciation – Federal Authority (UAE)",
     description: "Recognized by the Federal Authority for Identity, Citizenship, Customs, and Port Security for contributions toward improving government services through the Zero Government Bureaucracy initiative.",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=2574&auto=format&fit=crop"
+    image: "https://i.postimg.cc/vmK5TXsQ/image.png"
   },
   {
     id: 19,
     title: "Appreciation Certificate – HCT Innovation Month",
     description: "Recognized by the Higher Colleges of Technology for delivering an expert talk on technology transformation and future smart cities.",
-    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/j2Hf8bJZ/image.png"
   },
   {
     id: 20,
     title: "Certificate of Nomination – Business Excellence Award",
     description: "Nominated for exceptional leadership impact and outstanding professional performance at an international platform.",
-    image: "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/QxD1FHR6/image.png"
   },
   {
     id: 21,
     title: "Certificate of Appreciation – HCT Industry Advisory Committee",
     description: "Recognized for valuable contributions and expert guidance as a member of the Computer Information Sciences Industry Advisory Committee.",
-    image: "https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2670&auto=format&fit=crop"
+    image: "https://i.postimg.cc/qMGnyprT/image.png"
   }
 ];
 
@@ -177,16 +177,17 @@ const AwardsListing: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#C8F16B]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
 
                   {/* 1. Image Thumbnail Area */}
-                  <div className="relative h-[280px] w-full overflow-hidden">
+                  {/* UPDATED: Increased height and changed object-fit to contain */}
+                  <div className="relative h-[280px] md:h-[360px] lg:h-[420px] w-full overflow-hidden bg-black/20">
                      <img 
                         src={award.image} 
                         alt={award.title} 
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                        className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                         loading="lazy"
                      />
                      
                      {/* Overlay Gradient for readability */}
-                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F1E] via-[#0B1F1E]/20 to-transparent"></div>
+                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F1E] via-[#0B1F1E]/20 to-transparent pointer-events-none"></div>
 
                      {/* Optional: View Action Icon on Hover */}
                      <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white/70 opacity-0 group-hover:opacity-100 transition-all duration-300">
