@@ -41,14 +41,21 @@ const Hero: React.FC = () => {
   const activeCard = cards[activeIndex];
 
   return (
-    <section className="relative w-full min-h-[100dvh] sm:h-screen sm:min-h-[700px] flex items-end overflow-hidden bg-[#F6F5EF]">
+    <section className="relative w-full min-h-[100dvh] sm:h-screen sm:min-h-[700px] flex items-stretch sm:items-end overflow-hidden bg-[#F6F5EF]">
         
         {/* 1. BACKGROUND IMAGE (z-0) */}
         <div className="absolute inset-0 z-0">
+            {/* Mobile Image */}
+            <img 
+                src="https://i.postimg.cc/cHrNXScg/Gemini-Generated-Image-r9egf9r9egf9r9eg-(1)-(2).png" 
+                alt="Dr. Usman Zafar" 
+                className="w-full h-full object-cover object-[50%_12%] sm:hidden"
+            />
+            {/* Desktop/Tablet Image */}
             <img 
                 src="https://i.postimg.cc/SRPwbTTG/Gemini-Generated-Image-r9egf9r9egf9r9eg-(1).png" 
                 alt="Dr. Usman Zafar" 
-                className="w-full h-full object-cover object-[50%_12%] sm:object-center"
+                className="w-full h-full object-cover object-center hidden sm:block"
             />
         </div>
 
@@ -63,12 +70,11 @@ const Hero: React.FC = () => {
         ></div>
 
         {/* 3. CONTENT CONTAINER */}
-        {/* Mobile: Spacer creates 420px top zone. Content stacks at bottom. */}
-        {/* Tablet (sm): Keeps pt-[45vh] if needed, or resets. */}
-        {/* Desktop (lg): lg:pt-0 resets padding. lg:justify-between restores layout. */}
-        <div className="relative z-10 w-full max-w-[1450px] mx-auto px-6 md:px-12 lg:px-16 sm:pt-[45vh] lg:pt-0 pb-8 lg:pb-20 flex flex-col lg:flex-row items-end justify-end lg:justify-between gap-6 lg:gap-12 h-full">
+        {/* Mobile: 420px top safe zone via spacer. justify-end anchors content to bottom. */}
+        {/* Desktop (lg): Reverts to original spacing/layout. */}
+        <div className="relative z-10 w-full max-w-[1450px] mx-auto px-6 md:px-12 lg:px-16 flex flex-col lg:flex-row items-end justify-end lg:justify-between gap-6 lg:gap-12 flex-grow sm:flex-grow-0 lg:pb-20 pb-8">
             
-            {/* MOBILE ONLY SPACER: Forces top 420px to be empty for the image face */}
+            {/* MOBILE ONLY SPACER: Guaranteed 420px image-only area at top */}
             <div className="w-full h-[420px] shrink-0 sm:hidden" aria-hidden="true" />
 
             {/* LEFT SIDE: Typography */}
