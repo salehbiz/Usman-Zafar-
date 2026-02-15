@@ -13,22 +13,12 @@ const FeatureCards: React.FC = () => {
         <div className="relative h-[600px] w-full">
            {/* Back Image */}
            <div className="absolute top-0 right-0 w-[85%] h-[85%] rounded-[32px] overflow-hidden shadow-lg transform translate-x-4 translate-y-4 bg-gray-200">
-              <img 
-                src="https://picsum.photos/seed/case1/800/1000" 
-                className="w-full h-full object-cover opacity-80" 
-                alt="Strategy Session" 
-                loading="lazy"
-              />
+              <img src="https://picsum.photos/seed/case1/800/1000" className="w-full h-full object-cover opacity-80" alt="Strategy Session" />
            </div>
            
            {/* Front Image */}
            <div className="absolute bottom-0 left-0 w-[75%] h-[75%] rounded-[32px] overflow-hidden shadow-2xl border-[6px] border-[#F6F5EF] group cursor-pointer">
-              <img 
-                src="https://picsum.photos/seed/case2/800/1000" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                alt="Global Conference" 
-                loading="lazy"
-              />
+              <img src="https://picsum.photos/seed/case2/800/1000" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Global Conference" />
               
               {/* Tooltip Microcard */}
               <div className="absolute bottom-8 right-8 bg-white/90 backdrop-blur-xl p-4 rounded-2xl shadow-lg border border-white/50 max-w-[200px] animate-float">
