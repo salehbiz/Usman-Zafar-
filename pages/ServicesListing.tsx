@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Check, ShieldCheck, Globe, Layers, Zap, ArrowUpRight } from 'lucide-react';
+import AdvisoryPackagesGrid from '../components/AdvisoryPackagesGrid';
+import TestimonialsGrid from '../components/TestimonialsGrid';
 
 const ServicesListing: React.FC = () => {
   const navigate = useNavigate();
@@ -258,6 +260,12 @@ const ServicesListing: React.FC = () => {
             </div>
          </div>
       </section>
+
+      {/* NEW: ADVISORY PACKAGES GRID */}
+      <AdvisoryPackagesGrid />
+
+      {/* NEW: TESTIMONIALS */}
+      <TestimonialsGrid />
 
       {/* 5. CUSTOM CTA SECTION - Dark */}
       <section className="px-6 md:px-12 max-w-[1400px] mx-auto pb-24">

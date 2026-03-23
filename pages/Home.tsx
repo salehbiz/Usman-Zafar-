@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import AboutSection from '../components/AboutSection';
 import ServicesInteractive from '../components/ServicesInteractive';
 import PublicationsSection from '../components/PublicationsSection';
+import AdvisoryPackages from '../components/AdvisoryPackages';
 import TestimonialsGrid from '../components/TestimonialsGrid';
 import WhyWorkWithUs from '../components/WhyWorkWithUs';
 import Insights from '../components/Insights';
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       <AboutSection />
       <ServicesInteractive />
       <PublicationsSection />
+      <AdvisoryPackages />
       <TestimonialsGrid />
       <WhyWorkWithUs />
       <Insights />

@@ -17,6 +17,10 @@ import MediaListing from './pages/MediaListing';
 import AwardsListing from './pages/AwardsListing';
 import AcademicExperience from './pages/AcademicExperience';
 import Contact from './pages/Contact';
+import EssentialMarketEntry from './pages/EssentialMarketEntry';
+import GrowthAcceleration from './pages/GrowthAcceleration';
+import PremiumStrategicAdvisory from './pages/PremiumStrategicAdvisory';
+import EnterpriseAdvisory from './pages/EnterpriseAdvisory';
 import { SERVICE_CONTENT } from './constants';
 
 // Scroll to top on route change
@@ -43,6 +47,18 @@ const App: React.FC = () => {
 
             {/* Keynotes */}
             <Route path="/keynotes" element={<KeynotesListing />} />
+
+            {/* Advisory Package Routes */}
+            <Route path="/services/essential-market-entry" element={<EssentialMarketEntry />} />
+            <Route path="/services/growth-acceleration" element={<GrowthAcceleration />} />
+            <Route path="/services/premium-strategic-advisory" element={<PremiumStrategicAdvisory />} />
+            <Route path="/services/enterprise-advisory" element={<EnterpriseAdvisory />} />
+
+            {/* Advisory Package Direct Aliases (as requested) */}
+            <Route path="/essential-market-entry" element={<EssentialMarketEntry />} />
+            <Route path="/growth-acceleration" element={<GrowthAcceleration />} />
+            <Route path="/premium-strategic" element={<PremiumStrategicAdvisory />} />
+            <Route path="/enterprise-advisory" element={<EnterpriseAdvisory />} />
 
             {/* Individual Service Routes - Legacy */}
             <Route path="/services/board-advisory" element={<ServiceDetail content={SERVICE_CONTENT['board-advisory']} />} />

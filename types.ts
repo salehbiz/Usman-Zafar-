@@ -50,6 +50,7 @@ export interface ServicePageContent {
   title: string;
   subtitle: string;
   sections: ServiceSection[];
+  heroImage?: string;
 }
 
 export interface BookFeature {

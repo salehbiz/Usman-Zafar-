@@ -47,15 +47,15 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         {/* Mobile Image */}
         <img
-          src="https://i.postimg.cc/T1wxZ6vj/Gemini-Generated-Image-sswmzosswmzosswm-(1).png"
+          src="/images/hero/hero-main-high-qo.png"
           alt="Dr. Usman Zafar"
-          className="w-full h-full object-cover object-[50%_12%] sm:hidden"
+          className="absolute w-[110%] max-w-none h-full object-cover -left-[40px] sm:hidden"
         />
         {/* Desktop/Tablet Image */}
         <img
-          src="https://i.postimg.cc/T1wxZ6vj/Gemini-Generated-Image-sswmzosswmzosswm-(1).png"
+          src="/images/hero/hero-main-high-qo.png"
           alt="Dr. Usman Zafar"
-          className="w-full h-full object-cover object-center hidden sm:block"
+          className="absolute w-[110%] max-w-none h-full object-cover -left-[40px] hidden sm:block"
         />
       </div>
 
