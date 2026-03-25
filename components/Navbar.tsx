@@ -70,9 +70,9 @@ const Navbar: React.FC = () => {
         {/* CENTER LOGO */}
         <div className="flex justify-center w-full lg:w-2/12 cursor-pointer group" onClick={() => navigate('/')}>
            <img 
-             src="https://i.postimg.cc/fy1m9Jr8/Blue_White_Professional_Minimal_Brand_Logo_2_1_removebg_preview_(1).png" 
+             src="/logo-new.png" 
              alt="usmanzafar.com"
-             className={`h-8 w-auto object-contain transition-all duration-300 ${isHomePage && !isScrolled ? 'drop-shadow-lg' : ''}`}
+             className={`h-12 md:h-16 w-auto object-contain transition-all duration-300 ${isHomePage && !isScrolled ? 'drop-shadow-lg' : ''}`}
            />
         </div>
 
