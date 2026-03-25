@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         {/* Mobile Image */}
         <img
-          src="/images/hero/hero-main.png"
+          src="/images/hero/hero-mobile.jpg"
           alt="Dr. Usman Zafar"
           className="absolute w-[110%] max-w-none h-full object-cover -left-[40px] sm:hidden"
         />
