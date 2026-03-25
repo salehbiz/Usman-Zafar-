@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
   const activeCard = cards[activeIndex];
 
   return (
-    <section className="relative w-full min-h-[100dvh] sm:h-screen sm:min-h-[700px] flex items-stretch sm:items-end overflow-hidden bg-[#F6F5EF]">
+    <section className="relative w-full min-h-[110dvh] sm:h-screen sm:min-h-[700px] flex items-stretch sm:items-end overflow-hidden bg-[#F6F5EF]">
 
       {/* 1. BACKGROUND IMAGE (z-0) */}
       <div className="absolute inset-0 z-0">
@@ -70,32 +70,32 @@ const Hero: React.FC = () => {
       ></div>
 
       {/* 3. CONTENT CONTAINER */}
-      {/* Mobile: 420px top safe zone via spacer. justify-end anchors content to bottom. */}
+      {/* Mobile: Top safe zone via spacer. justify-end anchors content to bottom. */}
       {/* Desktop (lg): Reverts to original spacing/layout. */}
-      <div className="relative z-10 w-full max-w-[1450px] mx-auto px-6 md:px-12 lg:px-16 flex flex-col lg:flex-row items-end justify-end lg:justify-between gap-6 lg:gap-12 flex-grow sm:flex-grow-0 lg:pb-20 pb-8">
+      <div className="relative z-10 w-full max-w-[1450px] mx-auto px-6 md:px-12 lg:px-16 flex flex-col lg:flex-row items-end justify-end lg:justify-between gap-6 lg:gap-12 flex-grow sm:flex-grow-0 lg:pb-20 pb-10 pt-[10dvh] sm:pt-0">
 
-        {/* MOBILE ONLY SPACER: Guaranteed 420px image-only area at top */}
-        <div className="w-full h-[420px] shrink-0 sm:hidden" aria-hidden="true" />
+        {/* MOBILE ONLY SPACER: Guaranteed 55vh image-only area at top */}
+        <div className="w-full h-[55vh] shrink-0 sm:hidden" aria-hidden="true" />
 
         {/* LEFT SIDE: Typography */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-end animate-slide-up-fade pb-0 lg:pb-6 mb-8 lg:mb-0">
+        <div className="w-full max-w-[340px] sm:max-w-none lg:w-1/2 flex flex-col justify-end animate-slide-up-fade pb-0 lg:pb-6 mb-8 lg:mb-0">
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-[64px] font-medium tracking-[-0.02em] text-white mb-6 leading-[1.1] drop-shadow-sm">
+          <h1 className="text-[36px] sm:text-4xl md:text-5xl lg:text-[64px] font-medium tracking-[-0.02em] text-white mb-4 sm:mb-6 leading-[1.08] sm:leading-[1.1] drop-shadow-sm">
             Hi, I am <br />
             Dr. Usman Zafar
           </h1>
 
           {/* Subtitle */}
-          <p className="text-white/80 font-normal text-[13px] uppercase tracking-[0.08em] mb-10 max-w-xl flex items-center gap-3 drop-shadow-sm">
+          <p className="text-white/80 font-normal text-[11px] sm:text-[13px] uppercase tracking-[0.04em] sm:tracking-[0.08em] mb-8 sm:mb-10 max-w-xl flex flex-wrap items-center gap-2 sm:gap-3 drop-shadow-sm leading-relaxed">
             STRATEGIST <span className="text-white/60">•</span> MARKET ACCELERATOR <span className="text-white/60">•</span> ADVISOR
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 w-full">
             <button
               onClick={() => navigate('/contact')}
-              className="px-8 py-3.5 bg-[#C8F16B] text-[#134443] rounded-full font-medium transition-all duration-300 flex items-center gap-2 hover:bg-white hover:scale-105 shadow-lg shadow-[#C8F16B]/10 text-sm tracking-wide"
+              className="w-full sm:w-auto px-8 py-3.5 bg-[#C8F16B] text-[#134443] rounded-full font-medium transition-all duration-300 flex items-center justify-center gap-2 hover:bg-white hover:scale-105 shadow-lg shadow-[#C8F16B]/10 text-sm tracking-wide"
             >
               Book a Strategic Call
               <ArrowRight size={16} />
@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
 
             <button
               onClick={() => navigate('/services')}
-              className="px-8 py-3.5 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-[2px] text-sm tracking-wide"
+              className="w-full sm:w-auto px-8 py-3.5 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-all duration-300 backdrop-blur-[2px] text-sm tracking-wide flex items-center justify-center"
             >
               Explore Services
             </button>
