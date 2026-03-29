@@ -3,12 +3,10 @@
 > vite
 
 
-  VITE v6.4.1  ready in 468 ms
+  VITE v6.4.1  ready in 148 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://192.168.8.106:3000/
   ➜  press h + enter to show help
-3:44:36 PM [vite] (client) hmr update /App.tsx
-3:44:45 PM [vite] (client) hmr update /App.tsx, /pages/ServiceDetail.tsx, /pages/InsightsListing.tsx, /pages/WorkExperience.tsx, /pages/InsightDetail.tsx, /pages/BookDetail.tsx, /components/Navbar.tsx
-3:45:00 PM [vite] (client) hmr update /components/Navbar.tsx
-3:45:14 PM [vite] (client) hmr update /pages/Solutions.tsx
+3:50:05 PM [vite] (client) hmr update /pages/Solutions.tsx
+3:50:12 PM [vite] (client) hmr update /pages/Solutions.tsx
