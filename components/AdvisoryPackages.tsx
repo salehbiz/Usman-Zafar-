@@ -96,7 +96,7 @@ const AdvisoryPackages: React.FC = () => {
   }, [isPaused]);
 
   return (
-    <section className="relative py-16 bg-[#0B1E1C] overflow-hidden border-t border-white/5">
+    <section id="solutions" className="relative py-16 bg-[#0B1E1C] overflow-hidden border-t border-white/5">
       {/* Background Ambience */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-[400px] bg-gradient-to-b from-[#124442]/20 to-transparent opacity-30"></div>

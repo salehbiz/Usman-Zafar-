@@ -21,6 +21,7 @@ import EssentialMarketEntry from './pages/EssentialMarketEntry';
 import GrowthAcceleration from './pages/GrowthAcceleration';
 import PremiumStrategicAdvisory from './pages/PremiumStrategicAdvisory';
 import EnterpriseAdvisory from './pages/EnterpriseAdvisory';
+import Solutions from './pages/Solutions';
 import { SERVICE_CONTENT } from './constants';
 
 // Scroll to top on route change
@@ -99,6 +100,8 @@ const App: React.FC = () => {
 
             {/* New Dedicated About Page */}
             <Route path="/about" element={<About />} />
+
+            <Route path="/solutions" element={<Solutions />} />
 
             {/* New Academic & Education Pages */}
             <Route path="/academic-experience" element={<AcademicExperience />} />
