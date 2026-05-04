@@ -9,7 +9,6 @@ import ServicesListing from './pages/ServicesListing';
 import ServiceDetail from './pages/ServiceDetail';
 import BookDetail from './pages/BookDetail';
 import BooksListing from './pages/BooksListing';
-import WorkExperience from './pages/WorkExperience';
 import InsightsListing from './pages/InsightsListing';
 import InsightDetail from './pages/InsightDetail';
 import KeynotesListing from './pages/KeynotesListing';
@@ -22,6 +21,7 @@ import GrowthAcceleration from './pages/GrowthAcceleration';
 import PremiumStrategicAdvisory from './pages/PremiumStrategicAdvisory';
 import EnterpriseAdvisory from './pages/EnterpriseAdvisory';
 import Solutions from './pages/Solutions';
+import Aria from './pages/Aria';
 import { SERVICE_CONTENT } from './constants';
 
 // Scroll to top on route change
@@ -85,9 +85,6 @@ const App: React.FC = () => {
             <Route path="/books" element={<BooksListing />} />
             <Route path="/books/:slug" element={<BookDetail />} />
 
-            {/* Work Experience Route */}
-            <Route path="/work-experience" element={<WorkExperience />} />
-
             {/* Insights Routes */}
             <Route path="/insights" element={<InsightsListing />} />
             <Route path="/insights/:slug" element={<InsightDetail />} />
@@ -115,6 +112,7 @@ const App: React.FC = () => {
             } />
 
             <Route path="/contact" element={<Contact />} />
+            <Route path="/aria" element={<Aria />} />
 
           </Routes>
         </main>

@@ -79,6 +79,8 @@ const Navbar: React.FC = () => {
 
         {/* RIGHT NAV GROUP */}
         <div className="hidden lg:flex items-center space-x-2 w-5/12 justify-end">
+          <NavLink to="/aria" className={getNavLinkClass}>Aria</NavLink>
+          <NavLink to="/insights" className={getNavLinkClass}>Resources</NavLink>
           <NavLink to="/media" className={getNavLinkClass}>Media</NavLink>
           <NavLink to="/awards" className={getNavLinkClass}>Awards</NavLink>
           <NavLink to="/contact" className={getNavLinkClass}>Contact</NavLink>

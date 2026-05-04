@@ -45,27 +45,8 @@ const ServicesInteractive: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative w-full py-24 px-6 md:px-12 bg-[#0B1F1C] overflow-hidden">
-      
-      {/* --- BACKGROUND EFFECTS (Dark Premium Theme) --- */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Base Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0B2F2E] via-[#124442] to-[#091A19]"></div>
-        
-        {/* Subtle Lime Glow (Low Opacity) */}
-        <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-[#C8F16B]/[0.05] rounded-full blur-[150px]"></div>
-        
-        {/* Deep Teal Haze */}
-        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-[#1A5A59]/20 rounded-full blur-[120px]"></div>
-        
-        {/* Subtle Noise (Overlay) */}
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/noise.png')] opacity-[0.03] mix-blend-overlay"></div>
-        
-        {/* Vignette */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(0,0,0,0.4)_100%)]"></div>
-      </div>
-
-      <div className="max-w-[1400px] mx-auto relative z-10">
+    <section className="relative w-full pt-24 px-6 md:px-12 bg-transparent z-10">
+      <div className="max-w-[1400px] mx-auto relative">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
