@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Share2, Tag, Linkedin, Twitter } from 'lucide-react';
-import { INSIGHTS_DATA } from '../constants';
+import { ArrowLeft, Calendar, Clock, Share2, Tag, Linkedin, Twitter, ExternalLink } from 'lucide-react';
+import { BLOGS_DATA } from '../constants';
 import FinalCTA from '../components/FinalCTA';
 
-const InsightDetail: React.FC = () => {
+const BlogDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
-  const article = INSIGHTS_DATA.find((item) => item.slug === slug);
+  const article = BLOGS_DATA.find((item) => item.slug === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,14 +15,25 @@ const InsightDetail: React.FC = () => {
 
   if (!article) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#F6F5EF] text-[#124442]">
+      <div className="min-h-screen flex items-center justify-center bg-[#F6F5EF] text-[#124442] font-sans">
         <div className="text-center">
-            <h2 className="text-4xl font-bold mb-4">Article Not Found</h2>
-            <button onClick={() => navigate('/insights')} className="text-sm underline hover:text-[#C8F16B]">Back to Insights</button>
+            <h2 className="text-4xl font-bold mb-4">Blog Not Found</h2>
+            <button onClick={() => navigate('/blogs')} className="text-sm underline hover:text-[#C8F16B]">Back to Blogs</button>
         </div>
       </div>
     );
   }
+
+  const shareOnLinkedin = () => {
+    const url = encodeURIComponent(window.location.href);
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+  };
+
+  const shareOnTwitter = () => {
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent(article.title);
+    window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-[#F6F5EF] pt-24 font-sans text-[#124442]">
@@ -30,10 +41,10 @@ const InsightDetail: React.FC = () => {
        {/* Breadcrumb / Back */}
        <div className="px-6 md:px-12 max-w-[1000px] mx-auto mb-8">
           <button 
-             onClick={() => navigate('/insights')}
+             onClick={() => navigate('/blogs')}
              className="flex items-center gap-2 text-[#124442]/60 hover:text-[#124442] font-medium transition-colors"
           >
-             <ArrowLeft size={18} /> Back to Insights
+             <ArrowLeft size={18} /> Back to Blogs
           </button>
        </div>
 
@@ -67,13 +78,28 @@ const InsightDetail: React.FC = () => {
              </div>
              
              <div className="flex gap-2">
-                <button className="w-10 h-10 rounded-full border border-[#124442]/10 flex items-center justify-center text-[#124442]/60 hover:text-[#124442] hover:border-[#124442] transition-all">
-                   <Share2 size={16} />
-                </button>
-                <button className="w-10 h-10 rounded-full border border-[#124442]/10 flex items-center justify-center text-[#124442]/60 hover:text-[#0077b5] hover:border-[#0077b5] transition-all">
+                {article.link && (
+                   <a 
+                      href={article.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="h-10 px-4 rounded-full border border-[#124442]/10 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#124442]/60 hover:text-[#0077b5] hover:border-[#0077b5] transition-all"
+                   >
+                      <ExternalLink size={14} /> Read on LinkedIn
+                   </a>
+                )}
+                <button 
+                   onClick={shareOnLinkedin} 
+                   className="w-10 h-10 rounded-full border border-[#124442]/10 flex items-center justify-center text-[#124442]/60 hover:text-[#0077b5] hover:border-[#0077b5] transition-all"
+                   title="Share on LinkedIn"
+                >
                    <Linkedin size={16} />
                 </button>
-                <button className="w-10 h-10 rounded-full border border-[#124442]/10 flex items-center justify-center text-[#124442]/60 hover:text-black hover:border-black transition-all">
+                <button 
+                   onClick={shareOnTwitter}
+                   className="w-10 h-10 rounded-full border border-[#124442]/10 flex items-center justify-center text-[#124442]/60 hover:text-black hover:border-black transition-all"
+                   title="Share on X"
+                >
                    <Twitter size={16} />
                 </button>
              </div>
@@ -82,8 +108,8 @@ const InsightDetail: React.FC = () => {
 
        {/* Featured Image */}
        <div className="px-6 md:px-12 max-w-[1200px] mx-auto mb-16">
-          <div className="relative w-full aspect-[21/9] rounded-[32px] overflow-hidden shadow-xl">
-             <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
+          <div className="relative w-full rounded-[32px] overflow-hidden shadow-xl bg-white flex justify-center items-center p-2 border border-[#124442]/10">
+             <img src={article.image} alt={article.title} referrerPolicy="no-referrer" className="w-full h-auto max-h-[600px] object-contain rounded-[24px]" />
           </div>
        </div>
 
@@ -109,4 +135,4 @@ const InsightDetail: React.FC = () => {
   );
 };
 
-export default InsightDetail;
+export default BlogDetail;

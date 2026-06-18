@@ -1,4 +1,4 @@
-import { NavItem, ServiceItem, FAQItem, ArticleItem, ServicePageContent, BookContent, PortfolioItem } from './types';
+import { NavItem, ServiceItem, FAQItem, ArticleItem, ServicePageContent, BookContent, PortfolioItem, YouTubeVideo } from './types';
 import { Layers, TrendingUp, Building2, Globe, Cpu, RefreshCw, Mic, LineChart } from 'lucide-react';
 import React from 'react';
 
@@ -9,8 +9,9 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Solutions', path: '/solutions' },
   { label: 'Keynotes', path: '/keynotes' },
   { label: 'Books', path: '/books' },
+  { label: 'YouTube', path: '/youtube' },
   { label: 'Aria', path: '/aria' },
-  { label: 'Resources', path: '/insights' },
+  { label: 'Blogs', path: '/blogs' },
   { label: 'Media', path: '/media' },
   { label: 'Awards', path: '/awards' },
   { label: 'Contact', path: '/contact' },
@@ -334,7 +335,7 @@ export const BOOKS_CONTENT: Record<string, BookContent> = {
     title: "Artificial Intelligence for SME Leaders",
     subtitle: "A step-by-step guide for founders and managers to adopt AI and drive growth.",
     description: "In a world dominated by tech giants, how do Small and Medium Enterprises compete? This book provides a pragmatic roadmap for SME leaders to leverage AI not just for efficiency, but for exponential growth. Move beyond the hype and implement systems that drive real revenue. Dr. Usman Zafar breaks down complex algorithms into actionable business strategies, ensuring that your organization doesn't just survive the AI revolution, but thrives in it.",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop",
+    image: "/blogs/blog-4.jpg",
     price: "$29.99",
     type: "Ebook / Digital Download",
     highlights: [
@@ -404,82 +405,704 @@ export const FAQS: FAQItem[] = [
   }
 ];
 
-export const INSIGHTS_DATA: ArticleItem[] = [
+export const BLOGS_DATA: ArticleItem[] = [
   {
     id: '1',
-    slug: 'leadership-in-ai-era',
-    title: "Leadership in the AI Era: Beyond the Hype",
-    category: "Strategy",
-    date: "Oct 24, 2023",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2565&auto=format&fit=crop",
-    excerpt: "Why the biggest barrier to AI adoption isn't technical—it's cultural. A guide for executives navigating the intelligence revolution.",
+    slug: 'the-2026-global-growth-playbook-scaling-smarter-in-a-fragmented-world',
+    title: "The 2026 Global Growth Playbook: Scaling Smarter in a Fragmented World",
+    category: "Strategic Growth",
+    date: "April 23, 2026",
+    readTime: "3 min read",
+    image: "/blogs/blog-1.jpg",
+    excerpt: "In 2026, global expansion is no longer just a \"nice-to-have\" growth lever: it has become an essential requirement for business survival.",
     author: "Dr. Usman Zafar",
-    tags: ["Leadership", "Artificial Intelligence", "Culture"],
-    content: `
-      <p class="lead">Artificial Intelligence is no longer a futuristic concept; it is a present-day reality reshaping industries at an unprecedented pace. Yet, for many organizations, the hurdle isn't the technology itself, but the leadership mindset required to wield it effectively.</p>
-      
-      <h3>The Implementation Gap</h3>
-      <p>We see a recurring pattern in the market: organizations invest heavily in data infrastructure and state-of-the-art models, only to see projects stall in the pilot phase. This "implementation gap" is rarely a failure of engineering. It is a failure of strategy.</p>
-      
-      <p>True AI readiness requires a shift from viewing AI as a utility to viewing it as a strategic partner. Leaders must ask not just "How can we automate this?" but "How does this reimagine our value proposition?"</p>
+    tags: ["Strategic Growth", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/2026-global-growth-playbook-scaling-smarter-fragmented-dr-usman-zafar-jfvxf/",
+    content: `<p class="lead">In 2026, global expansion is no longer just a "nice-to-have" growth lever: it has become an essential requirement for business survival. As domestic markets face increasing saturation, the most successful leaders are those looking beyond their borders to capture new value.</p>
 
-      <h3>Cultural Resistance</h3>
-      <p>The fear of displacement is real. Successful transformation requires transparent communication. It demands a narrative that positions AI as an augmentative tool—one that removes drudgery to elevate human creativity and strategic thinking.</p>
+<h3>The Why: Why Go Global Now?
+The data is clear: companies that expand internationally grow 1.5 times faster than those focused solely on domestic markets. The immediate rewards are equally compelling, with 70% of businesses reporting an increase in revenue within just one year of entering a new international territory. Expansion is a primary driver for attracting global talent, staying ahead of competitors, and satisfying aggressive growth expectations from investors.</h3>
 
-      <h3>The path forward</h3>
-      <p>To navigate this era, executives must cultivate 'technological intuition'—a high-level understanding of what these tools can and cannot do. We don't need every CEO to be a data scientist, but we do need them to be data-literate architects of the future.</p>
-    `
+<h3>The Where: High-Growth Hotspots vs. Stability
+The Growth Engine: Asia is the primary driver of the global market, with projected growth between 4.5% and 5%. Countries like China, India, Japan, and Korea are leading this charge, alongside rising stars in Southeast Asia (Vietnam, Indonesia, and the Philippines) that offer highly skilled talent pools.
+The Stability Anchor: The US remains a dominant market with a steady 2% growth projection. Europe is expected to grow by 1.2%, with specific hotspots like Poland and Romania emerging as tech and supply chain powerhouses.
+The Opportunistic Play: The UAE continues to see a surge in new company setups, fueled by heavy government investment and massive property development.</h3>
+
+<h3>The How: Choosing Your Entry Model
+- Employer of Record (EOR): Best for "testing the water." Allows market entry in weeks with low risk.
+- Local Entity: The route for long-term commitment. Full control but longer timelines (e.g., Germany can take up to 5 months).
+- PEO (Professional Employer Organization): Co-employment model ideal for businesses that want to outsource compliance burden.</h3>
+
+<h3>The Risks: What to Watch in 2026
+- Permanent Establishment (PE) Risk: Hiring without proper entity structure can trigger tax penalties.
+- Contractor Misclassification: Can lead to "employment" status claims.
+- The AI Valuation Bubble: Focus shifting from AI "intelligence" to actual application in banking and healthcare.</h3>
+
+<h3>The Bottom Line: Don't choose a market based on hype — choose it based on fit. Success in 2026 requires a Global Readiness mindset where compliance and governance are seen as enablers of speed, not blockers.</h3>`
   },
   {
     id: '2',
-    slug: 'digital-sovereignty-imperative',
-    title: "The Digital Sovereignty Imperative",
-    category: "Policy",
-    date: "Sep 15, 2023",
-    readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop",
-    excerpt: "As data becomes the world's most valuable asset, nations and enterprises must rethink their infrastructure to ensure independence and security.",
+    slug: 'digital-sovereignty-the-silent-battle-for-data-control-in-a-borderless-world',
+    title: "Digital Sovereignty: The Silent Battle for Data Control in a Borderless World",
+    category: "Security & Sovereignty",
+    date: "October 2, 2025",
+    readTime: "3 min read",
+    image: "/blogs/blog-2.jpg",
+    excerpt: "In an interconnected world where data flows freely across borders, a quiet yet fierce struggle is unfolding.",
     author: "Dr. Usman Zafar",
-    tags: ["Policy", "Data Privacy", "Geopolitics"],
-    content: `
-      <p class="lead">We are witnessing the end of the borderless internet. In its place, a new era of 'Digital Sovereignty' is emerging, where control over data infrastructure is becoming a matter of national security and corporate survival.</p>
+    tags: ["Security & Sovereignty", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/digital-sovereignty-silent-battle-data-control-borderless-zafar-agzdf/",
+    content: `<p class="lead">In an interconnected world where data flows freely across borders, a quiet yet fierce struggle is unfolding. Nations are increasingly asserting control over their digital assets, driven by geopolitical rivalries, national security concerns, and the fear of foreign influence. This phenomenon, known as digital sovereignty, represents the ability of states to govern their data, infrastructure, and technologies independently.</p>
 
-      <h3>The Splinternet</h3>
-      <p>From the GDPR in Europe to data localization laws in Asia and the Middle East, the regulatory landscape is fracturing. For multinational enterprises, this creates a complex compliance mesh that can stifle innovation if not navigated with foresight.</p>
+<h3>Defining Digital Sovereignty Amid Rising Tensions
+Digital sovereignty encompasses control over the physical infrastructure (like servers and networks), the code layer (standards and algorithms), and the data layer (ownership and flows). Geopolitical tensions between the US and China are accelerating this trend. The US's CHIPS and Science Act aims to bolster domestic semiconductor production, reducing reliance on foreign supply chains.</h3>
 
-      <h3>Owning the Stack</h3>
-      <p>Dependency on foreign cloud providers is increasingly seen as a systemic risk. We advise governments and large enterprises to adopt hybrid architectures that balance the scalability of public cloud with the security of sovereign data centers.</p>
+<h3>The Global Battlegrounds: Regulations and Fragmentation
+Countries are enacting data localization laws, requiring companies to store and process data within national borders. India's mandate for financial data localization has compelled giants like Mastercard and Visa to build new facilities. Russia's strict rules led LinkedIn to exit the market entirely.</h3>
 
-      <h3>Strategic Autonomy</h3>
-      <p>Digital sovereignty isn't about isolationism; it's about autonomy. It is the ability to choose your digital destiny without being beholden to the policy whims of foreign powers or tech monopolies. For leaders today, ensuring data resilience is as critical as ensuring financial liquidity.</p>
-    `
+<p>In Europe, the EU leads with GDPR (fines up to ~$25 million), the Digital Markets Act (DMA), and the AI Act. China pursues a state-centric model through the PIPL and Cybersecurity Law. The US ban on TikTok (signed 2024) symbolizes the "digital Cold War."</p>
+
+<h3>Implications for Executives
+Risks: data breaches, non-compliance fines, supply chain vulnerabilities, extraterritorial law conflicts.
+Opportunities: Sovereign cloud solutions, data localization for trust, investment in resilient tech stacks.</h3>
+
+<p>The Urgency: Executives must audit data flows, engage in policy advocacy, and explore partnerships aligned with regional sovereignty goals. Proactive data governance is now a competitive advantage.</p>`
   },
   {
     id: '3',
-    slug: 'smart-city-governance',
-    title: "Smart Cities: Governance First, Sensors Second",
-    category: "Urban Future",
-    date: "Aug 02, 2023",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2669&auto=format&fit=crop",
-    excerpt: "Why the most successful smart cities aren't the ones with the most tech, but the ones with the most integrated decision-making frameworks.",
+    slug: 'the-jobs-poised-to-disappear-by-2030-navigating-the-ai-revolution',
+    title: "The Jobs Poised to Disappear by 2030: Navigating the AI Revolution",
+    category: "Artificial Intelligence",
+    date: "September 4, 2025",
+    readTime: "3 min read",
+    image: "/blogs/blog-3.jpg",
+    excerpt: "By 2030, AI could expose the equivalent of 300 million full-time jobs to automation worldwide (Goldman Sachs Research).",
     author: "Dr. Usman Zafar",
-    tags: ["Smart Cities", "Urban Planning", "IoT"],
-    content: `
-      <p class="lead">The graveyard of smart city pilots is paved with good intentions and disconnected dashboards. Too often, municipalities buy the hardware—the sensors, the cameras, the platforms—before they have the governance structures to use them.</p>
+    tags: ["Artificial Intelligence", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/jobs-poised-disappear-2030-navigating-ai-revolution-dr-usman-zafar-xtijc/",
+    content: `<p class="lead">By 2030, AI could expose the equivalent of 300 million full-time jobs to automation worldwide (Goldman Sachs Research). In the U.S. and Europe, two-thirds of jobs are exposed to some level of AI automation, with up to a quarter potentially fully automated.</p>
 
-      <h3>The Data Silo Problem</h3>
-      <p>A city is an organism, not a machine. Traffic affects air quality; air quality affects public health; public health affects economic productivity. Yet, in most administrations, these data streams live in hermetically sealed departments.</p>
+<h3>Key Statistics:
+- Goldman Sachs: Generative AI could automate tasks equivalent to 300 million jobs, potentially raising global GDP by 7% (~$7 trillion).
+- McKinsey: Up to 30% of hours worked in the U.S. could be automated by 2030; 11.8 million workers needing to switch occupations.
+- WEF Future of Jobs Report 2025: AI may displace 92 million roles but create 170 million new ones.
+- Stanford (2025): AI linked to 77,999 tech job cuts in H1 2025 alone.</h3>
 
-      <h3>The Integrated Command Center</h3>
-      <p>The future belongs to the 'Digital Twin'—a unified living model of the city. But building a digital twin is 10% technology and 90% diplomacy. It requires breaking down bureaucratic fiefdoms and establishing a single source of truth.</p>
+<h3>Jobs Most at Risk:
+1. Data Entry Clerks — 1.6 million clerical jobs at risk (McKinsey)
+2. Customer Service Representatives — 25-50% workload automation potential
+3. Retail Salespersons & Cashiers — 830,000 and 630,000 U.S. job losses projected
+4. Telemarketers
+5. Assembly Line Workers — up to 2 million manufacturing workers replaced by 2025 (MIT/Boston University)
+6. Administrative Assistants — ~710,000 job losses estimated
+7. Entry-Level Content Writers & Proofreaders
+8. Financial Analysts (Routine Roles)
+9. Receptionists
+10. Basic Software Coders</h3>
 
-      <h3>Citizen-Centric Design</h3>
-      <p>Ultimately, a smart city must serve its citizens, not just its administrators. If technology does not result in a tangible improvement in quality of life—shorter commutes, cleaner air, safer streets—it is merely expensive decoration. Governance must always prioritize the human experience over the technological capability.</p>
-    `
-  }
+<h3>Real-World Case Studies:
+- IBM: AI chatbots reduced customer service costs by 23.5%
+- Amazon: 750,000+ warehouse robots deployed; net reduction in logistics roles
+- Goldman Sachs: AI streamlining fraud detection and routine financial analysis
+- Stanford (2025): Generative AI accelerating declines for software engineers and customer service workers</h3>
+
+<p>Looking Ahead: With 170 million new jobs potentially emerging in AI ethics, data science, and sustainable tech, reskilling is essential. Governments, educators, and businesses must collaborate to bridge skill gaps.</p>`
+  },
+  {
+    id: '4',
+    slug: 'demystifying-the-magic-unveiling-the-potential-of-generative-ai-with-coursera-s-specialization',
+    title: "Demystifying the Magic: Unveiling the Potential of Generative AI with Coursera's Specialization",
+    category: "Artificial Intelligence",
+    date: "February 1, 2024",
+    readTime: "3 min read",
+    image: "/blogs/blog-4.jpg",
+    excerpt: "Generative AI is rapidly transforming our world.",
+    author: "Dr. Usman Zafar",
+    tags: ["Artificial Intelligence", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/demystifying-magic-unveiling-potential-generative-ai-courseras-zafar-5pezf/",
+    content: `<p class="lead">Generative AI is rapidly transforming our world. The Coursera Generative AI Fundamentals Specialization (offered by IBM) is a comprehensive 5-course program designed to equip learners with knowledge to navigate this frontier.</p>
+
+<h3>Course Breakdown:
+- Course 1: Introduction to Generative AI — core concepts, applications, types of generative models (VAEs, GANs)
+- Course 2: Text Generation with Generative AI — language models like GPT-3, creative content, code generation, translation
+- Course 3: Image Generation with Generative AI — Stable Diffusion, DALL-E, prompt-based image creation
+- Course 4: Prompt Engineering: The Art of Guiding Generative AI — crafting effective prompts, techniques to steer model outputs
+- Course 5: The Future of Generative AI — ethical considerations, societal impact, future possibilities</h3>
+
+<h3>What Makes This Specialization Unique:
+- Accessibility: Open to everyone, no prior AI knowledge required
+- Practical focus: Hands-on exercises and projects
+- Industry relevance: IBM experts, real-world applications
+- Flexibility: Self-paced learning
+- Completion certificate: Showcase acquired skills</h3>
+
+<p>Coursera partners with 200+ leading universities (Duke, Stanford, Yale) and top companies (Facebook, Google, IBM) serving 80+ million individuals worldwide.</p>`
+  },
+  {
+    id: '5',
+    slug: 'gcc-public-sector-ai-initiatives',
+    title: "GCC Public Sector AI Initiatives",
+    category: "Artificial Intelligence",
+    date: "October 3, 2023",
+    readTime: "3 min read",
+    image: "/blogs/blog-5.jpg",
+    excerpt: "Governments in the GCC are investing heavily in AI to transform services across healthcare, education, and transportation..",
+    author: "Dr. Usman Zafar",
+    tags: ["Artificial Intelligence", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/gcc-public-sector-ai-initiatives-dr-usman-zafar/",
+    content: `<p class="lead">Governments in the GCC are investing heavily in AI to transform services across healthcare, education, and transportation.</p>
+
+<h3>Saudi Arabia:
+- Saudi Data and Artificial Intelligence Authority (SDAIA): Developing Saudi Arabia's national AI strategy; launched the AI Academy for government employee training.
+- Saudi Smart Cities Program: AI-optimized traffic flow and energy management pilot projects.
+- National Digital Transformation Program: Established a National AI Center.</h3>
+
+<h3>United Arab Emirates:
+- Artificial Intelligence Office (AIO): National AI strategy; AI Summer Camp for students; AI Lab funding for startups.
+- Dubai Smart City: AI for personalized government services and public transportation optimization.
+- Abu Dhabi Government Services Platform: Unified platform using AI for personalized recommendations and automated permit issuance.</h3>
+
+<h3>Other GCC Countries:
+- Qatar (MCIT): Qatar AI Research Lab and Qatar AI Hub for training and resources.
+- Kuwait (KDGA): Kuwait AI Center providing funding and support to AI startups.
+- Oman (MTC): Oman AI Lab for research and Oman AI Hub for training.</h3>
+
+<h3>Deep Dive — Dubai Smart City:
+- AI personalizes government services based on user preferences and past interactions.
+- AI manages public transportation using real-time traffic camera and sensor data to optimize bus routes and schedules.</h3>
+
+<h3>Deep Dive — Abu Dhabi Government Services Platform:
+- Unified digital gateway for all Abu Dhabi government services.
+- AI-powered personalized recommendations and automated task processing for permits and licenses.</h3>`
+  },
+  {
+    id: '6',
+    slug: 'the-new-iphone-15-everything-you-need-to-know',
+    title: "The New iPhone 15: Everything You Need to Know",
+    category: "Technology",
+    date: "September 19, 2023",
+    readTime: "3 min read",
+    image: "/blogs/blog-6.jpg",
+    excerpt: "The iPhone 15, released September 22, 2023, is a significant upgrade over the previous model..",
+    author: "Dr. Usman Zafar",
+    tags: ["Technology", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/new-iphone-15-everything-you-need-know-dr-usman-zafar/",
+    content: `<p class="lead">The iPhone 15, released September 22, 2023, is a significant upgrade over the previous model.</p>
+
+<p>Design: New flat-edge frame similar to the iPad Pro; available in pink, yellow, green, blue, and black.</p>
+
+<p>Display: Super Retina XDR display with ProMotion (up to 120Hz refresh rate); brighter and more energy-efficient than previous models.</p>
+
+<p>Camera: New 48MP main camera sensor (up from 12MP); higher resolution photos and videos; improved low-light performance.</p>
+
+<p>Performance: Powered by the A16 Bionic chip — faster than the A15, improved performance for gaming, video editing, and augmented reality.</p>
+
+<p>Battery: Larger battery than previous model; supports faster charging.</p>
+
+<h3>Other Key Features:
+- New USB-C charging port
+- Satellite connectivity for emergency situations
+- Dynamic Island cutout housing front-facing camera and Face ID
+- Always-on display showing time, date, and key information when locked</h3>
+
+<p>Verdict: The iPhone 15 is the best iPhone Apple has ever made. Ideal for those wanting the latest features; current iPhone users on a budget may not need to upgrade.</p>`
+  },
+  {
+    id: '7',
+    slug: 'professional-tips-for-tech-companies-to-grow-in-the-middle-east-with-statistics',
+    title: "Professional Tips for Tech Companies to Grow in the Middle East with Statistics",
+    category: "Technology",
+    date: "September 15, 2023",
+    readTime: "3 min read",
+    image: "/blogs/blog-7.jpg",
+    excerpt: "The Middle East tech market is expected to grow at 10.2% CAGR (2023–2028), reaching $314.4 billion by 2028..",
+    author: "Dr. Usman Zafar",
+    tags: ["Technology", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/professional-tips-tech-companies-grow-middle-east-statistics-zafar/",
+    content: `<p class="lead">The Middle East tech market is expected to grow at 10.2% CAGR (2023–2028), reaching $314.4 billion by 2028.</p>
+
+<h3>Key Tips with Statistics:</h3>
+
+<ul><li>Localize your product/service — 62% of Middle East internet users prefer websites in their native language (Statista).</li></ul>
+
+<ul><li>Build relationships with local partners — 73% of CEOs in the Middle East believe partnerships are essential for growth (Deloitte).</li></ul>
+
+<ul><li>Attend industry events — ArabNet Digital Summit draws 10,000+ attendees annually.</li></ul>
+
+<ul><li>Invest in digital marketing — Social media penetration in the Middle East is 62%, above the global average of 59% (Hootsuite). Top platforms: Instagram, Twitter, LinkedIn.</li></ul>
+
+<ul><li>Hire local talent — 75% of CEOs in the Middle East say hiring local talent is essential for success (PwC).</li></ul>
+
+<ul><li>Focus on mobile — Mobile penetration in the Middle East is 85%, vs. global average of 67% (GSMA).</li></ul>
+
+<ul><li>Offer diverse payment options — 58% of consumers in the Middle East prefer to pay in cash (Visa).</li></ul>
+
+<ul><li>Provide excellent customer service — 70% of consumers willing to pay more for excellent service (PwC).</li></ul>
+
+<ul><li>Be patient — Expanding into a new market takes time.</li></ul>
+
+<h3>Additional Strategic Tips:
+- Invest in R&D aligned to regional needs
+- Partner with local universities and research institutions
+- Support the startup ecosystem (funding, mentorship, co-development)
+- Give back to the community through educational and social initiatives</h3>`
+  },
+  {
+    id: '8',
+    slug: 'ai-and-gdpr-a-guide-for-linkedin-users',
+    title: "AI and GDPR: A Guide for LinkedIn Users",
+    category: "Artificial Intelligence",
+    date: "September 14, 2023",
+    readTime: "3 min read",
+    image: "/blogs/blog-8.jpg",
+    excerpt: "AI is rapidly transforming LinkedIn through features like job recommendations, personalized news feeds, and automated messaging — but it also raises important privacy concerns..",
+    author: "Dr. Usman Zafar",
+    tags: ["Artificial Intelligence", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/ai-gdpr-guide-linkedin-users-dr-usman-zafar/",
+    content: `<p class="lead">AI is rapidly transforming LinkedIn through features like job recommendations, personalized news feeds, and automated messaging — but it also raises important privacy concerns.</p>
+
+<p>GDPR Overview: In effect since May 25, 2018, the GDPR applies to any organization processing personal data of EU residents, regardless of the organization's location.</p>
+
+<h3>GDPR Requirements Relevant to AI:
+- Obtain consent before collecting or processing personal data
+- Provide individuals access to their data and right to erasure
+- Implement technical and organizational measures to protect data
+- Conduct Data Protection Impact Assessments (DPIAs) for high-risk AI activities</h3>
+
+<h3>Privacy Risks of AI:
+1. Discrimination — Biased training data can lead to discriminatory outcomes (e.g., hiring algorithms)
+2. Transparency — Complex AI systems make it hard to understand decision-making
+3. Surveillance — Mass collection of online activity, location, and social interaction data</h3>
+
+<h3>How LinkedIn Users Can Protect Their Privacy:
+- Review and update privacy settings regularly
+- Avoid sharing sensitive personal information (home address, phone number)
+- Be aware of privacy risks when interacting with AI-powered features</h3>
+
+<h3>What LinkedIn Is Doing:
+- GDPR implementation and compliance
+- Heavy investment in privacy and security themes
+- User education resources on data privacy</h3>`
+  },
+  {
+    id: '9',
+    slug: '12-remote-work-best-practices-for-managers',
+    title: "12 Remote Work Best Practices for Managers",
+    category: "Future of Work",
+    date: "September 14, 2023",
+    readTime: "3 min read",
+    image: "/blogs/blog-9.jpg",
+    excerpt: "Remote work offers flexibility and cost savings but requires deliberate management.",
+    author: "Dr. Usman Zafar",
+    tags: ["Future of Work", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/12-remote-work-best-practices-managers-dr-usman-zafar/",
+    content: `<p class="lead">Remote work offers flexibility and cost savings but requires deliberate management. Here are 12 best practices:</p>
+
+<ul><li>Set clear expectations — Define work hours, communication standards, and performance goals.</li><li>Invest in the right tools — Video conferencing, project management software, file sharing tools, proper hardware.</li><li>Communicate regularly — Individual and group check-ins to stay connected and build trust.</li><li>Build trust and rapport — Essential for productivity and engagement in remote settings.</li><li>Give autonomy — Let team members work when and where they're most productive.</li><li>Provide regular feedback — Critical for remote employees to stay on track.</li><li>Support mental and physical health — Provide resources and encourage self-care.</li><li>Promote collaboration — Virtual meetings, team-building activities, shared workspaces.</li><li>Celebrate successes — Recognize accomplishments to boost morale and motivation.</li><li>Be flexible — Adapt schedules, tools, and management style as needed.</li><li>Lead by example — Be responsive, organized, and model healthy work habits.</li><li>Be available — Ensure team members feel they can reach you when needed.</li></ul>
+
+<h3>Additional Professional Tips:
+- Respect team members' time and boundaries
+- Be inclusive and avoid favoritism
+- Be transparent and honest in all communication
+- Be supportive and encouraging
+- Be willing to learn and grow as a remote leader</h3>`
+  },
+  {
+    id: '10',
+    slug: 'the-ai-revolution-in-healthcare-a-glimpse-into-the-future',
+    title: "The AI Revolution in Healthcare: A Glimpse into the Future",
+    category: "Artificial Intelligence",
+    date: "August 11, 2023",
+    readTime: "3 min read",
+    image: "/blogs/blog-10.jpg",
+    excerpt: "AI is set to play a major role in transforming healthcare, processing vast data and identifying patterns humans may miss..",
+    author: "Dr. Usman Zafar",
+    tags: ["Artificial Intelligence", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/ai-revolution-healthcare-glimpse-future-dr-usman-zafar/",
+    content: `<p class="lead">AI is set to play a major role in transforming healthcare, processing vast data and identifying patterns humans may miss.</p>
+
+<p>Revolutionizing Diagnosis: AI-powered tools (ML algorithms analyzing X-rays, CT scans) detect diseases at earlier stages with greater precision.</p>
+
+<p>Transforming Drug Discovery: AI has already led to successful treatments for diseases like Ebola and multiple sclerosis; holds promise for cancer and Alzheimer's.</p>
+
+<p>Improving Patient Care: AI-powered telemedicine reduces in-person visit needs. Remote monitoring via sensors alerts providers of health changes, preventing complications.</p>
+
+<p>Ethical Considerations:<br/>- Privacy: Patient data must be kept secure and confidential<br/>- Bias in algorithms: Can perpetuate health disparities; transparency and accountability required</p>
+
+<p>AI and Medical Imaging: AI algorithms help radiologists detect early signs of cancer in mammograms and streamline imaging processes, reducing wait times.</p>
+
+<p>AI in Public Health: BlueDot predicted COVID-19 spread before WHO recognition. Google Flu Trends predicts flu outbreaks up to two weeks before traditional surveillance.</p>
+
+<p>AI and Healthcare Accessibility: AI-powered chatbots and virtual assistants provide personalized medical advice in remote areas without traditional healthcare facilities.</p>
+
+<p>AI in Mental Health: ML algorithms analyze speech/language patterns to detect early signs of depression or anxiety; personalized treatment plans based on genetic and biometric data.</p>
+
+<p>AI in Aging Care: Remote monitoring via sensors/wearables tracks vital signs and behavioral changes; early intervention prevents serious complications.</p>
+
+<p>AI and Innovation: IBM Watson + Memorial Sloan Kettering Cancer Center — analyzed millions of pages of medical literature to identify personalized cancer treatment options.</p>
+
+<p>Implementation Challenges: Data privacy/security, regulatory hurdles, workforce training. Solution: collaboration across healthcare providers, tech companies, regulators, and patient advocates.</p>`
+  },
+  {
+    id: '11',
+    slug: 'the-future-is-green-top-5-sustainable-cities-of-2023',
+    title: "The Future is Green: Top 5 Sustainable Cities of 2023",
+    category: "Artificial Intelligence",
+    date: "August 8, 2023",
+    readTime: "3 min read",
+    image: "/blogs/blog-11.jpg",
+    excerpt: "Sustainable cities prioritize citizen well-being while minimizing environmental impact through renewable energy, public transportation, waste management, and green spaces..",
+    author: "Dr. Usman Zafar",
+    tags: ["Artificial Intelligence", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/future-green-top-5-sustainable-cities-2023-dr-usman-zafar/",
+    content: `<p class="lead">Sustainable cities prioritize citizen well-being while minimizing environmental impact through renewable energy, public transportation, waste management, and green spaces.</p>
+
+<h3>Criteria for Sustainable Cities:
+- Renewable energy (solar, wind, hydro)
+- Efficient public transportation systems
+- Effective waste management (recycling, composting)
+- Green spaces (parks, gardens, urban forests)</h3>
+
+<h3>Stockholm, Sweden:
+- Goal: Fossil fuel-free by 2040
+- Investments in wind and solar power
+- Extensive public transit (buses, trains, trams, electric buses)
+- 760+ km of bike paths</h3>
+
+<h3>Copenhagen, Denmark:
+- 62% of residents cycle to work or school daily
+- Goal: Carbon neutral by 2025
+- District heating system using waste heat from power plants
+- 50%+ of all waste recycled</h3>
+
+<h3>Vancouver, Canada:
+- Energy-efficient buildings and electric vehicle promotion
+- Goal: 100% renewable energy by 2050
+- Extensive bike lanes and pedestrian paths
+- One of North America's most efficient public transit systems</h3>
+
+<p>Conclusion: Sustainable cities are models for the future. Stockholm, Copenhagen, and Vancouver demonstrate what's possible. Global cooperation and local action are both essential to expand these models worldwide.</p>`
+  },
+  {
+    id: '12',
+    slug: 'disruptive-technologies-and-the-future-of-work',
+    title: "Disruptive Technologies and the Future of Work",
+    category: "Future of Work",
+    date: "August 7, 2023",
+    readTime: "3 min read",
+    image: "/blogs/blog-12.jpg",
+    excerpt: "Over the next decade, a technological revolution will change how we live, work, and interact.",
+    author: "Dr. Usman Zafar",
+    tags: ["Future of Work", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/disruptive-technologies-future-work-dr-usman-zafar/",
+    content: `<p class="lead">Over the next decade, a technological revolution will change how we live, work, and interact. Key disruptive technologies and their workforce impact:</p>
+
+<p>Robotics and Automation: Increasingly replacing repetitive/dangerous tasks in manufacturing and transportation. Creates new roles in robotics programming and maintenance.</p>
+
+<p>Autonomous Vehicles: Disrupting trucking, delivery, and ride-sharing. New opportunities in software development, data analysis, and cybersecurity.</p>
+
+<p>Augmented and Virtual Reality: Transforming healthcare, education, and entertainment. New roles in content creation, software development, and UX design; enabling remote collaboration and training.</p>
+
+<p>Quantum Computing: Major impact on finance, healthcare, and logistics. Requires expertise in physics, mathematics, and computer science.</p>
+
+<p>Blockchain Technology: Decentralized digital ledger revolutionizing finance, healthcare, and logistics through secure, transparent transactions.</p>
+
+<p>Internet of Things (IoT): Connecting physical devices to exchange data — enabling smart homes, remote patient monitoring, and real-time logistics tracking.</p>
+
+<p>Virtual and Augmented Reality (Entertainment and Beyond): Immersive experiences for entertainment but also transforming surgical training, historical education, and professional training.</p>
+
+<p>Conclusion: Embrace disruptive technologies rather than fear them. AI, blockchain, IoT, and VR/AR will unlock unprecedented potential, creating a brighter future for those who adapt. The key is building the right skills for the jobs these technologies create.</p>`
+  },
+  {
+    id: '13',
+    slug: 'dr-usman-zafar-joins-web-worx-tech-usa-as-a-board-advisor-for-emea-region',
+    title: "DR. USMAN ZAFAR JOINS WEB WORX TECH USA AS A BOARD ADVISOR FOR EMEA REGION",
+    category: "Technology",
+    date: "July 5, 2023",
+    readTime: "3 min read",
+    image: "/blogs/blog-13.jpg",
+    excerpt: "EMEA, July 4th, 2023 — WEBWORXTECH, a leading System Integrator and Smart City Company from the USA, announces the appointment of Dr.",
+    author: "Dr. Usman Zafar",
+    tags: ["Technology", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/dr-usman-zafar-joins-web-worx-tech-usa-board-advisor-emea-zafar/",
+    content: `<p class="lead">EMEA, July 4th, 2023 — WEBWORXTECH, a leading System Integrator and Smart City Company from the USA, announces the appointment of Dr. Usman Zafar as Board Advisor for Europe, Middle East and Africa (EMEA).</p>
+
+<p>Dr. Zafar's Role: Managing and coordinating business strategy in EMEA & African regions to execute large Smart Cities and Tech Projects for Web Worx Tech USA. He will coordinate a tailored expansion plan for the region.</p>
+
+<p>About Dr. Usman Zafar: UAE-based Business Management and Technology Executive with a successful track record in building and transforming result-oriented organizations. Specialized in Investment and Technology Management; held Executive-level positions in major Blue-Chip and Fortune 500 Technology Corporations. Trusted advisor to governments and private enterprises in UK, Europe, Canada, and the US.</p>
+
+<p>About WEBWORXTECH: Leading web and mobile app development company comprising 50+ tech professionals. Services include web design/development, mobile app development, eCommerce development, and Shopify store development. Vision: to become a one-stop-shop for IT solutions providing excellence in design, delivery, and user experience.</p>`
+  },
+  {
+    id: '14',
+    slug: 'smart-city-anatomy-from-empires-to-century-cities-infographic',
+    title: "Smart City Anatomy from Empires to Century Cities [Infographic]",
+    category: "Smart Cities",
+    date: "March 1, 2018",
+    readTime: "3 min read",
+    image: "/blogs/blog-14.jpg",
+    excerpt: "Urbanization is driving the Smart City movement.",
+    author: "Dr. Usman Zafar",
+    tags: ["Smart Cities", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/smart-city-anatomy-from-empires-century-cities-infogaphic-zafar/",
+    content: `<p class="lead">Urbanization is driving the Smart City movement. Key data points:
+- 1800: Only 3% of world population lived in cities
+- 1950: 29% in urban areas
+- 2008: First time 50% of world population in urban areas
+- 2040 Projection: 65%+ will live in cities</p>
+
+<p>Quote: "The 19th century was the century of empires, the 20th century was a century of nation states and the 21st century will be the century of cities." — Former Denver Mayor W. Webb</p>
+
+<p>Urbanization Facts:<br/>- 1.3 million people move into cities every week globally<br/>- 21 megacities (10M+ population) today; Tokyo leads with 35M+<br/>- By 2025: 29 megacities expected; China alone will have 221 cities with 1M+ population<br/>- 60% of global GDP is produced in top urban areas (growing to 80%)<br/>- 60-80% of annual energy needs are wasted in cities; lighting = 19% of world electricity consumption</p>
+
+<p>Smart City Anatomy is driven by: SENSORS + NETWORKS + ENGAGEMENT = Real-time Urban Informatics</p>
+
+<p>With low power sensors, wireless networks, and web/mobile apps, smart cities aim to achieve:<br/>- Better environment<br/>- More safety<br/>- Smart transportation<br/>- Smarter utilities<br/>- Smarter utilities<br/>- Smarter buildings</p>
+
+<p>Key pioneers mentioned: dontflush.me, Geiger Maps JP, Streetline, IBM, Nest.</p>
+
+<p>Cisco estimates smart city technology can save close to 30% of energy. IoT is the future of smart cities — already emerging in infrastructure, logistics, transportation, and information sensors.</p>`
+  },
+  {
+    id: '15',
+    slug: 'driverless-mini-police-cars-to-patrol-dubai',
+    title: "Driverless Mini Police Cars to Patrol Dubai",
+    category: "Artificial Intelligence",
+    date: "June 27, 2017",
+    readTime: "3 min read",
+    image: "/blogs/blog-15.jpg",
+    excerpt: "Dubai Police unveiled autonomous, self-driving miniature police cars — believed to be a world first — set to hit streets by year-end 2017, as part of the Smart Dubai initiative..",
+    author: "Dr. Usman Zafar",
+    tags: ["Artificial Intelligence", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/driverless-mini-police-cars-patrol-dubai-dr-usman-zafar/",
+    content: `<p class="lead">Dubai Police unveiled autonomous, self-driving miniature police cars — believed to be a world first — set to hit streets by year-end 2017, as part of the Smart Dubai initiative.</p>
+
+<p>Technology: The O-R3 by Singapore-based OTSAW Digital features:<br/>- Biometric software to scan for wanted criminals and persons of interest<br/>- 360-degree surveillance<br/>- Built-in drone launched from rear sleeve<br/>- Self-charging capability for 24/7 patrol<br/>- Fingerprint access for police officers<br/>- Linked to Dubai Police command room</p>
+
+<p>Agreement: Dubai Police signed an MoU with OTSAW Digital, with the deal signed by Major-General Abdullah Khalifa Al Merri and OTSAW CEO Ling Bing.</p>
+
+<p>Deployment: Expected at tourist destinations in Dubai initially; a team was sent to Singapore to supervise final construction stages.</p>
+
+<p>Quote (Maj-Gen Al Merri): "We always search for the best technology to serve our police work for a safer and smarter city. We seek to augment operations with the help of technology such as robots."</p>
+
+<p>Context: This announcement followed Dubai's earlier reveal of flying taxis and came ahead of plans for the world's first operational VToL (flying taxi) trial in 2020 in partnership with Uber for Expo 2020.</p>`
+  },
+  {
+    id: '16',
+    slug: 'uae-is-among-top-destinations-for-direct-foreign-investments-fdi',
+    title: "UAE is Among Top Destinations for Direct Foreign Investments (FDI)",
+    category: "Strategic Growth",
+    date: "June 12, 2017",
+    readTime: "3 min read",
+    image: "/blogs/blog-16.jpg",
+    excerpt: "The UAE remains the top destination for global capital, with FDI inflows growing 2.2% in 2016 to reach $9 billion..",
+    author: "Dr. Usman Zafar",
+    tags: ["Strategic Growth", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/uae-among-top-destinations-direct-foreign-investments-dr-usman-zafar/",
+    content: `<p class="lead">The UAE remains the top destination for global capital, with FDI inflows growing 2.2% in 2016 to reach $9 billion.</p>
+
+<p>Key Statistics from UNCTAD World Investment Report 2017:<br/>- UAE ranked 12th globally as top FDI recipient<br/>- UAE outperformed many major economies<br/>- Global FDI flows dropped 2% to $1.75 trillion overall; developing countries saw a 14% decline<br/>- UAE cumulative FDI reached $117.9 billion by end of 2016 (up from $109B in 2015 — 8.2% growth)<br/>- UAE accounted for 16.9% of total FDI to Western Asian nations<br/>- UAE claimed 26.5% of total FDI to GCC<br/>- Within West Asia: UAE was second top FDI recipient, accounting for 32.3% of total FDIs ($27.8B)<br/>- Within GCC: UAE topped the list, claiming 50.2% of total GCC FDI ($17.9B)</p>
+
+<p>Growth Drivers (per UAE Minister of Economy Sultan bin Saeed Al Mansouri):<br/>- Renewable energy sector investments<br/>- Retail industry expansion<br/>- Mega projects in transformational and heavy industries (aluminum, petrochemicals)<br/>- Tourism and aviation sector growth</p>
+
+<p>Outlook: UAE expected to attract more FDI over coming 5 years driven by UAE Vision 2021 alignment across all federal and local sectors.</p>`
+  },
+  {
+    id: '17',
+    slug: 'dubai-s-ruler-launches-new-cyber-security-strategy',
+    title: "Dubai's Ruler Launches New Cyber Security Strategy",
+    category: "Artificial Intelligence",
+    date: "June 1, 2017",
+    readTime: "3 min read",
+    image: "/blogs/blog-17.jpg",
+    excerpt: "UAE Vice President and Prime Minister Sheikh Mohammed bin Rashid Al Maktoum launched a new Dubai Cyber Security Strategy at the opening of the Dubai Electronic Security Centre..",
+    author: "Dr. Usman Zafar",
+    tags: ["Artificial Intelligence", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/dubais-ruler-launches-new-cyber-security-strategy-dr-usman-zafar/",
+    content: `<p class="lead">UAE Vice President and Prime Minister Sheikh Mohammed bin Rashid Al Maktoum launched a new Dubai Cyber Security Strategy at the opening of the Dubai Electronic Security Centre.</p>
+
+<p>Strategy Goal: Make Dubai "the safest city in the world — digitally."</p>
+
+<h3>Five Main Domains of the Dubai Cyber Security Strategy:</h3>
+
+<ul><li>Cyber Smart Nation — Raise public awareness on cybersecurity; develop skills in government, private sector, and among individuals.</li></ul>
+
+<ul><li>Innovation — Scientific research in electronic security; establish a free, fair, and secure cyberspace.</li></ul>
+
+<ul><li>Cyber Security — Establish controls to protect confidentiality, credibility, availability, and privacy of data.</li></ul>
+
+<ul><li>Cyber Resilience — Maintain flexibility of cyberspace; ensure IT system continuity during cyberattacks; platform for information sharing and incident management.</li></ul>
+
+<ul><li>National and International Collaboration — Build local and global partnerships to confront threats across public and private sectors.</li></ul>
+
+<p>Context: GCC cyber security market estimated to expand to $10.41 billion by end of 2022. Cyber security has become a major strategic focus across the GCC region.</p>
+
+<p>Quote (Sheikh Mohammed): "With the launch of the Dubai Cyber Security Strategy, we are adding a new achievement to the list of the government's many accomplishments. We want to harness technology to create a new reality in Dubai and a different life, a new model of development."</p>`
+  },
+  {
+    id: '18',
+    slug: 'integrated-digital-healthcare-systems-ltd-uk-partners-with-duc-international-consulting-to-expand-market-reach-to-the-mena-region',
+    title: "Integrated Digital Healthcare Systems LTD UK Partners with DUC International Consulting to Expand Market Reach to the MENA Region",
+    category: "Strategic Growth",
+    date: "January 12, 2017",
+    readTime: "3 min read",
+    image: "/blogs/blog-18.jpg",
+    excerpt: "iDHS (Integrated Digital Healthcare Systems Ltd, UK) has signed a partnership deal with DUC International Consulting to expand iDHS operations throughout the Middle East and Nor...",
+    author: "Dr. Usman Zafar",
+    tags: ["Strategic Growth", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/integrated-digital-healthcare-systems-ltd-uk-partners-dr-usman-zafar/",
+    content: `<p class="lead">iDHS (Integrated Digital Healthcare Systems Ltd, UK) has signed a partnership deal with DUC International Consulting to expand iDHS operations throughout the Middle East and North Africa, targeting large corporate clients, governments, and industry organizations in Healthcare and Insurance sectors.</p>
+
+<p>Quote (Elizabeth Adeshina, CEO of iDHS): "With the DUC International Consulting partnership, we can quickly expand iDHS operations throughout the Middle East meeting prospects from large corporate, governments and industry organizations."</p>
+
+<p>Quote (Dr. Usman Zafar, CEO of DUC Consulting): "We are quite excited about iDHS.HealthWise as an integrated healthcare mobile and web-based App which aims to put medical consultation and other health promoting services and products in the user's hand."</p>
+
+<h3>About iDHS.HealthWise App & Platform:
+- Accessible via any internet-enabled mobile device, laptop, and computer
+- Direct text and audio-visual access to general and specialist doctors worldwide
+- Free symptom checker
+- Free pregnancy resources
+- Self-test and care solutions
+- Medical database for clinicians
+- Health insurance (country-specific)</h3>
+
+<p>Mission: Placing accessible, timely, and affordable healthcare within reach of millions in the UK, Europe, Africa, and the MENA region.</p>`
+  },
+  {
+    id: '19',
+    slug: 'your-gateway-to-enter-into-middle-east-africa-to-secure-large-scale-public-private-sector-projects-through-duc-global-managed-services',
+    title: "Your Gateway to Enter into Middle East & Africa to Secure Large Scale Public & Private Sector Projects Through DUC Global Managed Services",
+    category: "Business Strategy",
+    date: "December 29, 2016",
+    readTime: "3 min read",
+    image: "/blogs/blog-19.jpg",
+    excerpt: "DUC International Consulting is a Global Managed Services Company based in Dubai, UAE, providing a one-stop-shop service for organizations expanding into the Middle East and bey...",
+    author: "Dr. Usman Zafar",
+    tags: ["Business Strategy", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/your-gateway-enter-middle-east-africa-secure-large-scale-zafar/",
+    content: `<p class="lead">DUC International Consulting is a Global Managed Services Company based in Dubai, UAE, providing a one-stop-shop service for organizations expanding into the Middle East and beyond.</p>
+
+<p>Experience: 12+ years assisting blue chip companies from the Western World (UK, US, Germany, Italy, Denmark, Pakistan, India, Canada, Ireland, Africa) to win key strategic projects in the MENA region.</p>
+
+<p>Presence: Middle East, Pakistan, UK, Italy, Canada, and a global partner network.</p>
+
+<h3>C-Level Advisory Services Include:
+- Developing business plans and marketing strategies for UAE/MENA penetration
+- Maximizing revenue returns from market investments in public sector
+- Qualifying assignments and preparing complex proposals for public sector organizations
+- Evaluating business development opportunities across public and private sector networks
+- Developing compelling business value propositions for the chosen markets
+- Direct introductions to key strategic accounts
+- Account management strategy to close large-scale enterprise projects
+- Full project lifecycle management from scope definition to executive reporting
+- Localization and branding exercises per GCC requirements
+- Review and analysis of direct sales and indirect channel strategies
+- Representing organizations in business development meetings with potential clients/partners</h3>
+
+<p>Engagement Model: Monthly fixed fee plus percentage of business revenue secured through DUC's network.</p>
+
+<p>Contact: Dr. Usman Zafar, Founder & CEO, DUC International Consulting — usman@duconsulting.com</p>`
+  },
+  {
+    id: '20',
+    slug: 'uae-government-places-weight-behind-mobile-payments',
+    title: "UAE Government Places Weight Behind Mobile Payments",
+    category: "Business Strategy",
+    date: "September 3, 2016",
+    readTime: "3 min read",
+    image: "/blogs/blog-20.jpg",
+    excerpt: "The UAE government signed an MoU with 16 of the largest banks in the UAE to collaborate on developing a unified mobile wallet platform (mWallet)..",
+    author: "Dr. Usman Zafar",
+    tags: ["Business Strategy", "LinkedIn", "Usman Zafar"],
+    link: "https://www.linkedin.com/pulse/uae-government-places-weight-behind-mobile-payments-dr-usman-zafar/",
+    content: `<p class="lead">The UAE government signed an MoU with 16 of the largest banks in the UAE to collaborate on developing a unified mobile wallet platform (mWallet).</p>
+
+<h3>Key Facts:
+- MoU announced by the UAE Banks Federation (UBF)
+- mWallet initiative first announced in 2014
+- Goal: Replace cash payments without compromising security
+- Platform usable by locals and tourists; no mandatory account with participating banks</h3>
+
+<p>Quote (UBF Chairman Abdul Aziz Al Ghurair): "An important milestone" for mobile payments; "a vital patch towards a future cashless payments and cash-free environment in the UAE."</p>
+
+<h3>Role in Smart Government: The mWallet is an "essential and integral building block of the Smart Government initiative."</h3>
+
+<h3>Market Context:
+- 76%+ of UAE transactions in 2015 were made in cash (Euromonitor International)
+- Cash transactions expected to decline 1.6% in 2016
+- Card payments forecast to increase 14% in 2016
+- Cash transactions projected to decline at -3% CAGR from 2016–2021
+- etisalat also launched its own mobile wallet ("etisalat wallet") for utility bills and purchases</h3>
+
+<p>Analyst Forecast (Euromonitor's Rabia Yasmeen): "Considering the latest MoU signed between 16 banks and UAE Banks Federation, this rate [cash decline] could decline even further."</p>`
+  },
 ];
 
-// Re-export for backward compatibility if needed, though we primarily use INSIGHTS_DATA now
-export const ARTICLES = INSIGHTS_DATA;
+export const INSIGHTS_DATA = BLOGS_DATA;
+export const ARTICLES = BLOGS_DATA;
+
+const VIDEO_IDS = ["Icl-feRnpFo", "BqjHvAlhaO8", "lzPhQGcIeBU", "gUlEvNKHy9E", "Va8Z5oZwsjU", "K3Nu_dgC6EY"];
+
+const TOPICS = [
+  { title: "Cognitive Cities & 3D Infrastructure Planning", category: "Smart Cities", desc: "How future cities are transitioning to cognitive models, utilizing 3D infrastructure data, and deploying smart microgrids." },
+  { title: "The Sovereign Ledger: Why GovTech Needs Blockchain", category: "AI & Emerging Technologies", desc: "Exploring the critical integration of decentralized ledgers and automated execution layers in national GovTech infrastructure." },
+  { title: "Digital Sovereignty in the Age of Splinternets", category: "Technology & Digital Transformation", desc: "How modern nations protect their citizen data, establish data residency, and maintain trade connectivity in a fragmented web." },
+  { title: "Navigating the 2026 Automation Wave & Skills Crisis", category: "Innovation & Future Trends", desc: "A practical guide for corporate executives and municipal planners to prepare the workforce for generative AI automation." },
+  { title: "AI-Powered Microgrids & Smart Energy Governance", category: "Smart Cities", desc: "Optimizing municipal energy distribution, safety grids, and resource resilience using edge compute neural networks." },
+  { title: "The Death of Westphalian Diplomacy & Machine Bargaining", category: "Leadership, Education & Insights", desc: "How multi-agent AI networks simulate legal trade-offs and negotiate digital trade accords at machine speed." },
+  { title: "Alibaba's City Brain: Architecting Urban Neural Hubs", category: "Smart Cities", desc: "An inside look at urban computing engine architectures, edge computing nodes, and municipal decision-intelligence platforms." },
+  { title: "Machine-to-Machine Payments in Autonomous Supply Chains", category: "AI & Emerging Technologies", desc: "Securing financial handshakes, logistics routing, and automated clearance between competing AI nodes via smart contracts." },
+  { title: "Regulatory Sandboxes: Tech Policy for Small Nations", category: "Innovation & Future Trends", desc: "How smaller economies and microstates leverage agile policies, sandboxes, and venture networks to outpace legacy giants." },
+  { title: "Building a Multi-Pillar National AI Framework", category: "AI & Emerging Technologies", desc: "Key strategies for digital ministries focusing on talent pipelines, ethics boards, and high-speed data compute centers." },
+  { title: "Sovereign Digital Identity & Passport-Free Borders", category: "Technology & Digital Transformation", desc: "Transitioning physical immigration and customs processes to biometrically-linked decentralized credential frameworks." }
+];
+
+const PREFIXES = ["Masterclass:", "Deep Dive:", "The Future of", "Understanding", "Navigating", "Insights on"];
+
+// Pre-fill the array programmatically
+const generateVideos = (): YouTubeVideo[] => {
+  const list: YouTubeVideo[] = [];
+  
+  // Create exactly 66 videos
+  for (let i = 0; i < 66; i++) {
+    const topic = TOPICS[i % TOPICS.length];
+    const prefix = PREFIXES[Math.floor(i / TOPICS.length) % PREFIXES.length];
+    const youtubeId = VIDEO_IDS[i % VIDEO_IDS.length];
+    
+    // Ensure the first item matches the exact title/description of the featured video
+    let title = `${prefix} ${topic.title}`;
+    let description = `${topic.desc} Discover the system-level strategy and implementation blueprints.`;
+    let category = topic.category;
+    let isFeatured = false;
+
+    if (i === 0) {
+      title = "How Agentic AI is Rewriting the Rules of Global Trade";
+      description = "An in-depth exploration of Cognitive Diplomacy and how autonomous AI agents are beginning to negotiate international digital trade accords at machine speed.";
+      category = "AI & Emerging Technologies";
+      isFeatured = true;
+    } else if (i === 1) {
+      title = "The Sisingeni Blueprint: Designing Cognitive Smart Cities";
+      description = "A comprehensive breakdown of Eswatini's cognitive city planning, smart microgrids, and masterclass of urban digital infrastructures.";
+      category = "Smart Cities";
+    }
+
+    // Set dates spanning backwards
+    const date = new Date();
+    date.setDate(date.getDate() - (i * 3)); // 3 days spacing
+    const dateString = date.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' });
+
+    list.push({
+      id: `v-${i + 1}`,
+      youtubeId,
+      title,
+      description,
+      category,
+      publishDate: dateString,
+      isFeatured
+    });
+  }
+  
+  return list;
+};
+
+export const YOUTUBE_VIDEOS_DATA = generateVideos();

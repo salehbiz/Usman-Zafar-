@@ -9,10 +9,11 @@ import ServicesListing from './pages/ServicesListing';
 import ServiceDetail from './pages/ServiceDetail';
 import BookDetail from './pages/BookDetail';
 import BooksListing from './pages/BooksListing';
-import InsightsListing from './pages/InsightsListing';
-import InsightDetail from './pages/InsightDetail';
+import BlogsListing from './pages/BlogsListing';
+import BlogDetail from './pages/BlogDetail';
 import KeynotesListing from './pages/KeynotesListing';
 import MediaListing from './pages/MediaListing';
+import YoutubeVideos from './pages/YoutubeVideos';
 import AwardsListing from './pages/AwardsListing';
 import AcademicExperience from './pages/AcademicExperience';
 import Contact from './pages/Contact';
@@ -85,12 +86,20 @@ const App: React.FC = () => {
             <Route path="/books" element={<BooksListing />} />
             <Route path="/books/:slug" element={<BookDetail />} />
 
-            {/* Insights Routes */}
-            <Route path="/insights" element={<InsightsListing />} />
-            <Route path="/insights/:slug" element={<InsightDetail />} />
+            {/* Blogs Routes */}
+            <Route path="/blogs" element={<BlogsListing />} />
+            <Route path="/blogs/:slug" element={<BlogDetail />} />
+            
+            {/* Insights Aliases for Backward Compatibility */}
+            <Route path="/insights" element={<BlogsListing />} />
+            <Route path="/insights/:slug" element={<BlogDetail />} />
 
             {/* Media Route */}
             <Route path="/media" element={<MediaListing />} />
+
+            {/* YouTube Videos Route */}
+            <Route path="/youtube" element={<YoutubeVideos />} />
+            <Route path="/videos" element={<YoutubeVideos />} />
 
             {/* Awards Route */}
             <Route path="/awards" element={<AwardsListing />} />

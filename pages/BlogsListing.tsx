@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { INSIGHTS_DATA } from '../constants';
+import { BLOGS_DATA } from '../constants';
 import { ArrowUpRight, Clock, Calendar } from 'lucide-react';
 import FinalCTA from '../components/FinalCTA';
 
-const InsightsListing: React.FC = () => {
+const BlogsListing: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -12,13 +12,13 @@ const InsightsListing: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-[#F6F5EF] min-h-screen pt-24">
+    <div className="bg-[#F6F5EF] min-h-screen pt-24 font-sans">
       
       {/* Header */}
       <div className="px-6 md:px-12 py-12 max-w-[1400px] mx-auto text-center mb-8">
          <span className="text-[#124442]/60 font-semibold tracking-widest text-xs uppercase mb-4 block">Journal & Perspectives</span>
          <h1 className="text-5xl lg:text-7xl font-semibold text-[#124442] tracking-tight mb-6">
-            Insights
+            Blogs
          </h1>
          <p className="text-xl text-[#124442]/70 max-w-2xl mx-auto leading-relaxed font-light">
             Analysis and commentary on the forces shaping global markets, technology policy, and leadership.
@@ -28,17 +28,18 @@ const InsightsListing: React.FC = () => {
       {/* Grid */}
       <div className="px-6 md:px-12 pb-24 max-w-[1400px] mx-auto">
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {INSIGHTS_DATA.map((article) => (
+            {BLOGS_DATA.map((article) => (
                <div 
                   key={article.id}
-                  onClick={() => navigate(`/insights/${article.slug}`)}
+                  onClick={() => navigate(`/blogs/${article.slug}`)}
                   className="group cursor-pointer flex flex-col gap-6 bg-white p-6 rounded-[32px] border border-[#124442]/5 shadow-sm hover:shadow-[0_20px_40px_-10px_rgba(18,68,66,0.1)] hover:-translate-y-1 transition-all duration-300"
                >
-                  <div className="relative aspect-[16/9] w-full rounded-[20px] overflow-hidden">
+                  <div className="relative aspect-[16/9] w-full rounded-[20px] overflow-hidden bg-[#124442]/5 flex justify-center items-center">
                      <img 
                         src={article.image} 
                         alt={article.title} 
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        referrerPolicy="no-referrer"
+                        className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-102"
                      />
                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
                         <span className="text-[#124442] text-[10px] font-bold uppercase tracking-widest">{article.category}</span>
@@ -76,4 +77,4 @@ const InsightsListing: React.FC = () => {
   );
 };
 
-export default InsightsListing;
+export default BlogsListing;

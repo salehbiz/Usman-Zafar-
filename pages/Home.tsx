@@ -7,6 +7,7 @@ import PublicationsSection from '../components/PublicationsSection';
 import AdvisoryPackages from '../components/AdvisoryPackages';
 import TestimonialsGrid from '../components/TestimonialsGrid';
 import WhyWorkWithUs from '../components/WhyWorkWithUs';
+import YoutubeTeaser from '../components/YoutubeTeaser';
 import Insights from '../components/Insights';
 import FinalCTA from '../components/FinalCTA';
 
@@ -43,6 +44,7 @@ const Home: React.FC = () => {
       <AdvisoryPackages />
       <TestimonialsGrid />
       <WhyWorkWithUs />
+      <YoutubeTeaser />
       <Insights />
       <FinalCTA />
     </div>

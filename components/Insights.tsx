@@ -31,7 +31,7 @@ const STATIC_ARTICLES = [
     title: " Unveiling the Potential of Generative AI with Coursera's Specialization",
     excerpt: "Generative AI, the technology behind text-generating chatbots, artistic masterpieces conjured from words, and even realistic deepfakes, is rapidly transforming our world. ",
     image: "https://i.postimg.cc/jqhCkyR8/image.png",
-    link: "hhttps://www.linkedin.com/pulse/demystifying-magic-unveiling-potential-generative-ai-courseras-zafar-5pezf/?trackingId=CnEqnwETQniW4mqwiaqXDA%3D%3D"
+    link: "https://www.linkedin.com/pulse/demystifying-magic-unveiling-potential-generative-ai-courseras-zafar-5pezf/?trackingId=CnEqnwETQniW4mqwiaqXDA%3D%3D"
   }
 ];
 
@@ -63,7 +63,7 @@ const Insights: React.FC = () => {
           </div>
           
           <button 
-             onClick={() => navigate('/media')}
+             onClick={() => navigate('/blogs')}
              className="group flex items-center gap-2 text-white/60 hover:text-[#C8F16B] transition-colors text-sm font-medium uppercase tracking-widest border-b border-transparent hover:border-[#C8F16B] pb-1"
           >
              Show All Articles <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />

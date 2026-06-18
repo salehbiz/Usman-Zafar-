@@ -29,6 +29,7 @@ export interface ArticleItem {
   content: string; // HTML or Markdown string
   author: string;
   tags: string[];
+  link?: string;
 }
 
 export interface TestimonialItem {
@@ -84,4 +85,14 @@ export interface PortfolioItem {
   challenge: string;
   solution: string;
   impact: string[];
+}
+
+export interface YouTubeVideo {
+  id: string;
+  youtubeId: string;
+  title: string;
+  description: string;
+  category: string;
+  publishDate: string;
+  isFeatured?: boolean;
 }
