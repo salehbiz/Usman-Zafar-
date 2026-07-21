@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
 
   // Helper to get active link class
   const getNavLinkClass = ({ isActive }: { isActive: boolean }) => 
-    `text-sm font-medium tracking-wide px-4 py-2 rounded-full transition-all duration-300 ${
+    `text-xs xl:text-sm font-medium tracking-wide px-2.5 xl:px-4 py-2 rounded-full transition-all duration-300 whitespace-nowrap shrink-0 ${
       isActive 
         ? 'text-[#C8F16B] bg-white/5' 
         : `text-[#F6F5EF] hover:bg-white/10 hover:text-white ${isHomePage && !isScrolled ? 'drop-shadow-sm' : ''}`
@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
           
           <button 
             onClick={() => navigate('/contact')} 
-            className="ml-4 px-6 py-2.5 text-sm font-semibold bg-[#C8F16B] text-[#134443] rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_15px_rgba(200,241,107,0.2)]"
+            className="ml-2 xl:ml-4 px-4 xl:px-6 py-2.5 text-xs xl:text-sm font-semibold bg-[#C8F16B] text-[#134443] rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_15px_rgba(200,241,107,0.2)] whitespace-nowrap shrink-0"
           >
             Book a Call
           </button>

@@ -335,7 +335,7 @@ export const BOOKS_CONTENT: Record<string, BookContent> = {
     title: "Artificial Intelligence for SME Leaders",
     subtitle: "A step-by-step guide for founders and managers to adopt AI and drive growth.",
     description: "In a world dominated by tech giants, how do Small and Medium Enterprises compete? This book provides a pragmatic roadmap for SME leaders to leverage AI not just for efficiency, but for exponential growth. Move beyond the hype and implement systems that drive real revenue. Dr. Usman Zafar breaks down complex algorithms into actionable business strategies, ensuring that your organization doesn't just survive the AI revolution, but thrives in it.",
-    image: "/blogs/blog-4.jpg",
+    image: "/images/ai-sme-leaders.jpg",
     price: "$29.99",
     type: "Ebook / Digital Download",
     highlights: [
@@ -362,7 +362,7 @@ export const BOOKS_CONTENT: Record<string, BookContent> = {
     title: "Digital Sovereignty",
     subtitle: "A strategic guide to the global data wars and reclaiming control in an AI-driven world.",
     description: "Data is the new oil, but who owns the pipeline? 'Digital Sovereignty' explores the critical intersection of technology, national security, and individual privacy. A must-read for policymakers and corporate strategists navigating the splinter internet. This book dissects the geopolitical struggle for control over digital infrastructure and offers a manifesto for how nations and enterprises can secure their digital future without isolationism.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
+    image: "/images/digital-sovereignty.jpg",
     price: "$34.99",
     type: "Hardcover & Ebook",
     highlights: [
@@ -382,6 +382,36 @@ export const BOOKS_CONTENT: Record<string, BookContent> = {
       { title: "Policy Deep Dives", description: "Analysis of major digital sovereignty legislation globally." },
       { title: "Strategic Risk Models", description: "Frameworks for assessing data dependency risks." },
       { title: "Future Scenarios", description: "Projections for the internet's evolution over the next decade." }
+    ]
+  },
+  'sentient-cities': {
+    id: 'sentient-cities',
+    title: "Sentient Cities",
+    subtitle: "The Digital Twin Revolution: How AI-powered virtual replicas are transforming urban planning, infrastructure, and the future of human settlement.",
+    description: "Your city is about to start thinking. The only question is whether you'll understand what it's saying.\n\nMore than 500 cities worldwide are already run, in part, by AI-powered digital twins — living virtual replicas fed by millions of sensors that predict traffic four minutes before it jams, detect a water-main fracture years before it bursts, and simulate ten thousand versions of a neighborhood before a single brick is laid. The market behind this revolution is projected to grow from $13.6 billion to over $600 billion by 2035.\n\nSentient Cities is the definitive field guide to that transformation — written by one of the world's most recognized smart-city leaders, and refined over three editions into the book city leaders, engineers, investors, and technologists reach for first.",
+    image: "/images/sentient-cities.jpg",
+    price: "$9.99",
+    type: "Kindle / Paperback",
+    highlights: [
+      "The Urban Brain — the 5-layer operating system that lets a city sense, think, and act",
+      "The end of the traffic jam — how Hangzhou, Seoul, and Singapore cut congestion by up to 22%",
+      "Generative urban design — AI that produces thousands of optimized city blueprints in minutes",
+      "The net-zero playbook — district energy twins, solar mapping, and peer-to-peer energy trading",
+      "Predictive infrastructure — the ROI case that turns $6 trillion of deferred maintenance into foresight",
+      "The investment map — where the money is flowing, which platforms are winning, and the jobs being created",
+      "The governance imperative — surveillance, algorithmic bias, GDPR, the EU AI Act, and how democracies keep control",
+      "20 city deep-dives — Singapore, Dubai, Helsinki, NEOM, Tokyo, New York, Kigali, and more"
+    ],
+    audience: [
+      "City and Government Leaders",
+      "Urban Planners & Engineers",
+      "Technology Executives",
+      "Investors & Consultants"
+    ],
+    features: [
+      { title: "Full-Color Data Panels", description: "Packed with full-color data panels, charts, and original illustrations." },
+      { title: "Implementation Playbook", description: "A complete roadmap and a ten-point action plan for city leaders." },
+      { title: "ROI Framework", description: "A complete ROI case study and comprehensive glossary." }
     ]
   }
 };

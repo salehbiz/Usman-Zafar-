@@ -8,7 +8,7 @@ const BooksListing: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-[#F6F5EF] min-h-screen pt-20">
+    <div className="bg-[#F6F5EF] min-h-screen pt-32">
       <div className="px-6 md:px-12 py-12 max-w-[1400px] mx-auto text-center">
          <span className="text-[#124442]/60 font-semibold tracking-widest text-xs uppercase mb-4 block">Library</span>
          <h1 className="text-5xl lg:text-7xl font-semibold text-[#124442] tracking-tight mb-6">Publications</h1>
