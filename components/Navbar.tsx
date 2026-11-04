@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
         {/* CENTER LOGO */}
         <div className="flex justify-center w-full lg:w-2/12 cursor-pointer group" onClick={() => navigate('/')}>
            <img 
-             src="/logo-new.png" 
+             src="/logo-new.webp"
              alt="usmanzafar.com"
              className={`h-12 md:h-16 w-auto object-contain transition-all duration-300 ${isHomePage && !isScrolled ? 'drop-shadow-lg' : ''}`}
            />

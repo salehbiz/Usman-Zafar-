@@ -31,18 +31,18 @@ const PortfolioImpact: React.FC = () => {
         <div className="grid grid-cols-2 gap-4 md:gap-6">
            <div className="space-y-4 md:space-y-6 translate-y-8">
               <div className="rounded-[32px] overflow-hidden aspect-[3/4] shadow-lg">
-                 <img src="https://images.unsplash.com/photo-1541818767794-2b9626da71b1?q=80&w=1287&auto=format&fit=crop" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Global Forum" />
+                 <img src="https://images.unsplash.com/photo-1541818767794-2b9626da71b1?q=80&w=1287&auto=format&fit=crop" loading="lazy" decoding="async" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Global Forum" />
               </div>
               <div className="rounded-[32px] overflow-hidden aspect-square shadow-lg">
-                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Boardroom" />
+                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop" loading="lazy" decoding="async" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Boardroom" />
               </div>
            </div>
            <div className="space-y-4 md:space-y-6 -translate-y-8">
               <div className="rounded-[32px] overflow-hidden aspect-square shadow-lg">
-                  <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Architecture" />
+                  <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop" loading="lazy" decoding="async" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Architecture" />
               </div>
               <div className="rounded-[32px] overflow-hidden aspect-[3/4] shadow-lg">
-                  <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2670&auto=format&fit=crop" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Conference" />
+                  <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2670&auto=format&fit=crop" loading="lazy" decoding="async" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Conference" />
               </div>
            </div>
         </div>

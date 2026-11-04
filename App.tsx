@@ -1,29 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import About from './pages/About';
-import GenericPage from './pages/GenericPage';
-import ServicesListing from './pages/ServicesListing';
-import ServiceDetail from './pages/ServiceDetail';
-import BookDetail from './pages/BookDetail';
-import BooksListing from './pages/BooksListing';
-import BlogsListing from './pages/BlogsListing';
-import BlogDetail from './pages/BlogDetail';
-import KeynotesListing from './pages/KeynotesListing';
-import MediaListing from './pages/MediaListing';
-import YoutubeVideos from './pages/YoutubeVideos';
-import AwardsListing from './pages/AwardsListing';
-import AcademicExperience from './pages/AcademicExperience';
-import Contact from './pages/Contact';
-import EssentialMarketEntry from './pages/EssentialMarketEntry';
-import GrowthAcceleration from './pages/GrowthAcceleration';
-import PremiumStrategicAdvisory from './pages/PremiumStrategicAdvisory';
-import EnterpriseAdvisory from './pages/EnterpriseAdvisory';
-import Solutions from './pages/Solutions';
-import Aria from './pages/Aria';
 import { SERVICE_CONTENT } from './constants';
+
+const About = lazy(() => import('./pages/About'));
+const GenericPage = lazy(() => import('./pages/GenericPage'));
+const ServicesListing = lazy(() => import('./pages/ServicesListing'));
+const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
+const BookDetail = lazy(() => import('./pages/BookDetail'));
+const BooksListing = lazy(() => import('./pages/BooksListing'));
+const BlogsListing = lazy(() => import('./pages/BlogsListing'));
+const BlogDetail = lazy(() => import('./pages/BlogDetail'));
+const KeynotesListing = lazy(() => import('./pages/KeynotesListing'));
+const MediaListing = lazy(() => import('./pages/MediaListing'));
+const YoutubeVideos = lazy(() => import('./pages/YoutubeVideos'));
+const AwardsListing = lazy(() => import('./pages/AwardsListing'));
+const AcademicExperience = lazy(() => import('./pages/AcademicExperience'));
+const Contact = lazy(() => import('./pages/Contact'));
+const EssentialMarketEntry = lazy(() => import('./pages/EssentialMarketEntry'));
+const GrowthAcceleration = lazy(() => import('./pages/GrowthAcceleration'));
+const PremiumStrategicAdvisory = lazy(() => import('./pages/PremiumStrategicAdvisory'));
+const EnterpriseAdvisory = lazy(() => import('./pages/EnterpriseAdvisory'));
+const Solutions = lazy(() => import('./pages/Solutions'));
+const Aria = lazy(() => import('./pages/Aria'));
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -41,6 +42,7 @@ const App: React.FC = () => {
       <div className="font-sans text-brand bg-cream min-h-screen flex flex-col selection:bg-accent selection:text-brand-dark">
         <Navbar />
         <main className="flex-grow">
+          <Suspense fallback={<div className="min-h-screen bg-cream" />}>
           <Routes>
             <Route path="/" element={<Home />} />
             
@@ -124,6 +126,7 @@ const App: React.FC = () => {
             <Route path="/aria" element={<Aria />} />
 
           </Routes>
+          </Suspense>
         </main>
         <Footer />
       </div>
