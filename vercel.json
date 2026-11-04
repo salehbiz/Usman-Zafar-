@@ -1,5 +1,18 @@
 {
     "framework": "vite",
+    "redirects": [
+        {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "usmanzafar.com"
+                }
+            ],
+            "destination": "https://usman-zafar-advisory.vercel.app/$1",
+            "permanent": false
+        }
+    ],
     "rewrites": [
         {
             "source": "/(.*)",
